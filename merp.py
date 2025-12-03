@@ -1,11 +1,15 @@
 """
-STOCK SCREENER WITH BACKTESTING
+STOCK SCREENER WITH BACKTESTING v2.0
 Educational project for analyzing stocks using technical indicators
 
-Current Indicator: 50-period Simple Moving Average (SMA) on 15-minute intervals
-Signal Logic: BUY when price crosses above SMA, SELL when price crosses below SMA
+Features:
+- 20-period Simple Moving Average (SMA) on daily intervals
+- Full portfolio profit/loss tracking
+- Position sizing recommendations
+- JSON output for dashboard integration
+- Live signals + historical backtesting
 
-Backtesting: Tests strategy over past 60 days using extended hours data
+Signal Logic: BUY when price crosses above SMA, SELL when price crosses below SMA
 """
 
 import yfinance as yf
@@ -13,6 +17,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 import time
 import os
+import json
 
 
 # ============================================================================
@@ -20,10 +25,15 @@ import os
 # ============================================================================
 
 TICKER_FILE = 'qqq_holdings.txt'    # File containing stock symbols to analyze
-INTERVAL = '15m'                    # Data interval: 15-minute candles
-LOOKBACK_PERIOD = '60d'             # Fetches x days of historical data
-SMA_PERIOD = 50                     # Moving average period
+INTERVAL = '1d'                     # Data interval: daily candles
+LOOKBACK_PERIOD = '1y'              # Fetches 1 year of historical data
+SMA_PERIOD = 20                     # 20-day moving average period
 BACKTEST_DAYS = 60                  # Tests the strategy over x days
+
+# POSITION SIZING CONFIG
+PORTFOLIO_SIZE = 10000              # Total portfolio value in dollars
+MAX_POSITION_PCT = 0.10             # Maximum 10% of portfolio per stock
+RISK_PER_TRADE_PCT = 0.02           # Risk 2% of portfolio per trade
 
 
 # ============================================================================
@@ -32,8 +42,7 @@ BACKTEST_DAYS = 60                  # Tests the strategy over x days
 
 def load_tickers(filename=TICKER_FILE):
     """
-    reads stock ticker symbols from text file, "qqq_holdings.txt"
-    
+    Reads stock ticker symbols from text file.
     File format: One ticker per line, lines starting with # are ignored
     """
     tickers = []
@@ -53,36 +62,12 @@ def load_tickers(filename=TICKER_FILE):
 def fetch_stock_data(ticker, period=LOOKBACK_PERIOD, interval=INTERVAL):
     """
     Fetch historical stock price data using yfinance.
-
-    prepost=True, includes extended hours (pre-market and after-hours) data.
-    
     Returns: DataFrame with OHLCV data, or None if error
-
-    OHLCV stands for the five key pieces of information captured for each trading period (whether that's 1 minute, 15 minutes, 1 hour, or 1 day):
-    The Five Components:
-
-        O - Open: The price at which the stock first traded when that period began
-        H - High: The highest price reached during that period
-        L - Low: The lowest price reached during that period
-        C - Close: The price at which the stock last traded when that period ended
-        V - Volume: The total number of shares traded during that period
-
-    Example for a 15-minute interval from 9:45 AM to 10:00 AM:
-
-        Open:   $175.20  (first trade at 9:45 AM)
-        High:   $176.50  (highest it reached during those 15 minutes)
-        Low:    $174.80  (lowest it dipped during those 15 minutes)
-        Close:  $176.10  (last trade at 10:00 AM)
-        Volume: 250,000  (total shares traded in that 15-minute window)
     """
-
     try:
         stock = yf.Ticker(ticker)
-
         df = stock.history(period=period, interval=interval, prepost=True)
         
-        # "df.empty" checks if there is no data returned from yfinance at all -> returns None
-        # "len(df) < SMA_PERIOD" ensures there is enough data to calculate the SMA indicator
         if df.empty or len(df) < SMA_PERIOD:
             return None
             
@@ -99,24 +84,58 @@ def fetch_stock_data(ticker, period=LOOKBACK_PERIOD, interval=INTERVAL):
 def calculate_sma(df, period=SMA_PERIOD):
     """
     Calculate Simple Moving Average (SMA).
-    
-    The SMA smooths out price data by calculating the average price
-    over a specified period. It's a lagging indicator that helps
-    identify trend direction.
     """
     df['SMA'] = df['Close'].rolling(window=period).mean()
     return df
 
 
 # ============================================================================
+# POSITION SIZING
+# ============================================================================
+
+def calculate_position_size(price, signal_strength, portfolio_size=PORTFOLIO_SIZE):
+    """
+    Calculate recommended position size based on:
+    - Portfolio size
+    - Maximum position percentage
+    - Signal strength (distance from SMA)
+    
+    Returns: Dictionary with shares to buy and dollar amount
+    """
+    max_position_dollars = portfolio_size * MAX_POSITION_PCT
+    risk_dollars = portfolio_size * RISK_PER_TRADE_PCT
+    
+    # Adjust position based on signal strength (stronger signal = larger position)
+    # But never exceed max position
+    if signal_strength > 5:  # Very strong signal (>5% above SMA)
+        position_multiplier = 1.0
+    elif signal_strength > 2:  # Strong signal
+        position_multiplier = 0.75
+    elif signal_strength > 0:  # Moderate signal
+        position_multiplier = 0.5
+    else:  # Weak/no signal
+        position_multiplier = 0.25
+    
+    position_dollars = min(max_position_dollars * position_multiplier, max_position_dollars)
+    shares = int(position_dollars / price)
+    actual_dollars = shares * price
+    
+    return {
+        'shares': shares,
+        'dollars': round(actual_dollars, 2),
+        'position_pct': round((actual_dollars / portfolio_size) * 100, 2),
+        'risk_dollars': round(risk_dollars, 2)
+    }
+
+
+# ============================================================================
 # LIVE SIGNAL GENERATION
 # ============================================================================
 
-def generate_current_signal(df):
+def generate_current_signal(df, ticker):
     """
     Generate trading signal for current market conditions.
-    
-    Returns: Dictionary with current signal and metrics
+    Returns: Dictionary with current signal, metrics, and position sizing
     """
     current = df.iloc[-1]
     previous = df.iloc[-2]
@@ -135,21 +154,29 @@ def generate_current_signal(df):
     
     # Generate signal
     if crossed_above:
-        signal = 'STRONG BUY'  # Just crossed above
+        signal = 'STRONG BUY'
     elif price > sma:
-        signal = 'BUY'  # Above SMA
+        signal = 'BUY'
     elif crossed_below:
-        signal = 'SELL'  # Just crossed below
+        signal = 'SELL'
     else:
-        signal = 'HOLD'  # Below SMA
+        signal = 'HOLD'
+    
+    # Calculate position sizing for buy signals
+    position = None
+    if signal in ['STRONG BUY', 'BUY']:
+        position = calculate_position_size(price, distance_from_sma)
     
     return {
+        'ticker': ticker,
         'signal': signal,
-        'price': price,
-        'sma': sma,
-        'distance_pct': distance_from_sma,
+        'price': round(price, 2),
+        'sma': round(sma, 2),
+        'distance_pct': round(distance_from_sma, 2),
         'crossed_above': crossed_above,
-        'crossed_below': crossed_below
+        'crossed_below': crossed_below,
+        'position': position,
+        'timestamp': datetime.now().isoformat()
     }
 
 
@@ -174,8 +201,12 @@ def backtest_strategy(ticker, df):
     # Reset index to make datetime a column
     df = df.reset_index()
     
+    # Handle both 'Datetime' (intraday) and 'Date' (daily) column names
+    if 'Date' in df.columns:
+        df = df.rename(columns={'Date': 'Datetime'})
+    
     trades = []
-    position = None  # Track if we're in a position
+    position = None
     
     # Loop through data looking for crossovers
     for i in range(1, len(df)):
@@ -193,7 +224,7 @@ def backtest_strategy(ticker, df):
         
         # Detect crossover above (BUY signal)
         if prev_price <= prev_sma and current_price > current_sma:
-            if position is None:  # Only enter if not already in position
+            if position is None:
                 position = {
                     'entry_date': current['Datetime'],
                     'entry_price': current_price,
@@ -202,7 +233,7 @@ def backtest_strategy(ticker, df):
         
         # Detect crossover below (SELL signal)
         elif prev_price >= prev_sma and current_price < current_sma:
-            if position is not None:  # Only exit if we have a position
+            if position is not None:
                 exit_price = current_price
                 profit_loss = exit_price - position['entry_price']
                 profit_loss_pct = (profit_loss / position['entry_price']) * 100
@@ -217,7 +248,7 @@ def backtest_strategy(ticker, df):
                     'duration': current['Datetime'] - position['entry_date']
                 }
                 trades.append(trade)
-                position = None  # Close the position
+                position = None
     
     # If still in position at end, close it at last price
     if position is not None:
@@ -248,21 +279,29 @@ def backtest_strategy(ticker, df):
     win_rate = (len(winning_trades) / total_trades * 100) if total_trades > 0 else 0
     
     total_profit = sum(t['profit_loss'] for t in trades)
-    avg_profit_pct = sum(t['profit_loss_pct'] for t in trades) / total_trades
+    total_profit_pct = sum(t['profit_loss_pct'] for t in trades)
+    avg_profit_pct = total_profit_pct / total_trades
     
     avg_winner = sum(t['profit_loss_pct'] for t in winning_trades) / len(winning_trades) if winning_trades else 0
     avg_loser = sum(t['profit_loss_pct'] for t in losing_trades) / len(losing_trades) if losing_trades else 0
+    
+    # Calculate gross profit and gross loss
+    gross_profit = sum(t['profit_loss'] for t in winning_trades)
+    gross_loss = sum(t['profit_loss'] for t in losing_trades)
     
     return {
         'ticker': ticker,
         'total_trades': total_trades,
         'winning_trades': len(winning_trades),
         'losing_trades': len(losing_trades),
-        'win_rate': win_rate,
-        'total_profit': total_profit,
-        'avg_profit_pct': avg_profit_pct,
-        'avg_winner_pct': avg_winner,
-        'avg_loser_pct': avg_loser,
+        'win_rate': round(win_rate, 2),
+        'total_profit': round(total_profit, 2),
+        'total_profit_pct': round(total_profit_pct, 2),
+        'avg_profit_pct': round(avg_profit_pct, 2),
+        'avg_winner_pct': round(avg_winner, 2),
+        'avg_loser_pct': round(avg_loser, 2),
+        'gross_profit': round(gross_profit, 2),
+        'gross_loss': round(gross_loss, 2),
         'trades': trades
     }
 
@@ -282,9 +321,8 @@ def analyze_stock(ticker):
     # Calculate indicators
     df = calculate_sma(df)
     
-    # Generate current signal
-    signal = generate_current_signal(df)
-    signal['ticker'] = ticker
+    # Generate current signal with position sizing
+    signal = generate_current_signal(df, ticker)
     
     # Run backtest
     backtest_result = backtest_strategy(ticker, df)
@@ -293,10 +331,154 @@ def analyze_stock(ticker):
 
 
 # ============================================================================
+# PORTFOLIO SUMMARY
+# ============================================================================
+
+def calculate_portfolio_summary(backtest_results):
+    """
+    Calculate overall portfolio performance from all backtests.
+    
+    Returns: Dictionary with portfolio-level metrics
+    """
+    valid_backtests = [b for b in backtest_results if b is not None]
+    
+    if not valid_backtests:
+        return None
+    
+    # Aggregate metrics
+    total_trades = sum(b['total_trades'] for b in valid_backtests)
+    total_wins = sum(b['winning_trades'] for b in valid_backtests)
+    total_losses = sum(b['losing_trades'] for b in valid_backtests)
+    
+    # Dollar-based metrics (per share)
+    gross_profit = sum(b['gross_profit'] for b in valid_backtests)
+    gross_loss = sum(b['gross_loss'] for b in valid_backtests)
+    net_profit = gross_profit + gross_loss  # gross_loss is negative
+    
+    # Percentage-based metrics
+    total_profit_pct = sum(b['total_profit_pct'] for b in valid_backtests)
+    avg_profit_pct = total_profit_pct / len(valid_backtests)
+    
+    # Win rate
+    overall_win_rate = (total_wins / total_trades * 100) if total_trades > 0 else 0
+    
+    # Profitable vs unprofitable stocks
+    profitable_stocks = [b for b in valid_backtests if b['total_profit'] > 0]
+    unprofitable_stocks = [b for b in valid_backtests if b['total_profit'] <= 0]
+    
+    # Best and worst performers
+    sorted_by_profit = sorted(valid_backtests, key=lambda x: x['total_profit'], reverse=True)
+    best_stock = sorted_by_profit[0] if sorted_by_profit else None
+    worst_stock = sorted_by_profit[-1] if sorted_by_profit else None
+    
+    # Profit factor (gross profit / abs(gross loss))
+    profit_factor = abs(gross_profit / gross_loss) if gross_loss != 0 else float('inf')
+    
+    return {
+        'total_stocks_analyzed': len(valid_backtests),
+        'profitable_stocks': len(profitable_stocks),
+        'unprofitable_stocks': len(unprofitable_stocks),
+        'total_trades': total_trades,
+        'winning_trades': total_wins,
+        'losing_trades': total_losses,
+        'overall_win_rate': round(overall_win_rate, 2),
+        'gross_profit': round(gross_profit, 2),
+        'gross_loss': round(gross_loss, 2),
+        'net_profit': round(net_profit, 2),
+        'avg_profit_pct_per_stock': round(avg_profit_pct, 2),
+        'profit_factor': round(profit_factor, 2),
+        'best_performer': {
+            'ticker': best_stock['ticker'],
+            'profit': best_stock['total_profit'],
+            'win_rate': best_stock['win_rate']
+        } if best_stock else None,
+        'worst_performer': {
+            'ticker': worst_stock['ticker'],
+            'profit': worst_stock['total_profit'],
+            'win_rate': worst_stock['win_rate']
+        } if worst_stock else None,
+        'is_profitable': net_profit > 0
+    }
+
+
+# ============================================================================
+# JSON OUTPUT FOR DASHBOARD
+# ============================================================================
+
+def generate_dashboard_json(signals, backtest_results, portfolio_summary):
+    """
+    Generate JSON output for dashboard integration.
+    """
+    # Convert signals for JSON (remove non-serializable items)
+    signals_json = []
+    for s in signals:
+        signal_copy = s.copy()
+        signals_json.append(signal_copy)
+    
+    # Convert backtests for JSON
+    backtests_json = []
+    for b in backtest_results:
+        if b is None:
+            continue
+        backtest_copy = b.copy()
+        # Convert trades to serializable format
+        trades_json = []
+        for t in backtest_copy['trades']:
+            trade_copy = {
+                'entry_date': t['entry_date'].isoformat() if hasattr(t['entry_date'], 'isoformat') else str(t['entry_date']),
+                'entry_price': round(t['entry_price'], 2),
+                'exit_date': t['exit_date'].isoformat() if hasattr(t['exit_date'], 'isoformat') else str(t['exit_date']),
+                'exit_price': round(t['exit_price'], 2),
+                'profit_loss': round(t['profit_loss'], 2),
+                'profit_loss_pct': round(t['profit_loss_pct'], 2),
+                'duration_hours': round(t['duration'].total_seconds() / 3600, 1)
+            }
+            trades_json.append(trade_copy)
+        backtest_copy['trades'] = trades_json
+        backtests_json.append(backtest_copy)
+    
+    dashboard_data = {
+        'generated_at': datetime.now().isoformat(),
+        'config': {
+            'sma_period': SMA_PERIOD,
+            'interval': INTERVAL,
+            'lookback_period': LOOKBACK_PERIOD,
+            'portfolio_size': PORTFOLIO_SIZE,
+            'max_position_pct': MAX_POSITION_PCT,
+            'risk_per_trade_pct': RISK_PER_TRADE_PCT
+        },
+        'portfolio_summary': portfolio_summary,
+        'signals': signals_json,
+        'backtests': backtests_json
+    }
+    
+    return dashboard_data
+
+
+def save_dashboard_json(dashboard_data):
+    """
+    Save dashboard data to JSON file.
+    """
+    if not os.path.exists('dashboard_data'):
+        os.makedirs('dashboard_data')
+    
+    filename = f"dashboard_data/dashboard_{datetime.now().strftime('%Y%m%d_%H%M')}.json"
+    
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(dashboard_data, f, indent=2, default=str)
+    
+    # Also save as 'latest.json' for easy access
+    with open('dashboard_data/latest.json', 'w', encoding='utf-8') as f:
+        json.dump(dashboard_data, f, indent=2, default=str)
+    
+    return filename
+
+
+# ============================================================================
 # RESULTS & REPORTING
 # ============================================================================
 
-def generate_report(signals, backtest_results):
+def generate_report(signals, backtest_results, portfolio_summary):
     """
     Generate a formatted text report of all results.
     """
@@ -304,20 +486,70 @@ def generate_report(signals, backtest_results):
     
     report = []
     report.append("=" * 80)
-    report.append("STOCK SCREENING & BACKTEST REPORT")
+    report.append("STOCK SCREENING & BACKTEST REPORT v2.0")
     report.append(f"Generated: {timestamp}")
     report.append(f"Strategy: {SMA_PERIOD}-period SMA Crossover on {INTERVAL} intervals")
-    report.append(f"Backtest Period: {BACKTEST_DAYS} days (includes extended hours)")
+    report.append(f"Lookback Period: {LOOKBACK_PERIOD}")
+    report.append(f"Portfolio Size: ${PORTFOLIO_SIZE:,}")
     report.append("=" * 80)
     report.append("")
     
-    # Separate signals by type
+    # =========================================================================
+    # PORTFOLIO SUMMARY (NEW!)
+    # =========================================================================
+    if portfolio_summary:
+        report.append("💰 PORTFOLIO SUMMARY")
+        report.append("=" * 80)
+        report.append("")
+        
+        # Profit/Loss Status
+        if portfolio_summary['is_profitable']:
+            report.append("📈 STATUS: PROFITABLE ✅")
+        else:
+            report.append("📉 STATUS: UNPROFITABLE ❌")
+        report.append("")
+        
+        report.append(f"  Gross Profit:    ${portfolio_summary['gross_profit']:>+10,.2f}")
+        report.append(f"  Gross Loss:      ${portfolio_summary['gross_loss']:>+10,.2f}")
+        report.append(f"  ─────────────────────────────")
+        report.append(f"  NET PROFIT/LOSS: ${portfolio_summary['net_profit']:>+10,.2f}")
+        report.append("")
+        report.append(f"  Profit Factor:   {portfolio_summary['profit_factor']:.2f}x")
+        report.append(f"  (Profit Factor > 1.0 means profitable)")
+        report.append("")
+        
+        report.append("  TRADE STATISTICS:")
+        report.append(f"    Total Trades:      {portfolio_summary['total_trades']}")
+        report.append(f"    Winning Trades:    {portfolio_summary['winning_trades']}")
+        report.append(f"    Losing Trades:     {portfolio_summary['losing_trades']}")
+        report.append(f"    Overall Win Rate:  {portfolio_summary['overall_win_rate']:.1f}%")
+        report.append("")
+        
+        report.append("  STOCK PERFORMANCE:")
+        report.append(f"    Stocks Analyzed:   {portfolio_summary['total_stocks_analyzed']}")
+        report.append(f"    Profitable:        {portfolio_summary['profitable_stocks']}")
+        report.append(f"    Unprofitable:      {portfolio_summary['unprofitable_stocks']}")
+        report.append("")
+        
+        if portfolio_summary['best_performer']:
+            bp = portfolio_summary['best_performer']
+            report.append(f"  🏆 Best:  {bp['ticker']} (${bp['profit']:+.2f}, {bp['win_rate']:.0f}% WR)")
+        if portfolio_summary['worst_performer']:
+            wp = portfolio_summary['worst_performer']
+            report.append(f"  💀 Worst: {wp['ticker']} (${wp['profit']:+.2f}, {wp['win_rate']:.0f}% WR)")
+        
+        report.append("")
+        report.append("=" * 80)
+        report.append("")
+    
+    # =========================================================================
+    # CURRENT SIGNALS
+    # =========================================================================
     strong_buys = [s for s in signals if s['signal'] == 'STRONG BUY']
     buys = [s for s in signals if s['signal'] == 'BUY']
     sells = [s for s in signals if s['signal'] == 'SELL']
     holds = [s for s in signals if s['signal'] == 'HOLD']
     
-    # Current signals summary
     report.append("📊 CURRENT MARKET SIGNALS")
     report.append("-" * 80)
     report.append(f"Strong Buys (just crossed above SMA): {len(strong_buys)}")
@@ -327,22 +559,9 @@ def generate_report(signals, backtest_results):
     report.append(f"Total Analyzed:                       {len(signals)}")
     report.append("")
     
-    # Backtest summary
-    valid_backtests = [b for b in backtest_results if b is not None]
-    if valid_backtests:
-        total_trades = sum(b['total_trades'] for b in valid_backtests)
-        avg_win_rate = sum(b['win_rate'] for b in valid_backtests) / len(valid_backtests)
-        profitable_stocks = len([b for b in valid_backtests if b['total_profit'] > 0])
-        
-        report.append("📈 BACKTEST SUMMARY")
-        report.append("-" * 80)
-        report.append(f"Stocks with Signals: {len(valid_backtests)}")
-        report.append(f"Total Trades: {total_trades}")
-        report.append(f"Average Win Rate: {avg_win_rate:.1f}%")
-        report.append(f"Profitable Stocks: {profitable_stocks}/{len(valid_backtests)}")
-        report.append("")
-    
-    # Strong Buy signals
+    # =========================================================================
+    # STRONG BUY SIGNALS WITH POSITION SIZING
+    # =========================================================================
     if strong_buys:
         report.append("")
         report.append("🔥 STRONG BUY SIGNALS (Just Crossed Above SMA)")
@@ -351,43 +570,56 @@ def generate_report(signals, backtest_results):
             report.append(f"\n{s['ticker']}")
             report.append(f"  Price: ${s['price']:.2f} | SMA: ${s['sma']:.2f} | Distance: {s['distance_pct']:+.2f}%")
             
+            # Position sizing recommendation
+            if s['position']:
+                p = s['position']
+                report.append(f"  📦 POSITION SIZE: {p['shares']} shares (${p['dollars']:,.2f} = {p['position_pct']}% of portfolio)")
+            
             # Add backtest info if available
             backtest = next((b for b in backtest_results if b and b['ticker'] == s['ticker']), None)
             if backtest:
-                report.append(f"  Backtest: {backtest['total_trades']} trades | "
+                report.append(f"  📈 Backtest: {backtest['total_trades']} trades | "
                             f"Win Rate: {backtest['win_rate']:.1f}% | "
                             f"Avg P/L: {backtest['avg_profit_pct']:+.2f}%")
     
-    # Buy signals
+    # =========================================================================
+    # BUY SIGNALS WITH POSITION SIZING
+    # =========================================================================
     if buys:
         report.append("")
-        report.append("🟢 BUY SIGNALS (Above SMA)")
+        report.append("🟢 TOP 10 BUY SIGNALS (Above SMA)")
         report.append("=" * 80)
-        for s in sorted(buys, key=lambda x: x['distance_pct'], reverse=True)[:10]:  # Top 10
+        for s in sorted(buys, key=lambda x: x['distance_pct'], reverse=True)[:10]:
             report.append(f"\n{s['ticker']}")
             report.append(f"  Price: ${s['price']:.2f} | SMA: ${s['sma']:.2f} | Distance: {s['distance_pct']:+.2f}%")
             
+            if s['position']:
+                p = s['position']
+                report.append(f"  📦 POSITION SIZE: {p['shares']} shares (${p['dollars']:,.2f} = {p['position_pct']}% of portfolio)")
+            
             backtest = next((b for b in backtest_results if b and b['ticker'] == s['ticker']), None)
             if backtest:
-                report.append(f"  Backtest: {backtest['total_trades']} trades | "
+                report.append(f"  📈 Backtest: {backtest['total_trades']} trades | "
                             f"Win Rate: {backtest['win_rate']:.1f}% | "
                             f"Avg P/L: {backtest['avg_profit_pct']:+.2f}%")
         
         if len(buys) > 10:
             report.append(f"\n  ... and {len(buys) - 10} more BUY signals")
     
-    # Detailed backtest results
+    # =========================================================================
+    # DETAILED BACKTEST RESULTS (TOP 10)
+    # =========================================================================
+    valid_backtests = [b for b in backtest_results if b is not None]
     if valid_backtests:
         report.append("")
         report.append("")
         report.append("=" * 80)
-        report.append("DETAILED BACKTEST RESULTS")
+        report.append("DETAILED BACKTEST RESULTS (Top 10 by Profit)")
         report.append("=" * 80)
         
-        # Sort by profitability
         sorted_backtests = sorted(valid_backtests, key=lambda x: x['total_profit'], reverse=True)
         
-        for bt in sorted_backtests[:15]:  # Top 15 most profitable
+        for bt in sorted_backtests[:10]:
             report.append(f"\n{bt['ticker']}")
             report.append("-" * 80)
             report.append(f"Total Trades: {bt['total_trades']}")
@@ -395,30 +627,28 @@ def generate_report(signals, backtest_results):
             report.append(f"Avg Profit/Loss: {bt['avg_profit_pct']:+.2f}%")
             report.append(f"Avg Winner: {bt['avg_winner_pct']:+.2f}% | Avg Loser: {bt['avg_loser_pct']:+.2f}%")
             report.append(f"Total Profit: ${bt['total_profit']:+.2f}")
-            
-            # Show individual trades
-            report.append(f"\nTrades:")
-            for i, trade in enumerate(bt['trades'][:5], 1):  # Show first 5 trades
-                duration_hours = trade['duration'].total_seconds() / 3600
-                report.append(f"  {i}. Entry: {trade['entry_date'].strftime('%m/%d %H:%M')} @ ${trade['entry_price']:.2f}")
-                report.append(f"     Exit:  {trade['exit_date'].strftime('%m/%d %H:%M')} @ ${trade['exit_price']:.2f}")
-                report.append(f"     P/L: ${trade['profit_loss']:+.2f} ({trade['profit_loss_pct']:+.2f}%) | Duration: {duration_hours:.1f}h")
-            
-            if len(bt['trades']) > 5:
-                report.append(f"  ... and {len(bt['trades']) - 5} more trades")
     
+    # =========================================================================
+    # STRATEGY EXPLANATION
+    # =========================================================================
     report.append("")
     report.append("=" * 80)
     report.append("STRATEGY EXPLANATION")
     report.append("-" * 80)
     report.append(f"Entry Signal: Price crosses above {SMA_PERIOD}-period SMA")
     report.append(f"Exit Signal: Price crosses below {SMA_PERIOD}-period SMA")
-    report.append("Data: 15-minute intervals including extended hours (pre-market & after-hours)")
+    report.append(f"Data: {INTERVAL} intervals")
     report.append("")
-    report.append("STRONG BUY: Stock just crossed above SMA (fresh signal)")
-    report.append("BUY: Stock is above SMA (in uptrend)")
-    report.append("SELL: Stock just crossed below SMA (exit signal)")
-    report.append("HOLD: Stock is below SMA (in downtrend)")
+    report.append("SIGNAL TYPES:")
+    report.append("  STRONG BUY: Stock just crossed above SMA (fresh entry signal)")
+    report.append("  BUY: Stock is above SMA (in uptrend)")
+    report.append("  SELL: Stock just crossed below SMA (exit signal)")
+    report.append("  HOLD: Stock is below SMA (wait for entry)")
+    report.append("")
+    report.append("POSITION SIZING:")
+    report.append(f"  Portfolio Size: ${PORTFOLIO_SIZE:,}")
+    report.append(f"  Max Position: {MAX_POSITION_PCT*100:.0f}% per stock (${PORTFOLIO_SIZE * MAX_POSITION_PCT:,.0f})")
+    report.append(f"  Risk Per Trade: {RISK_PER_TRADE_PCT*100:.0f}% of portfolio (${PORTFOLIO_SIZE * RISK_PER_TRADE_PCT:,.0f})")
     report.append("=" * 80)
     
     return "\n".join(report)
@@ -428,11 +658,9 @@ def save_report(report_text):
     """
     Save report to a text file in trade_reports directory.
     """
-    # Create directory if it doesn't exist
     if not os.path.exists('trade_reports'):
         os.makedirs('trade_reports')
     
-    # Generate filename with timestamp
     filename = f"trade_reports/screening_report_{datetime.now().strftime('%Y%m%d_%H%M')}.txt"
     
     with open(filename, 'w', encoding='utf-8') as f:
@@ -450,14 +678,16 @@ def main():
     Main program flow:
     1. Load ticker symbols
     2. Analyze each stock (current signal + backtest)
-    3. Generate and save report
+    3. Calculate portfolio summary
+    4. Generate and save reports (text + JSON)
     """
     print("\n" + "=" * 80)
-    print("STOCK SCREENER WITH BACKTESTING")
+    print("STOCK SCREENER WITH BACKTESTING v2.0")
     print("=" * 80)
     print(f"Strategy: {SMA_PERIOD}-period SMA Crossover")
     print(f"Interval: {INTERVAL}")
-    print(f"Backtest: {BACKTEST_DAYS} days (extended hours included)")
+    print(f"Lookback: {LOOKBACK_PERIOD}")
+    print(f"Portfolio: ${PORTFOLIO_SIZE:,}")
     print("=" * 80 + "\n")
     
     # Load tickers
@@ -482,25 +712,39 @@ def main():
             
             status = f"✓ {signal['signal']}"
             if backtest:
-                status += f" | Backtest: {backtest['total_trades']} trades, {backtest['win_rate']:.0f}% WR"
+                status += f" | {backtest['total_trades']} trades, {backtest['win_rate']:.0f}% WR"
+            if signal['position']:
+                status += f" | Buy {signal['position']['shares']} shares"
             print(status)
         else:
             print("⚠ Insufficient data")
         
-        time.sleep(0.25)  # Be respectful to API
+        time.sleep(0.25)
     
     print(f"\n✅ Analysis complete! {len(signals)} stocks analyzed.\n")
     
-    # Generate report
-    report_text = generate_report(signals, backtest_results)
+    # Calculate portfolio summary
+    portfolio_summary = calculate_portfolio_summary(backtest_results)
+    
+    # Generate text report
+    report_text = generate_report(signals, backtest_results, portfolio_summary)
     print(report_text)
     
-    # Save report
-    filename = save_report(report_text)
-    print(f"\n💾 Report saved to: {filename}")
+    # Save text report
+    report_filename = save_report(report_text)
+    print(f"\n💾 Report saved to: {report_filename}")
+    
+    # Generate and save JSON for dashboard
+    dashboard_data = generate_dashboard_json(signals, backtest_results, portfolio_summary)
+    json_filename = save_dashboard_json(dashboard_data)
+    print(f"📊 Dashboard JSON saved to: {json_filename}")
+    print(f"📊 Latest dashboard data: dashboard_data/latest.json")
+    
     print("\n" + "=" * 80)
     print("✅ Program complete!")
     print("=" * 80 + "\n")
+    
+    return dashboard_data  # Return for programmatic use
 
 
 if __name__ == "__main__":
