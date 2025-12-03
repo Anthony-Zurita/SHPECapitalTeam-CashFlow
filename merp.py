@@ -19,11 +19,11 @@ import os
 # CONFIGURATION
 # ============================================================================
 
-TICKER_FILE = 'qqq_holdings.txt'   # File containing stock symbols
+TICKER_FILE = 'qqq_holdings.txt'    # File containing stock symbols to analyze
 INTERVAL = '15m'                    # Data interval: 15-minute candles
-LOOKBACK_PERIOD = '60d'             # How far back to fetch data
+LOOKBACK_PERIOD = '60d'             # Fetches x days of historical data
 SMA_PERIOD = 50                     # Moving average period
-BACKTEST_DAYS = 60                  # Days to backtest
+BACKTEST_DAYS = 60                  # Tests the strategy over x days
 
 
 # ============================================================================
@@ -32,7 +32,7 @@ BACKTEST_DAYS = 60                  # Days to backtest
 
 def load_tickers(filename=TICKER_FILE):
     """
-    Load stock ticker symbols from a text file.
+    reads stock ticker symbols from text file, "qqq_holdings.txt"
     
     File format: One ticker per line, lines starting with # are ignored
     """
@@ -43,7 +43,7 @@ def load_tickers(filename=TICKER_FILE):
                 line = line.strip()
                 if line and not line.startswith('#'):
                     tickers.append(line)
-        print(f"✓ Loaded {len(tickers)} tickers from {filename}\n")
+        print(f"✅ Loaded {len(tickers)} tickers from {filename}\n")
         return tickers
     except FileNotFoundError:
         print(f"❌ Error: {filename} not found!")
@@ -52,22 +52,43 @@ def load_tickers(filename=TICKER_FILE):
 
 def fetch_stock_data(ticker, period=LOOKBACK_PERIOD, interval=INTERVAL):
     """
-    Fetch historical stock data using yfinance.
-    Includes extended hours (pre-market and after-hours) data.
+    Fetch historical stock price data using yfinance.
+
+    prepost=True, includes extended hours (pre-market and after-hours) data.
     
     Returns: DataFrame with OHLCV data, or None if error
+
+    OHLCV stands for the five key pieces of information captured for each trading period (whether that's 1 minute, 15 minutes, 1 hour, or 1 day):
+    The Five Components:
+
+        O - Open: The price at which the stock first traded when that period began
+        H - High: The highest price reached during that period
+        L - Low: The lowest price reached during that period
+        C - Close: The price at which the stock last traded when that period ended
+        V - Volume: The total number of shares traded during that period
+
+    Example for a 15-minute interval from 9:45 AM to 10:00 AM:
+
+        Open:   $175.20  (first trade at 9:45 AM)
+        High:   $176.50  (highest it reached during those 15 minutes)
+        Low:    $174.80  (lowest it dipped during those 15 minutes)
+        Close:  $176.10  (last trade at 10:00 AM)
+        Volume: 250,000  (total shares traded in that 15-minute window)
     """
+
     try:
         stock = yf.Ticker(ticker)
-        # prepost=True includes extended hours data
+
         df = stock.history(period=period, interval=interval, prepost=True)
         
+        # "df.empty" checks if there is no data returned from yfinance at all -> returns None
+        # "len(df) < SMA_PERIOD" ensures there is enough data to calculate the SMA indicator
         if df.empty or len(df) < SMA_PERIOD:
             return None
             
         return df
     except Exception as e:
-        print(f"  ⚠ Error fetching {ticker}: {str(e)[:50]}")
+        print(f"⚠️ Error fetching {ticker}: {str(e)[:50]}")
         return None
 
 
