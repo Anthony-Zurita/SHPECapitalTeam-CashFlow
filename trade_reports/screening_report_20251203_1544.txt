@@ -1,0 +1,383 @@
+================================================================================
+STOCK SCREENING & BACKTEST REPORT
+Generated: 2025-12-03 15:44:04
+Strategy: 20-period SMA Crossover on 1d intervals
+Backtest Period: 60 days (includes extended hours)
+================================================================================
+
+📊 CURRENT MARKET SIGNALS
+--------------------------------------------------------------------------------
+Strong Buys (just crossed above SMA): 10
+Buys (above SMA):                     63
+Sells (just crossed below SMA):       1
+Holds (below SMA):                    26
+Total Analyzed:                       100
+
+📈 BACKTEST SUMMARY
+--------------------------------------------------------------------------------
+Stocks with Signals: 97
+Total Trades: 264
+Average Win Rate: 40.2%
+Profitable Stocks: 48/97
+
+
+🔥 STRONG BUY SIGNALS (Just Crossed Above SMA)
+================================================================================
+
+PAYX
+  Price: $113.39 | SMA: $111.35 | Distance: +1.83%
+  Backtest: 3 trades | Win Rate: 0.0% | Avg P/L: -1.03%
+
+PLTR
+  Price: $175.32 | SMA: $172.19 | Distance: +1.82%
+  Backtest: 4 trades | Win Rate: 0.0% | Avg P/L: -2.81%
+
+ABNB
+  Price: $119.75 | SMA: $118.43 | Distance: +1.11%
+  Backtest: 2 trades | Win Rate: 0.0% | Avg P/L: -0.22%
+
+TEAM
+  Price: $153.91 | SMA: $152.33 | Distance: +1.04%
+  Backtest: 2 trades | Win Rate: 0.0% | Avg P/L: -0.84%
+
+MRNA
+  Price: $24.90 | SMA: $24.65 | Distance: +1.02%
+  Backtest: 6 trades | Win Rate: 0.0% | Avg P/L: -4.66%
+
+CMCSA
+  Price: $27.39 | SMA: $27.17 | Distance: +0.80%
+  Backtest: 1 trades | Win Rate: 0.0% | Avg P/L: +0.00%
+
+QCOM
+  Price: $170.70 | SMA: $169.42 | Distance: +0.75%
+  Backtest: 4 trades | Win Rate: 25.0% | Avg P/L: +0.26%
+
+GILD
+  Price: $125.18 | SMA: $124.46 | Distance: +0.58%
+  Backtest: 4 trades | Win Rate: 25.0% | Avg P/L: +0.06%
+
+SIRI
+  Price: $21.27 | SMA: $21.19 | Distance: +0.38%
+  Backtest: 3 trades | Win Rate: 0.0% | Avg P/L: -2.32%
+
+HON
+  Price: $193.59 | SMA: $193.54 | Distance: +0.02%
+  Backtest: 6 trades | Win Rate: 0.0% | Avg P/L: -1.97%
+
+🟢 BUY SIGNALS (Above SMA)
+================================================================================
+
+MCHP
+  Price: $63.67 | SMA: $54.03 | Distance: +17.85%
+  Backtest: 3 trades | Win Rate: 33.3% | Avg P/L: +0.49%
+
+MDB
+  Price: $406.83 | SMA: $350.26 | Distance: +16.15%
+  Backtest: 3 trades | Win Rate: 66.7% | Avg P/L: +0.38%
+
+SNPS
+  Price: $466.65 | SMA: $405.01 | Distance: +15.22%
+  Backtest: 2 trades | Win Rate: 50.0% | Avg P/L: +6.16%
+
+NXPI
+  Price: $228.73 | SMA: $199.57 | Distance: +14.61%
+  Backtest: 4 trades | Win Rate: 25.0% | Avg P/L: +1.64%
+
+ADI
+  Price: $277.85 | SMA: $242.92 | Distance: +14.38%
+  Backtest: 5 trades | Win Rate: 20.0% | Avg P/L: +1.83%
+
+AMAT
+  Price: $268.39 | SMA: $237.03 | Distance: +13.23%
+  Backtest: 3 trades | Win Rate: 33.3% | Avg P/L: +2.28%
+
+TXN
+  Price: $182.76 | SMA: $162.77 | Distance: +12.28%
+  Backtest: 3 trades | Win Rate: 33.3% | Avg P/L: +2.31%
+
+GEHC
+  Price: $84.05 | SMA: $75.97 | Distance: +10.64%
+  Backtest: 3 trades | Win Rate: 66.7% | Avg P/L: +3.96%
+
+RIVN
+  Price: $17.52 | SMA: $15.96 | Distance: +9.84%
+  Backtest: 4 trades | Win Rate: 25.0% | Avg P/L: +0.50%
+
+DLTR
+  Price: $113.91 | SMA: $105.19 | Distance: +8.29%
+  Backtest: 2 trades | Win Rate: 100.0% | Avg P/L: +8.75%
+
+  ... and 53 more BUY signals
+
+
+================================================================================
+DETAILED BACKTEST RESULTS
+================================================================================
+
+REGN
+--------------------------------------------------------------------------------
+Total Trades: 2
+Wins: 1 | Losses: 1 | Win Rate: 50.0%
+Avg Profit/Loss: +12.31%
+Avg Winner: +25.02% | Avg Loser: -0.41%
+Total Profit: $+142.08
+
+Trades:
+  1. Entry: 10/17 00:00 @ $577.33
+     Exit:  10/23 00:00 @ $574.97
+     P/L: $-2.36 (-0.41%) | Duration: 144.0h
+  2. Entry: 10/24 00:00 @ $577.23
+     Exit:  12/03 00:00 @ $721.66
+     P/L: $+144.43 (+25.02%) | Duration: 961.0h
+
+ISRG
+--------------------------------------------------------------------------------
+Total Trades: 3
+Wins: 2 | Losses: 1 | Win Rate: 66.7%
+Avg Profit/Loss: +6.51%
+Avg Winner: +11.83% | Avg Loser: -4.13%
+Total Profit: $+88.38
+
+Trades:
+  1. Entry: 10/08 00:00 @ $448.09
+     Exit:  10/10 00:00 @ $429.59
+     P/L: $-18.50 (-4.13%) | Duration: 48.0h
+  2. Entry: 10/17 00:00 @ $446.13
+     Exit:  11/18 00:00 @ $546.77
+     P/L: $+100.64 (+22.56%) | Duration: 769.0h
+  3. Entry: 11/19 00:00 @ $564.64
+     Exit:  12/03 00:00 @ $570.88
+     P/L: $+6.23 (+1.10%) | Duration: 336.0h
+
+KLAC
+--------------------------------------------------------------------------------
+Total Trades: 3
+Wins: 2 | Losses: 1 | Win Rate: 66.7%
+Avg Profit/Loss: +2.37%
+Avg Winner: +4.34% | Avg Loser: -1.56%
+Total Profit: $+77.79
+
+Trades:
+  1. Entry: 10/15 00:00 @ $1085.19
+     Exit:  11/13 00:00 @ $1159.77
+     P/L: $+74.58 (+6.87%) | Duration: 697.0h
+  2. Entry: 11/28 00:00 @ $1175.47
+     Exit:  12/01 00:00 @ $1157.18
+     P/L: $-18.29 (-1.56%) | Duration: 72.0h
+  3. Entry: 12/02 00:00 @ $1189.86
+     Exit:  12/03 00:00 @ $1211.35
+     P/L: $+21.49 (+1.81%) | Duration: 24.0h
+
+GOOGL
+--------------------------------------------------------------------------------
+Total Trades: 1
+Wins: 1 | Losses: 0 | Win Rate: 100.0%
+Avg Profit/Loss: +27.88%
+Avg Winner: +27.88% | Avg Loser: +0.00%
+Total Profit: $+69.99
+
+Trades:
+  1. Entry: 10/15 00:00 @ $251.03
+     Exit:  12/03 00:00 @ $321.02
+     P/L: $+69.99 (+27.88%) | Duration: 1177.0h
+
+GOOG
+--------------------------------------------------------------------------------
+Total Trades: 1
+Wins: 1 | Losses: 0 | Win Rate: 100.0%
+Avg Profit/Loss: +27.73%
+Avg Winner: +27.73% | Avg Loser: +0.00%
+Total Profit: $+69.79
+
+Trades:
+  1. Entry: 10/15 00:00 @ $251.71
+     Exit:  12/03 00:00 @ $321.50
+     P/L: $+69.79 (+27.73%) | Duration: 1177.0h
+
+SNPS
+--------------------------------------------------------------------------------
+Total Trades: 2
+Wins: 1 | Losses: 1 | Win Rate: 50.0%
+Avg Profit/Loss: +6.16%
+Avg Winner: +13.91% | Avg Loser: -1.58%
+Total Profit: $+49.62
+
+Trades:
+  1. Entry: 10/24 00:00 @ $464.18
+     Exit:  10/28 00:00 @ $456.83
+     P/L: $-7.35 (-1.58%) | Duration: 96.0h
+  2. Entry: 11/26 00:00 @ $409.68
+     Exit:  12/03 00:00 @ $466.65
+     P/L: $+56.97 (+13.91%) | Duration: 168.0h
+
+AMGN
+--------------------------------------------------------------------------------
+Total Trades: 1
+Wins: 1 | Losses: 0 | Win Rate: 100.0%
+Avg Profit/Loss: +16.56%
+Avg Winner: +16.56% | Avg Loser: +0.00%
+Total Profit: $+49.07
+
+Trades:
+  1. Entry: 10/31 00:00 @ $296.32
+     Exit:  12/03 00:00 @ $345.39
+     P/L: $+49.07 (+16.56%) | Duration: 793.0h
+
+BIIB
+--------------------------------------------------------------------------------
+Total Trades: 2
+Wins: 2 | Losses: 0 | Win Rate: 100.0%
+Avg Profit/Loss: +11.34%
+Avg Winner: +11.34% | Avg Loser: +0.00%
+Total Profit: $+33.90
+
+Trades:
+  1. Entry: 10/20 00:00 @ $146.63
+     Exit:  10/29 00:00 @ $147.86
+     P/L: $+1.23 (+0.84%) | Duration: 216.0h
+  2. Entry: 10/30 00:00 @ $149.61
+     Exit:  12/03 00:00 @ $182.28
+     P/L: $+32.67 (+21.84%) | Duration: 817.0h
+
+ILMN
+--------------------------------------------------------------------------------
+Total Trades: 2
+Wins: 1 | Losses: 1 | Win Rate: 50.0%
+Avg Profit/Loss: +12.40%
+Avg Winner: +29.29% | Avg Loser: -4.49%
+Total Profit: $+24.53
+
+Trades:
+  1. Entry: 10/20 00:00 @ $99.50
+     Exit:  10/29 00:00 @ $95.03
+     P/L: $-4.47 (-4.49%) | Duration: 216.0h
+  2. Entry: 10/30 00:00 @ $99.01
+     Exit:  12/03 00:00 @ $128.01
+     P/L: $+29.00 (+29.29%) | Duration: 817.0h
+
+MAR
+--------------------------------------------------------------------------------
+Total Trades: 3
+Wins: 1 | Losses: 2 | Win Rate: 33.3%
+Avg Profit/Loss: +2.91%
+Avg Winner: +13.16% | Avg Loser: -2.22%
+Total Profit: $+23.87
+
+Trades:
+  1. Entry: 10/14 00:00 @ $267.34
+     Exit:  10/16 00:00 @ $258.43
+     P/L: $-8.91 (-3.33%) | Duration: 48.0h
+  2. Entry: 10/21 00:00 @ $267.80
+     Exit:  10/28 00:00 @ $264.83
+     P/L: $-2.96 (-1.11%) | Duration: 168.0h
+  3. Entry: 11/04 00:00 @ $271.60
+     Exit:  12/03 00:00 @ $307.34
+     P/L: $+35.74 (+13.16%) | Duration: 696.0h
+
+VRTX
+--------------------------------------------------------------------------------
+Total Trades: 4
+Wins: 1 | Losses: 3 | Win Rate: 25.0%
+Avg Profit/Loss: +1.30%
+Avg Winner: +6.85% | Avg Loser: -0.56%
+Total Profit: $+22.54
+
+Trades:
+  1. Entry: 11/10 00:00 @ $421.20
+     Exit:  11/19 00:00 @ $421.03
+     P/L: $-0.17 (-0.04%) | Duration: 216.0h
+  2. Entry: 11/21 00:00 @ $426.76
+     Exit:  11/24 00:00 @ $424.00
+     P/L: $-2.76 (-0.65%) | Duration: 72.0h
+  3. Entry: 11/25 00:00 @ $429.82
+     Exit:  12/01 00:00 @ $425.60
+     P/L: $-4.22 (-0.98%) | Duration: 144.0h
+  4. Entry: 12/02 00:00 @ $433.15
+     Exit:  12/03 00:00 @ $462.84
+     P/L: $+29.69 (+6.85%) | Duration: 24.0h
+
+ADI
+--------------------------------------------------------------------------------
+Total Trades: 5
+Wins: 1 | Losses: 4 | Win Rate: 20.0%
+Avg Profit/Loss: +1.83%
+Avg Winner: +16.06% | Avg Loser: -1.73%
+Total Profit: $+21.71
+
+Trades:
+  1. Entry: 10/16 00:00 @ $241.61
+     Exit:  10/22 00:00 @ $240.36
+     P/L: $-1.25 (-0.52%) | Duration: 144.0h
+  2. Entry: 10/23 00:00 @ $243.29
+     Exit:  10/24 00:00 @ $238.01
+     P/L: $-5.28 (-2.17%) | Duration: 24.0h
+  3. Entry: 10/27 00:00 @ $243.01
+     Exit:  10/28 00:00 @ $239.35
+     P/L: $-3.66 (-1.51%) | Duration: 24.0h
+  4. Entry: 11/12 00:00 @ $241.44
+     Exit:  11/14 00:00 @ $234.89
+     P/L: $-6.55 (-2.71%) | Duration: 48.0h
+  5. Entry: 11/24 00:00 @ $239.40
+     Exit:  12/03 00:00 @ $277.85
+     P/L: $+38.45 (+16.06%) | Duration: 216.0h
+
+LRCX
+--------------------------------------------------------------------------------
+Total Trades: 2
+Wins: 2 | Losses: 0 | Win Rate: 100.0%
+Avg Profit/Loss: +7.13%
+Avg Winner: +7.13% | Avg Loser: +0.00%
+Total Profit: $+20.18
+
+Trades:
+  1. Entry: 10/13 00:00 @ $137.81
+     Exit:  11/13 00:00 @ $153.32
+     P/L: $+15.51 (+11.25%) | Duration: 745.0h
+  2. Entry: 11/26 00:00 @ $155.14
+     Exit:  12/03 00:00 @ $159.81
+     P/L: $+4.67 (+3.01%) | Duration: 168.0h
+
+CRWD
+--------------------------------------------------------------------------------
+Total Trades: 2
+Wins: 1 | Losses: 1 | Win Rate: 50.0%
+Avg Profit/Loss: +1.88%
+Avg Winner: +5.20% | Avg Loser: -1.45%
+Total Profit: $+18.40
+
+Trades:
+  1. Entry: 10/20 00:00 @ $503.61
+     Exit:  11/13 00:00 @ $529.78
+     P/L: $+26.17 (+5.20%) | Duration: 577.0h
+  2. Entry: 11/14 00:00 @ $537.55
+     Exit:  11/17 00:00 @ $529.78
+     P/L: $-7.77 (-1.45%) | Duration: 72.0h
+
+AAPL
+--------------------------------------------------------------------------------
+Total Trades: 2
+Wins: 2 | Losses: 0 | Win Rate: 100.0%
+Avg Profit/Loss: +3.40%
+Avg Winner: +3.40% | Avg Loser: +0.00%
+Total Profit: $+18.25
+
+Trades:
+  1. Entry: 10/20 00:00 @ $261.99
+     Exit:  11/17 00:00 @ $267.46
+     P/L: $+5.47 (+2.09%) | Duration: 673.0h
+  2. Entry: 11/21 00:00 @ $271.49
+     Exit:  12/03 00:00 @ $284.27
+     P/L: $+12.78 (+4.71%) | Duration: 288.0h
+
+================================================================================
+STRATEGY EXPLANATION
+--------------------------------------------------------------------------------
+Entry Signal: Price crosses above 20-period SMA
+Exit Signal: Price crosses below 20-period SMA
+Data: 15-minute intervals including extended hours (pre-market & after-hours)
+
+STRONG BUY: Stock just crossed above SMA (fresh signal)
+BUY: Stock is above SMA (in uptrend)
+SELL: Stock just crossed below SMA (exit signal)
+HOLD: Stock is below SMA (in downtrend)
+================================================================================

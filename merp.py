@@ -67,9 +67,8 @@ import json
 
 TICKER_FILE = 'qqq_holdings.txt'    # File containing stock symbols to analyze
 INTERVAL = '1d'                     # Data interval: daily candles
-LOOKBACK_PERIOD = '1y'              # Fetches 1 year of historical data
+LOOKBACK_PERIOD = '5y'              # Fetches 5 years of historical data
 SMA_PERIOD = 20                     # 20-day moving average period
-BACKTEST_DAYS = 100                  # Tests the strategy over x days
 
 # POSITION SIZING CONFIG
 PORTFOLIO_SIZE = 10000              # Total portfolio value in dollars

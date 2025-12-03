@@ -1,0 +1,247 @@
+================================================================================
+STOCK SCREENING & BACKTEST REPORT v2.0
+Generated: 2025-12-03 15:57:26
+Strategy: 20-period SMA Crossover on 1d intervals
+Lookback Period: 1y
+Portfolio Size: $10,000
+================================================================================
+
+💰 PORTFOLIO SUMMARY
+================================================================================
+
+📈 STATUS: PROFITABLE ✅
+
+  Gross Profit:    $ +8,120.11
+  Gross Loss:      $ -7,837.68
+  ─────────────────────────────
+  NET PROFIT/LOSS: $   +282.43
+
+  Profit Factor:   1.04x
+  (Profit Factor > 1.0 means profitable)
+
+  TRADE STATISTICS:
+    Total Trades:      1426
+    Winning Trades:    382
+    Losing Trades:     1035
+    Overall Win Rate:  26.8%
+
+  STOCK PERFORMANCE:
+    Stocks Analyzed:   100
+    Profitable:        48
+    Unprofitable:      52
+
+  🏆 Best:  KLAC ($+318.55, 36% WR)
+  💀 Worst: BKNG ($-333.03, 24% WR)
+
+================================================================================
+
+📊 CURRENT MARKET SIGNALS
+--------------------------------------------------------------------------------
+Strong Buys (just crossed above SMA): 8
+Buys (above SMA):                     64
+Sells (just crossed below SMA):       2
+Holds (below SMA):                    26
+Total Analyzed:                       100
+
+
+🔥 STRONG BUY SIGNALS (Just Crossed Above SMA)
+================================================================================
+
+PLTR
+  Price: $176.31 | SMA: $172.24 | Distance: +2.36%
+  📦 POSITION SIZE: 4 shares ($705.24 = 7.05% of portfolio)
+  📈 Backtest: 14 trades | Win Rate: 35.7% | Avg P/L: +2.79%
+
+MRNA
+  Price: $25.15 | SMA: $24.66 | Distance: +1.96%
+  📦 POSITION SIZE: 19 shares ($477.76 = 4.78% of portfolio)
+  📈 Backtest: 15 trades | Win Rate: 13.3% | Avg P/L: -2.63%
+
+PAYX
+  Price: $113.36 | SMA: $111.34 | Distance: +1.81%
+  📦 POSITION SIZE: 4 shares ($453.44 = 4.53% of portfolio)
+  📈 Backtest: 11 trades | Win Rate: 18.2% | Avg P/L: -0.62%
+
+ABNB
+  Price: $120.15 | SMA: $118.45 | Distance: +1.44%
+  📦 POSITION SIZE: 4 shares ($480.60 = 4.81% of portfolio)
+  📈 Backtest: 14 trades | Win Rate: 21.4% | Avg P/L: -0.34%
+
+CMCSA
+  Price: $27.42 | SMA: $27.17 | Distance: +0.92%
+  📦 POSITION SIZE: 18 shares ($493.56 = 4.94% of portfolio)
+  📈 Backtest: 12 trades | Win Rate: 33.3% | Avg P/L: -2.09%
+
+GILD
+  Price: $125.02 | SMA: $124.46 | Distance: +0.45%
+  📦 POSITION SIZE: 3 shares ($375.06 = 3.75% of portfolio)
+  📈 Backtest: 20 trades | Win Rate: 20.0% | Avg P/L: -0.05%
+
+SIRI
+  Price: $21.26 | SMA: $21.19 | Distance: +0.34%
+  📦 POSITION SIZE: 23 shares ($489.09 = 4.89% of portfolio)
+  📈 Backtest: 15 trades | Win Rate: 26.7% | Avg P/L: -0.83%
+
+CRWD
+  Price: $523.27 | SMA: $523.19 | Distance: +0.02%
+  📦 POSITION SIZE: 0 shares ($0.00 = 0.0% of portfolio)
+  📈 Backtest: 12 trades | Win Rate: 33.3% | Avg P/L: +3.38%
+
+🟢 TOP 10 BUY SIGNALS (Above SMA)
+================================================================================
+
+MCHP
+  Price: $63.69 | SMA: $54.03 | Distance: +17.88%
+  📦 POSITION SIZE: 15 shares ($955.28 = 9.55% of portfolio)
+  📈 Backtest: 13 trades | Win Rate: 15.4% | Avg P/L: +2.52%
+
+ON
+  Price: $57.06 | SMA: $48.59 | Distance: +17.42%
+  📦 POSITION SIZE: 17 shares ($969.94 = 9.7% of portfolio)
+  📈 Backtest: 14 trades | Win Rate: 28.6% | Avg P/L: +1.14%
+
+MDB
+  Price: $406.00 | SMA: $350.22 | Distance: +15.93%
+  📦 POSITION SIZE: 2 shares ($812.00 = 8.12% of portfolio)
+  📈 Backtest: 12 trades | Win Rate: 58.3% | Avg P/L: +2.02%
+
+SNPS
+  Price: $466.99 | SMA: $405.02 | Distance: +15.30%
+  📦 POSITION SIZE: 2 shares ($933.98 = 9.34% of portfolio)
+  📈 Backtest: 13 trades | Win Rate: 30.8% | Avg P/L: +2.01%
+
+ADI
+  Price: $278.08 | SMA: $242.93 | Distance: +14.47%
+  📦 POSITION SIZE: 3 shares ($834.23 = 8.34% of portfolio)
+  📈 Backtest: 13 trades | Win Rate: 46.1% | Avg P/L: +2.63%
+
+NXPI
+  Price: $227.48 | SMA: $199.51 | Distance: +14.02%
+  📦 POSITION SIZE: 4 shares ($909.92 = 9.1% of portfolio)
+  📈 Backtest: 16 trades | Win Rate: 31.2% | Avg P/L: +0.54%
+
+AMAT
+  Price: $269.05 | SMA: $237.06 | Distance: +13.50%
+  📦 POSITION SIZE: 3 shares ($807.15 = 8.07% of portfolio)
+  📈 Backtest: 16 trades | Win Rate: 31.2% | Avg P/L: +1.64%
+
+TXN
+  Price: $182.77 | SMA: $162.77 | Distance: +12.29%
+  📦 POSITION SIZE: 5 shares ($913.87 = 9.14% of portfolio)
+  📈 Backtest: 9 trades | Win Rate: 44.4% | Avg P/L: +2.08%
+
+ODFL
+  Price: $150.74 | SMA: $135.98 | Distance: +10.85%
+  📦 POSITION SIZE: 6 shares ($904.44 = 9.04% of portfolio)
+  📈 Backtest: 24 trades | Win Rate: 12.5% | Avg P/L: -2.39%
+
+GFS
+  Price: $38.10 | SMA: $34.50 | Distance: +10.44%
+  📦 POSITION SIZE: 26 shares ($990.60 = 9.91% of portfolio)
+  📈 Backtest: 21 trades | Win Rate: 19.1% | Avg P/L: -1.14%
+
+  ... and 54 more BUY signals
+
+
+================================================================================
+DETAILED BACKTEST RESULTS (Top 10 by Profit)
+================================================================================
+
+KLAC
+--------------------------------------------------------------------------------
+Total Trades: 14
+Wins: 5 | Losses: 9 | Win Rate: 35.7%
+Avg Profit/Loss: +3.14%
+Avg Winner: +14.75% | Avg Loser: -3.31%
+Total Profit: $+318.55
+
+CRWD
+--------------------------------------------------------------------------------
+Total Trades: 12
+Wins: 4 | Losses: 7 | Win Rate: 33.3%
+Avg Profit/Loss: +3.38%
+Avg Winner: +15.99% | Avg Loser: -3.35%
+Total Profit: $+158.01
+
+GOOGL
+--------------------------------------------------------------------------------
+Total Trades: 11
+Wins: 5 | Losses: 6 | Win Rate: 45.5%
+Avg Profit/Loss: +5.41%
+Avg Winner: +14.24% | Avg Loser: -1.94%
+Total Profit: $+123.60
+
+AMD
+--------------------------------------------------------------------------------
+Total Trades: 6
+Wins: 2 | Losses: 4 | Win Rate: 33.3%
+Avg Profit/Loss: +17.69%
+Avg Winner: +62.02% | Avg Loser: -4.47%
+Total Profit: $+120.45
+
+GOOG
+--------------------------------------------------------------------------------
+Total Trades: 12
+Wins: 5 | Losses: 7 | Win Rate: 41.7%
+Avg Profit/Loss: +4.61%
+Avg Winner: +14.13% | Avg Loser: -2.19%
+Total Profit: $+117.59
+
+SNPS
+--------------------------------------------------------------------------------
+Total Trades: 13
+Wins: 4 | Losses: 9 | Win Rate: 30.8%
+Avg Profit/Loss: +2.01%
+Avg Winner: +12.62% | Avg Loser: -2.70%
+Total Profit: $+107.61
+
+MU
+--------------------------------------------------------------------------------
+Total Trades: 13
+Wins: 3 | Losses: 10 | Win Rate: 23.1%
+Avg Profit/Loss: +7.70%
+Avg Winner: +46.58% | Avg Loser: -3.97%
+Total Profit: $+105.07
+
+CEG
+--------------------------------------------------------------------------------
+Total Trades: 17
+Wins: 8 | Losses: 9 | Win Rate: 47.1%
+Avg Profit/Loss: +2.29%
+Avg Winner: +9.53% | Avg Loser: -4.15%
+Total Profit: $+105.07
+
+MSFT
+--------------------------------------------------------------------------------
+Total Trades: 7
+Wins: 3 | Losses: 4 | Win Rate: 42.9%
+Avg Profit/Loss: +3.00%
+Avg Winner: +11.39% | Avg Loser: -3.28%
+Total Profit: $+79.96
+
+ADI
+--------------------------------------------------------------------------------
+Total Trades: 13
+Wins: 6 | Losses: 7 | Win Rate: 46.1%
+Avg Profit/Loss: +2.63%
+Avg Winner: +7.59% | Avg Loser: -1.62%
+Total Profit: $+73.33
+
+================================================================================
+STRATEGY EXPLANATION
+--------------------------------------------------------------------------------
+Entry Signal: Price crosses above 20-period SMA
+Exit Signal: Price crosses below 20-period SMA
+Data: 1d intervals
+
+SIGNAL TYPES:
+  STRONG BUY: Stock just crossed above SMA (fresh entry signal)
+  BUY: Stock is above SMA (in uptrend)
+  SELL: Stock just crossed below SMA (exit signal)
+  HOLD: Stock is below SMA (wait for entry)
+
+POSITION SIZING:
+  Portfolio Size: $10,000
+  Max Position: 10% per stock ($1,000)
+  Risk Per Trade: 2% of portfolio ($200)
+================================================================================
