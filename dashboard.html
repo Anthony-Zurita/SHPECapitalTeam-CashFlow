@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHPE Capital Trading Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0021A5 0%, #FA4616 100%);
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .timestamp {
+            color: #999;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h2 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .metric {
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .metric:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: #666;
+            font-weight: 500;
+        }
+
+        .metric-value {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .positive {
+            color: #10b981;
+        }
+
+        .negative {
+            color: #ef4444;
+        }
+
+        .neutral {
+            color: #6b7280;
+        }
+
+        .signal-badge {
+            display: inline-block;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+
+        .signal-strong-buy {
+            background: #10b981;
+            color: white;
+        }
+
+        .signal-buy {
+            background: #34d399;
+            color: white;
+        }
+
+        .signal-sell {
+            background: #ef4444;
+            color: white;
+        }
+
+        .signal-hold {
+            background: #9ca3af;
+            color: white;
+        }
+
+        .signals-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .signal-card {
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .signal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .ticker {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .signal-details {
+            font-size: 0.9em;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .position-info {
+            background: #e0e7ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+            font-size: 0.85em;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th {
+            background: #667eea;
+            color: white;
+            padding: 12px;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #eee;
+        }
+
+        tr:hover {
+            background: #f9fafb;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: white;
+            font-size: 1.2em;
+        }
+
+        .error {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .big-number {
+            font-size: 2em;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .config-tag {
+            display: inline-block;
+            background: #e0e7ff;
+            padding: 5px 10px;
+            border-radius: 5px;
+            margin: 5px 5px 5px 0;
+            font-size: 0.85em;
+            color: #4338ca;
+        }
+
+        .refresh-btn {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .refresh-btn:hover {
+            background: #5568d3;
+        }
+
+        .refresh-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .run-btn {
+            background: #10b981;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: 600;
+            margin-top: 10px;
+            margin-left: 10px;
+            transition: background 0.3s;
+        }
+
+        .run-btn:hover {
+            background: #059669;
+        }
+
+        .run-btn:disabled {
+            background: #9ca3af;
+            cursor: not-allowed;
+        }
+
+        .status-message {
+            display: inline-block;
+            margin-left: 15px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        .status-running {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .status-success {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-error {
+            background: #fee2e2;
+            color: #991b1b;
+        }
+
+        .section-full {
+            grid-column: 1 / -1;
+            margin-bottom: 30px;
+        }
+
+        .stats-row {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-box {
+            flex: 1;
+            min-width: 150px;
+            text-align: center;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+
+        .stat-value {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .signal-filters {
+            display: flex;
+            gap: 10px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 8px 16px;
+            border: 2px solid #667eea;
+            background: white;
+            color: #667eea;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 0.9em;
+            transition: all 0.3s;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .filter-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(102, 126, 234, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📈 SHPE Capital Trading Dashboard</h1>
+            <div class="subtitle">SMA Crossover Strategy with Stop-Loss Protection</div>
+            <div class="timestamp" id="timestamp">Loading...</div>
+            <div>
+                <button class="refresh-btn" id="refresh-btn" onclick="loadData()">🔄 Refresh Data</button>
+                <button class="run-btn" id="run-btn" onclick="runAlgorithm()">▶️ Run Algorithm</button>
+                <span class="status-message" id="status-message" style="display: none;"></span>
+            </div>
+        </header>
+
+        <div id="loading" class="loading">Loading dashboard data...</div>
+        <div id="error" class="error" style="display: none;"></div>
+        <div id="content" style="display: none;">
+            
+            <!-- Portfolio Summary Section -->
+            <div class="card section-full">
+                <h2>📊 Portfolio Summary</h2>
+                <div class="stats-row">
+                    <div class="stat-box">
+                        <div class="stat-label">Net Profit</div>
+                        <div class="stat-value" id="net-profit">$0</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Profit Factor</div>
+                        <div class="stat-value" id="profit-factor">0.00x</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Win Rate</div>
+                        <div class="stat-value" id="win-rate">0%</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Total Trades</div>
+                        <div class="stat-value" id="total-trades">0</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-label">Stocks Analyzed</div>
+                        <div class="stat-value" id="stocks-analyzed">0</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid">
+                <!-- Configuration Card -->
+                <div class="card">
+                    <h2>⚙️ Strategy Configuration</h2>
+                    <div id="config-tags"></div>
+                </div>
+
+                <!-- Performance Metrics -->
+                <div class="card">
+                    <h2>💰 Performance</h2>
+                    <div id="performance-metrics"></div>
+                </div>
+
+                <!-- Trade Statistics -->
+                <div class="card">
+                    <h2>📈 Trade Statistics</h2>
+                    <div id="trade-stats"></div>
+                </div>
+            </div>
+
+            <!-- Current Signals -->
+            <div class="card section-full">
+                <h2>🎯 Current Trading Signals</h2>
+                <div class="signal-filters">
+                    <button class="filter-btn active" data-signal="STRONG BUY" onclick="toggleFilter(this)">STRONG BUY</button>
+                    <button class="filter-btn" data-signal="BUY" onclick="toggleFilter(this)">BUY</button>
+                    <button class="filter-btn" data-signal="SELL" onclick="toggleFilter(this)">SELL</button>
+                    <button class="filter-btn" data-signal="HOLD" onclick="toggleFilter(this)">HOLD</button>
+                </div>
+                <div class="signals-grid" id="signals-grid"></div>
+            </div>
+
+            <!-- Top Performers -->
+            <div class="card section-full">
+                <h2>🏆 Top Backtest Performers</h2>
+                <table id="performers-table">
+                    <thead>
+                        <tr>
+                            <th>Ticker</th>
+                            <th>Total Profit</th>
+                            <th>Win Rate</th>
+                            <th>Total Trades</th>
+                            <th>Avg Profit %</th>
+                            <th>Profit Factor</th>
+                        </tr>
+                    </thead>
+                    <tbody id="performers-body"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Check if we're using the server or local files
+        const USE_SERVER = window.location.hostname === 'localhost' && window.location.port === '5000';
+        const API_BASE = USE_SERVER ? 'http://localhost:5000/api' : '';
+
+        // Track active signal filters (single selection mode)
+        let activeFilters = new Set(['STRONG BUY']);
+        let allSignals = []; // Store all signals for filtering
+
+        async function loadData() {
+            try {
+                document.getElementById('loading').style.display = 'block';
+                document.getElementById('error').style.display = 'none';
+                document.getElementById('content').style.display = 'none';
+                hideStatusMessage();
+
+                let data;
+                if (USE_SERVER) {
+                    // Load from API
+                    const response = await fetch(`${API_BASE}/latest-data`);
+                    if (!response.ok) throw new Error('Failed to load data from server');
+                    const result = await response.json();
+                    data = result.data;
+                } else {
+                    // Load from local file
+                    const response = await fetch('dashboard_data/latest.json');
+                    if (!response.ok) throw new Error('Failed to load data');
+                    data = await response.json();
+                }
+                
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+                
+                renderDashboard(data);
+            } catch (error) {
+                document.getElementById('loading').style.display = 'none';
+                document.getElementById('error').style.display = 'block';
+                document.getElementById('error').textContent = 'Error loading dashboard: ' + error.message;
+            }
+        }
+
+        async function runAlgorithm() {
+            if (!USE_SERVER) {
+                alert('Server mode required. Start the server with: python server.py');
+                return;
+            }
+
+            try {
+                const runBtn = document.getElementById('run-btn');
+                const refreshBtn = document.getElementById('refresh-btn');
+                
+                // Disable buttons and show running status
+                runBtn.disabled = true;
+                refreshBtn.disabled = true;
+                showStatusMessage('Running algorithm... This may take a few minutes', 'running');
+
+                const response = await fetch(`${API_BASE}/run-algorithm`, {
+                    method: 'POST'
+                });
+
+                const result = await response.json();
+
+                if (result.success) {
+                    showStatusMessage('Algorithm completed successfully!', 'success');
+                    // Automatically load the new data
+                    renderDashboard(result.data);
+                    document.getElementById('loading').style.display = 'none';
+                    document.getElementById('content').style.display = 'block';
+                } else {
+                    throw new Error(result.error);
+                }
+
+            } catch (error) {
+                showStatusMessage('Error: ' + error.message, 'error');
+            } finally {
+                // Re-enable buttons
+                document.getElementById('run-btn').disabled = false;
+                document.getElementById('refresh-btn').disabled = false;
+            }
+        }
+
+        function showStatusMessage(message, type) {
+            const statusEl = document.getElementById('status-message');
+            statusEl.textContent = message;
+            statusEl.className = 'status-message status-' + type;
+            statusEl.style.display = 'inline-block';
+        }
+
+        function hideStatusMessage() {
+            document.getElementById('status-message').style.display = 'none';
+        }
+
+        function toggleFilter(button) {
+            const signal = button.dataset.signal;
+            
+            // Deselect all buttons
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            
+            // Select clicked button
+            button.classList.add('active');
+            
+            // Update active filters to only include this signal
+            activeFilters.clear();
+            activeFilters.add(signal);
+            
+            // Re-render signals with new filter
+            renderSignals();
+        }
+
+        function renderSignals() {
+            // Filter signals based on active filters
+            const filteredSignals = allSignals.filter(signal => 
+                activeFilters.has(signal.signal)
+            );
+            
+            const signalsHtml = filteredSignals.map(signal => {
+                const signalClass = signal.signal.toLowerCase().replace(' ', '-');
+                const distanceClass = signal.distance_pct > 0 ? 'positive' : 'negative';
+                
+                let positionHtml = '';
+                if (signal.position) {
+                    positionHtml = `
+                        <div class="position-info">
+                            <strong>Position:</strong> ${signal.position.shares} shares @ $${signal.price} = $${signal.position.dollars}<br>
+                            <strong>Stop-Loss:</strong> $${signal.position.stop_loss_price} (-${signal.position.stop_loss_pct}%)<br>
+                            <strong>Risk:</strong> $${signal.position.risk_dollars} (${signal.position.position_pct}% of portfolio)
+                        </div>
+                    `;
+                }
+                
+                return `
+                    <div class="signal-card">
+                        <div class="signal-header">
+                            <span class="ticker">${signal.ticker}</span>
+                            <span class="signal-badge signal-${signalClass}">${signal.signal}</span>
+                        </div>
+                        <div class="signal-details">
+                            <strong>Price:</strong> $${signal.price} | <strong>SMA:</strong> $${signal.sma}<br>
+                            <strong>Distance:</strong> <span class="${distanceClass}">${signal.distance_pct}%</span>
+                        </div>
+                        ${positionHtml}
+                    </div>
+                `;
+            }).join('');
+            
+            document.getElementById('signals-grid').innerHTML = signalsHtml || 
+                '<p style="color: #666;">No signals match the current filters.</p>';
+        }
+
+        function renderDashboard(data) {
+            // Timestamp
+            const timestamp = new Date(data.generated_at);
+            document.getElementById('timestamp').textContent = 
+                `Last updated: ${timestamp.toLocaleString()}`;
+
+            // Portfolio Summary Stats
+            const summary = data.portfolio_summary;
+            const netProfit = summary.net_profit;
+            const profitClass = netProfit > 0 ? 'positive' : 'negative';
+            
+            document.getElementById('net-profit').textContent = `$${netProfit.toLocaleString()}`;
+            document.getElementById('net-profit').className = `stat-value ${profitClass}`;
+            
+            document.getElementById('profit-factor').textContent = `${summary.profit_factor}x`;
+            document.getElementById('profit-factor').className = 
+                `stat-value ${summary.profit_factor > 1 ? 'positive' : 'negative'}`;
+            
+            document.getElementById('win-rate').textContent = `${summary.overall_win_rate}%`;
+            document.getElementById('total-trades').textContent = summary.total_trades.toLocaleString();
+            document.getElementById('stocks-analyzed').textContent = summary.total_stocks_analyzed;
+
+            // Configuration
+            const config = data.config;
+            const configTags = `
+                <div class="config-tag">SMA: ${config.sma_period} days</div>
+                <div class="config-tag">Interval: ${config.interval}</div>
+                <div class="config-tag">Lookback: ${config.lookback_period}</div>
+                <div class="config-tag">Portfolio: $${config.portfolio_size.toLocaleString()}</div>
+                <div class="config-tag">Stop-Loss: ${config.stop_loss_pct * 100}%</div>
+                <div class="config-tag">Max Position: ${config.max_position_pct * 100}%</div>
+            `;
+            document.getElementById('config-tags').innerHTML = configTags;
+
+            // Performance Metrics
+            const performanceHtml = `
+                <div class="metric">
+                    <span class="metric-label">Gross Profit</span>
+                    <span class="metric-value positive">$${summary.gross_profit.toLocaleString()}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Gross Loss</span>
+                    <span class="metric-value negative">$${summary.gross_loss.toLocaleString()}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Net Profit</span>
+                    <span class="metric-value ${profitClass}">$${netProfit.toLocaleString()}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Best Performer</span>
+                    <span class="metric-value positive">${summary.best_performer.ticker} (+$${summary.best_performer.profit})</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Worst Performer</span>
+                    <span class="metric-value negative">${summary.worst_performer.ticker} ($${summary.worst_performer.profit})</span>
+                </div>
+            `;
+            document.getElementById('performance-metrics').innerHTML = performanceHtml;
+
+            // Trade Statistics
+            const tradeStatsHtml = `
+                <div class="metric">
+                    <span class="metric-label">Winning Trades</span>
+                    <span class="metric-value positive">${summary.winning_trades}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Losing Trades</span>
+                    <span class="metric-value negative">${summary.losing_trades}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Profitable Stocks</span>
+                    <span class="metric-value">${summary.profitable_stocks} / ${summary.total_stocks_analyzed}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Stop-Loss Exits</span>
+                    <span class="metric-value">${summary.stop_loss_exits}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Signal Exits</span>
+                    <span class="metric-value">${summary.signal_exits}</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-label">Worst Trade</span>
+                    <span class="metric-value negative">${summary.worst_trade_pct}%</span>
+                </div>
+            `;
+            document.getElementById('trade-stats').innerHTML = tradeStatsHtml;
+
+            // Store all signals and render with filters
+            allSignals = data.signals;
+            renderSignals();
+
+            // Top Performers Table
+            const sortedBacktests = [...data.backtests].sort((a, b) => 
+                b.total_profit - a.total_profit
+            );
+            const topPerformers = sortedBacktests.slice(0, 15);
+            
+            const performersHtml = topPerformers.map(bt => {
+                const profitClass = bt.total_profit > 0 ? 'positive' : 'negative';
+                const profitFactor = bt.gross_loss !== 0 ? 
+                    Math.abs(bt.gross_profit / bt.gross_loss).toFixed(2) : '∞';
+                
+                return `
+                    <tr>
+                        <td><strong>${bt.ticker}</strong></td>
+                        <td class="${profitClass}">$${bt.total_profit.toLocaleString()}</td>
+                        <td>${bt.win_rate}%</td>
+                        <td>${bt.total_trades}</td>
+                        <td class="${bt.avg_profit_pct > 0 ? 'positive' : 'negative'}">${bt.avg_profit_pct}%</td>
+                        <td>${profitFactor}x</td>
+                    </tr>
+                `;
+            }).join('');
+            
+            document.getElementById('performers-body').innerHTML = performersHtml;
+        }
+
+        // Auto-refresh every 5 minutes
+        setInterval(loadData, 300000);
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
