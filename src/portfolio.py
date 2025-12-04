@@ -143,3 +143,4 @@ def calculate_portfolio_summary(backtest_results):
         'stop_loss_pct': STOP_LOSS_PCT * 100,
         'stop_loss_enabled': USE_STOP_LOSS
     }
+
