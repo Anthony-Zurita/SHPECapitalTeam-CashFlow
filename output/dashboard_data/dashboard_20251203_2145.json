@@ -1,0 +1,1665 @@
+{
+  "generated_at": "2025-12-03T21:45:31.345075",
+  "config": {
+    "sma_period": 20,
+    "interval": "1d",
+    "lookback_period": "5y",
+    "portfolio_size": 10000,
+    "max_position_pct": 0.1,
+    "risk_per_trade_pct": 0.02,
+    "stop_loss_pct": 0.05,
+    "stop_loss_enabled": true
+  },
+  "portfolio_summary": {
+    "total_stocks_analyzed": 100,
+    "profitable_stocks": 60,
+    "unprofitable_stocks": 40,
+    "total_trades": 7270,
+    "winning_trades": 1901,
+    "losing_trades": 5369,
+    "overall_win_rate": 26.15,
+    "gross_profit": 31593.05,
+    "gross_loss": -27440.49,
+    "net_profit": 4152.56,
+    "avg_profit_pct_per_stock": 0.49,
+    "profit_factor": 1.15,
+    "best_performer": {
+      "ticker": "BKNG",
+      "profit": 1480.98,
+      "win_rate": 34.78
+    },
+    "worst_performer": {
+      "ticker": "ILMN",
+      "profit": -184.27,
+      "win_rate": 12.82
+    },
+    "is_profitable": "True",
+    "stop_loss_exits": 1120,
+    "signal_exits": 6078,
+    "worst_trade_pct": -5.0,
+    "stop_loss_pct": 5.0,
+    "stop_loss_enabled": true
+  },
+  "signals": [
+    {
+      "ticker": "NVDA",
+      "signal": "HOLD",
+      "price": 179.59,
+      "sma": 185.35,
+      "distance_pct": -3.11,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:08.406682"
+    },
+    {
+      "ticker": "MSFT",
+      "signal": "HOLD",
+      "price": 477.73,
+      "sma": 492.6,
+      "distance_pct": -3.02,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:08.626383"
+    },
+    {
+      "ticker": "AAPL",
+      "signal": "BUY",
+      "price": 284.15,
+      "sma": 273.75,
+      "distance_pct": 3.8,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 568.3,
+        "position_pct": 5.68,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 269.94,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:08.851037"
+    },
+    {
+      "ticker": "AVGO",
+      "signal": "BUY",
+      "price": 380.61,
+      "sma": 362.42,
+      "distance_pct": 5.02,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 761.22,
+        "position_pct": 7.61,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 361.58,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:09.102961"
+    },
+    {
+      "ticker": "AMZN",
+      "signal": "HOLD",
+      "price": 232.38,
+      "sma": 234.33,
+      "distance_pct": -0.83,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:09.281515"
+    },
+    {
+      "ticker": "META",
+      "signal": "BUY",
+      "price": 639.6,
+      "sma": 619.78,
+      "distance_pct": 3.2,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 1,
+        "dollars": 639.6,
+        "position_pct": 6.4,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 607.62,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:09.478146"
+    },
+    {
+      "ticker": "TSLA",
+      "signal": "BUY",
+      "price": 446.74,
+      "sma": 422.99,
+      "distance_pct": 5.61,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 893.48,
+        "position_pct": 8.93,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 424.4,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:09.651480"
+    },
+    {
+      "ticker": "GOOGL",
+      "signal": "BUY",
+      "price": 319.63,
+      "sma": 297.73,
+      "distance_pct": 7.35,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 958.89,
+        "position_pct": 9.59,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 303.65,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:09.819265"
+    },
+    {
+      "ticker": "GOOG",
+      "signal": "BUY",
+      "price": 320.62,
+      "sma": 298.15,
+      "distance_pct": 7.53,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 961.86,
+        "position_pct": 9.62,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 304.59,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:10.004230"
+    },
+    {
+      "ticker": "NFLX",
+      "signal": "HOLD",
+      "price": 103.96,
+      "sma": 109.49,
+      "distance_pct": -5.05,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:10.281211"
+    },
+    {
+      "ticker": "COST",
+      "signal": "BUY",
+      "price": 922.26,
+      "sma": 911.1,
+      "distance_pct": 1.23,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 876.15,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:10.484722"
+    },
+    {
+      "ticker": "PLTR",
+      "signal": "STRONG BUY",
+      "price": 176.08,
+      "sma": 172.23,
+      "distance_pct": 2.23,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 704.32,
+        "position_pct": 7.04,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 167.28,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:10.668460"
+    },
+    {
+      "ticker": "AMD",
+      "signal": "HOLD",
+      "price": 217.6,
+      "sma": 228.62,
+      "distance_pct": -4.82,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:10.912439"
+    },
+    {
+      "ticker": "TMUS",
+      "signal": "SELL",
+      "price": 208.51,
+      "sma": 208.69,
+      "distance_pct": -0.09,
+      "crossed_above": false,
+      "crossed_below": true,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:11.101694"
+    },
+    {
+      "ticker": "CSCO",
+      "signal": "BUY",
+      "price": 77.75,
+      "sma": 75.43,
+      "distance_pct": 3.07,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 9,
+        "dollars": 699.75,
+        "position_pct": 7.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 73.86,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:11.301702"
+    },
+    {
+      "ticker": "LIN",
+      "signal": "HOLD",
+      "price": 409.15,
+      "sma": 415.41,
+      "distance_pct": -1.51,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:11.520828"
+    },
+    {
+      "ticker": "INTU",
+      "signal": "HOLD",
+      "price": 647.68,
+      "sma": 648.18,
+      "distance_pct": -0.08,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:11.718349"
+    },
+    {
+      "ticker": "PEP",
+      "signal": "BUY",
+      "price": 148.06,
+      "sma": 146.05,
+      "distance_pct": 1.38,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 444.18,
+        "position_pct": 4.44,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 140.66,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:12.013922"
+    },
+    {
+      "ticker": "BKNG",
+      "signal": "BUY",
+      "price": 5047.21,
+      "sma": 4918.48,
+      "distance_pct": 2.62,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 4794.85,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:12.217995"
+    },
+    {
+      "ticker": "ISRG",
+      "signal": "BUY",
+      "price": 569.71,
+      "sma": 563.2,
+      "distance_pct": 1.16,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 541.22,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:12.395663"
+    },
+    {
+      "ticker": "TXN",
+      "signal": "BUY",
+      "price": 182.6,
+      "sma": 162.76,
+      "distance_pct": 12.19,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 913.0,
+        "position_pct": 9.13,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 173.47,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:12.718357"
+    },
+    {
+      "ticker": "AMGN",
+      "signal": "BUY",
+      "price": 345.42,
+      "sma": 334.35,
+      "distance_pct": 3.31,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 690.84,
+        "position_pct": 6.91,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 328.15,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:12.935498"
+    },
+    {
+      "ticker": "QCOM",
+      "signal": "BUY",
+      "price": 175.07,
+      "sma": 169.54,
+      "distance_pct": 3.26,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 700.28,
+        "position_pct": 7.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 166.32,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:13.152431"
+    },
+    {
+      "ticker": "SHOP",
+      "signal": "BUY",
+      "price": 160.0,
+      "sma": 152.68,
+      "distance_pct": 4.79,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 640.0,
+        "position_pct": 6.4,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 152.0,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:13.319282"
+    },
+    {
+      "ticker": "AMAT",
+      "signal": "BUY",
+      "price": 268.63,
+      "sma": 237.04,
+      "distance_pct": 13.33,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 805.89,
+        "position_pct": 8.06,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 255.2,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:13.551838"
+    },
+    {
+      "ticker": "HON",
+      "signal": "HOLD",
+      "price": 193.47,
+      "sma": 193.54,
+      "distance_pct": -0.03,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:13.852472"
+    },
+    {
+      "ticker": "CMCSA",
+      "signal": "STRONG BUY",
+      "price": 27.43,
+      "sma": 27.17,
+      "distance_pct": 0.96,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 18,
+        "dollars": 493.74,
+        "position_pct": 4.94,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 26.06,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:14.068388"
+    },
+    {
+      "ticker": "PANW",
+      "signal": "HOLD",
+      "price": 193.63,
+      "sma": 199.02,
+      "distance_pct": -2.71,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:14.336453"
+    },
+    {
+      "ticker": "ADP",
+      "signal": "BUY",
+      "price": 260.22,
+      "sma": 254.0,
+      "distance_pct": 2.45,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 520.44,
+        "position_pct": 5.2,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 247.21,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:14.593198"
+    },
+    {
+      "ticker": "VRTX",
+      "signal": "BUY",
+      "price": 463.13,
+      "sma": 429.01,
+      "distance_pct": 7.95,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 926.26,
+        "position_pct": 9.26,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 439.97,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:14.758179"
+    },
+    {
+      "ticker": "SBUX",
+      "signal": "BUY",
+      "price": 87.11,
+      "sma": 84.74,
+      "distance_pct": 2.79,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 8,
+        "dollars": 696.88,
+        "position_pct": 6.97,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 82.75,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:14.948778"
+    },
+    {
+      "ticker": "GILD",
+      "signal": "STRONG BUY",
+      "price": 125.0,
+      "sma": 124.45,
+      "distance_pct": 0.44,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 500.0,
+        "position_pct": 5.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 118.75,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:15.123721"
+    },
+    {
+      "ticker": "ADI",
+      "signal": "BUY",
+      "price": 278.24,
+      "sma": 242.94,
+      "distance_pct": 14.53,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 834.72,
+        "position_pct": 8.35,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 264.33,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:15.332483"
+    },
+    {
+      "ticker": "LRCX",
+      "signal": "BUY",
+      "price": 159.75,
+      "sma": 154.15,
+      "distance_pct": 3.63,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 639.0,
+        "position_pct": 6.39,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 151.76,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:15.570809"
+    },
+    {
+      "ticker": "REGN",
+      "signal": "BUY",
+      "price": 723.67,
+      "sma": 714.67,
+      "distance_pct": 1.26,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 687.49,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:15.735083"
+    },
+    {
+      "ticker": "MU",
+      "signal": "BUY",
+      "price": 234.16,
+      "sma": 233.56,
+      "distance_pct": 0.26,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 468.32,
+        "position_pct": 4.68,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 222.45,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:15.968408"
+    },
+    {
+      "ticker": "MDLZ",
+      "signal": "HOLD",
+      "price": 56.03,
+      "sma": 56.48,
+      "distance_pct": -0.81,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:16.165317"
+    },
+    {
+      "ticker": "KLAC",
+      "signal": "BUY",
+      "price": 1211.75,
+      "sma": 1165.73,
+      "distance_pct": 3.95,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 1151.16,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:16.360556"
+    },
+    {
+      "ticker": "PYPL",
+      "signal": "HOLD",
+      "price": 61.24,
+      "sma": 63.12,
+      "distance_pct": -2.98,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:16.537710"
+    },
+    {
+      "ticker": "SNPS",
+      "signal": "BUY",
+      "price": 466.44,
+      "sma": 405.0,
+      "distance_pct": 15.17,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 932.88,
+        "position_pct": 9.33,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 443.12,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:16.718292"
+    },
+    {
+      "ticker": "CDNS",
+      "signal": "BUY",
+      "price": 336.11,
+      "sma": 314.25,
+      "distance_pct": 6.96,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 672.22,
+        "position_pct": 6.72,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 319.3,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:16.971447"
+    },
+    {
+      "ticker": "MELI",
+      "signal": "BUY",
+      "price": 2119.83,
+      "sma": 2071.44,
+      "distance_pct": 2.34,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 2013.84,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:17.135772"
+    },
+    {
+      "ticker": "CRWD",
+      "signal": "STRONG BUY",
+      "price": 524.17,
+      "sma": 523.23,
+      "distance_pct": 0.18,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 497.96,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:17.335213"
+    },
+    {
+      "ticker": "MAR",
+      "signal": "BUY",
+      "price": 306.65,
+      "sma": 292.39,
+      "distance_pct": 4.88,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 613.3,
+        "position_pct": 6.13,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 291.32,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:17.602360"
+    },
+    {
+      "ticker": "ORLY",
+      "signal": "SELL",
+      "price": 98.61,
+      "sma": 98.94,
+      "distance_pct": -0.34,
+      "crossed_above": false,
+      "crossed_below": true,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:17.828729"
+    },
+    {
+      "ticker": "FTNT",
+      "signal": "BUY",
+      "price": 82.76,
+      "sma": 81.42,
+      "distance_pct": 1.65,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 6,
+        "dollars": 496.56,
+        "position_pct": 4.97,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 78.62,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:18.106791"
+    },
+    {
+      "ticker": "ADSK",
+      "signal": "BUY",
+      "price": 307.24,
+      "sma": 297.83,
+      "distance_pct": 3.16,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 614.48,
+        "position_pct": 6.14,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 291.88,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:18.335176"
+    },
+    {
+      "ticker": "ABNB",
+      "signal": "STRONG BUY",
+      "price": 120.13,
+      "sma": 118.45,
+      "distance_pct": 1.42,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 480.52,
+        "position_pct": 4.81,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 114.12,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:18.534177"
+    },
+    {
+      "ticker": "DASH",
+      "signal": "BUY",
+      "price": 222.48,
+      "sma": 203.38,
+      "distance_pct": 9.39,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 889.92,
+        "position_pct": 8.9,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 211.36,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:18.734918"
+    },
+    {
+      "ticker": "CTAS",
+      "signal": "HOLD",
+      "price": 184.71,
+      "sma": 184.72,
+      "distance_pct": -0.01,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:18.960132"
+    },
+    {
+      "ticker": "WDAY",
+      "signal": "HOLD",
+      "price": 214.84,
+      "sma": 223.29,
+      "distance_pct": -3.79,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:19.119896"
+    },
+    {
+      "ticker": "CHTR",
+      "signal": "HOLD",
+      "price": 199.96,
+      "sma": 204.62,
+      "distance_pct": -2.28,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:19.432707"
+    },
+    {
+      "ticker": "PCAR",
+      "signal": "BUY",
+      "price": 108.54,
+      "sma": 100.4,
+      "distance_pct": 8.11,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 9,
+        "dollars": 976.86,
+        "position_pct": 9.77,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 103.11,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:19.670004"
+    },
+    {
+      "ticker": "NXPI",
+      "signal": "BUY",
+      "price": 227.56,
+      "sma": 199.51,
+      "distance_pct": 14.06,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 910.24,
+        "position_pct": 9.1,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 216.18,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:19.868208"
+    },
+    {
+      "ticker": "MNST",
+      "signal": "BUY",
+      "price": 73.99,
+      "sma": 72.14,
+      "distance_pct": 2.57,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 10,
+        "dollars": 739.9,
+        "position_pct": 7.4,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 70.29,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:20.052032"
+    },
+    {
+      "ticker": "PAYX",
+      "signal": "STRONG BUY",
+      "price": 113.39,
+      "sma": 111.35,
+      "distance_pct": 1.84,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 453.56,
+        "position_pct": 4.54,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 107.72,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:20.275474"
+    },
+    {
+      "ticker": "AEP",
+      "signal": "HOLD",
+      "price": 118.06,
+      "sma": 121.36,
+      "distance_pct": -2.72,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:20.551845"
+    },
+    {
+      "ticker": "CPRT",
+      "signal": "HOLD",
+      "price": 38.85,
+      "sma": 40.38,
+      "distance_pct": -3.79,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:20.720178"
+    },
+    {
+      "ticker": "ROST",
+      "signal": "BUY",
+      "price": 178.0,
+      "sma": 167.27,
+      "distance_pct": 6.41,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 890.0,
+        "position_pct": 8.9,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 169.1,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:20.941559"
+    },
+    {
+      "ticker": "ODFL",
+      "signal": "BUY",
+      "price": 150.95,
+      "sma": 135.99,
+      "distance_pct": 11.0,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 6,
+        "dollars": 905.7,
+        "position_pct": 9.06,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 143.4,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:21.195304"
+    },
+    {
+      "ticker": "EA",
+      "signal": "BUY",
+      "price": 203.21,
+      "sma": 201.56,
+      "distance_pct": 0.82,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 406.42,
+        "position_pct": 4.06,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 193.05,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:21.375458"
+    },
+    {
+      "ticker": "TTD",
+      "signal": "HOLD",
+      "price": 38.61,
+      "sma": 41.32,
+      "distance_pct": -6.57,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:21.619157"
+    },
+    {
+      "ticker": "KDP",
+      "signal": "BUY",
+      "price": 28.33,
+      "sma": 27.19,
+      "distance_pct": 4.2,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 26,
+        "dollars": 736.58,
+        "position_pct": 7.37,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 26.91,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:21.837621"
+    },
+    {
+      "ticker": "MCHP",
+      "signal": "BUY",
+      "price": 63.61,
+      "sma": 54.02,
+      "distance_pct": 17.75,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 15,
+        "dollars": 954.15,
+        "position_pct": 9.54,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 60.43,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:22.055175"
+    },
+    {
+      "ticker": "DXCM",
+      "signal": "BUY",
+      "price": 64.85,
+      "sma": 60.12,
+      "distance_pct": 7.87,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 15,
+        "dollars": 972.75,
+        "position_pct": 9.73,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 61.61,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:22.218920"
+    },
+    {
+      "ticker": "FAST",
+      "signal": "BUY",
+      "price": 41.22,
+      "sma": 40.43,
+      "distance_pct": 1.96,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 12,
+        "dollars": 494.64,
+        "position_pct": 4.95,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 39.16,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:22.458564"
+    },
+    {
+      "ticker": "BKR",
+      "signal": "BUY",
+      "price": 50.49,
+      "sma": 48.69,
+      "distance_pct": 3.7,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 14,
+        "dollars": 706.86,
+        "position_pct": 7.07,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 47.97,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:22.669133"
+    },
+    {
+      "ticker": "IDXX",
+      "signal": "BUY",
+      "price": 725.93,
+      "sma": 716.81,
+      "distance_pct": 1.27,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 0,
+        "dollars": 0.0,
+        "position_pct": 0.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 689.63,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:22.839405"
+    },
+    {
+      "ticker": "LULU",
+      "signal": "BUY",
+      "price": 182.3,
+      "sma": 171.81,
+      "distance_pct": 6.11,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 911.5,
+        "position_pct": 9.12,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 173.19,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:23.102495"
+    },
+    {
+      "ticker": "VRSK",
+      "signal": "BUY",
+      "price": 224.48,
+      "sma": 219.67,
+      "distance_pct": 2.19,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 673.44,
+        "position_pct": 6.73,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 213.26,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:23.318916"
+    },
+    {
+      "ticker": "EXC",
+      "signal": "HOLD",
+      "price": 44.54,
+      "sma": 45.79,
+      "distance_pct": -2.72,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:23.712427"
+    },
+    {
+      "ticker": "CCEP",
+      "signal": "BUY",
+      "price": 91.64,
+      "sma": 90.42,
+      "distance_pct": 1.35,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 458.2,
+        "position_pct": 4.58,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 87.06,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:23.969515"
+    },
+    {
+      "ticker": "GEHC",
+      "signal": "BUY",
+      "price": 83.59,
+      "sma": 75.94,
+      "distance_pct": 10.07,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 11,
+        "dollars": 919.49,
+        "position_pct": 9.19,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 79.41,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:24.135785"
+    },
+    {
+      "ticker": "XEL",
+      "signal": "HOLD",
+      "price": 78.39,
+      "sma": 80.4,
+      "distance_pct": -2.5,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:24.385586"
+    },
+    {
+      "ticker": "ZS",
+      "signal": "HOLD",
+      "price": 243.66,
+      "sma": 289.2,
+      "distance_pct": -15.75,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:24.552348"
+    },
+    {
+      "ticker": "ON",
+      "signal": "BUY",
+      "price": 57.15,
+      "sma": 48.6,
+      "distance_pct": 17.6,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 17,
+        "dollars": 971.55,
+        "position_pct": 9.72,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 54.29,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:24.727995"
+    },
+    {
+      "ticker": "CTSH",
+      "signal": "BUY",
+      "price": 79.24,
+      "sma": 74.41,
+      "distance_pct": 6.49,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 12,
+        "dollars": 950.88,
+        "position_pct": 9.51,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 75.28,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:24.931478"
+    },
+    {
+      "ticker": "DDOG",
+      "signal": "HOLD",
+      "price": 155.83,
+      "sma": 172.63,
+      "distance_pct": -9.73,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:25.939078"
+    },
+    {
+      "ticker": "BIIB",
+      "signal": "BUY",
+      "price": 180.75,
+      "sma": 169.08,
+      "distance_pct": 6.9,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 903.75,
+        "position_pct": 9.04,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 171.71,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:26.118940"
+    },
+    {
+      "ticker": "ILMN",
+      "signal": "BUY",
+      "price": 127.95,
+      "sma": 123.94,
+      "distance_pct": 3.24,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 639.75,
+        "position_pct": 6.4,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 121.55,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:26.318942"
+    },
+    {
+      "ticker": "WBD",
+      "signal": "BUY",
+      "price": 24.57,
+      "sma": 23.17,
+      "distance_pct": 6.02,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 40,
+        "dollars": 982.8,
+        "position_pct": 9.83,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 23.34,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:26.479715"
+    },
+    {
+      "ticker": "CDW",
+      "signal": "BUY",
+      "price": 143.68,
+      "sma": 142.4,
+      "distance_pct": 0.9,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 431.04,
+        "position_pct": 4.31,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 136.5,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:26.869813"
+    },
+    {
+      "ticker": "MRNA",
+      "signal": "STRONG BUY",
+      "price": 25.18,
+      "sma": 24.66,
+      "distance_pct": 2.09,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 29,
+        "dollars": 730.22,
+        "position_pct": 7.3,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 23.92,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:27.044607"
+    },
+    {
+      "ticker": "CSGP",
+      "signal": "BUY",
+      "price": 69.02,
+      "sma": 67.89,
+      "distance_pct": 1.67,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 7,
+        "dollars": 483.14,
+        "position_pct": 4.83,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 65.57,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:27.214914"
+    },
+    {
+      "ticker": "GFS",
+      "signal": "BUY",
+      "price": 38.09,
+      "sma": 34.5,
+      "distance_pct": 10.42,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 26,
+        "dollars": 990.34,
+        "position_pct": 9.9,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 36.19,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:27.370572"
+    },
+    {
+      "ticker": "DLTR",
+      "signal": "BUY",
+      "price": 112.92,
+      "sma": 105.14,
+      "distance_pct": 7.4,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 8,
+        "dollars": 903.36,
+        "position_pct": 9.03,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 107.27,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:27.625009"
+    },
+    {
+      "ticker": "FANG",
+      "signal": "BUY",
+      "price": 158.38,
+      "sma": 147.64,
+      "distance_pct": 7.27,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 6,
+        "dollars": 950.28,
+        "position_pct": 9.5,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 150.46,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:27.825450"
+    },
+    {
+      "ticker": "SMCI",
+      "signal": "HOLD",
+      "price": 33.68,
+      "sma": 35.48,
+      "distance_pct": -5.06,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:29.025111"
+    },
+    {
+      "ticker": "MDB",
+      "signal": "BUY",
+      "price": 405.94,
+      "sma": 350.22,
+      "distance_pct": 15.91,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 811.88,
+        "position_pct": 8.12,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 385.64,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:29.242845"
+    },
+    {
+      "ticker": "TEAM",
+      "signal": "BUY",
+      "price": 156.76,
+      "sma": 151.92,
+      "distance_pct": 3.19,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 627.02,
+        "position_pct": 6.27,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 148.92,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:29.416928"
+    },
+    {
+      "ticker": "TTWO",
+      "signal": "BUY",
+      "price": 244.95,
+      "sma": 241.13,
+      "distance_pct": 1.59,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 489.9,
+        "position_pct": 4.9,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 232.7,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:29.612839"
+    },
+    {
+      "ticker": "PDD",
+      "signal": "HOLD",
+      "price": 117.2,
+      "sma": 124.61,
+      "distance_pct": -5.94,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:29.772636"
+    },
+    {
+      "ticker": "ZM",
+      "signal": "BUY",
+      "price": 85.64,
+      "sma": 82.93,
+      "distance_pct": 3.27,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 8,
+        "dollars": 685.12,
+        "position_pct": 6.85,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 81.36,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:29.948159"
+    },
+    {
+      "ticker": "LCID",
+      "signal": "HOLD",
+      "price": 13.56,
+      "sma": 14.34,
+      "distance_pct": -5.44,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:30.147118"
+    },
+    {
+      "ticker": "RIVN",
+      "signal": "BUY",
+      "price": 17.53,
+      "sma": 15.96,
+      "distance_pct": 9.87,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 57,
+        "dollars": 999.21,
+        "position_pct": 9.99,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 16.65,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:30.392968"
+    },
+    {
+      "ticker": "ENPH",
+      "signal": "BUY",
+      "price": 29.39,
+      "sma": 28.94,
+      "distance_pct": 1.54,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 17,
+        "dollars": 499.63,
+        "position_pct": 5.0,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 27.92,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:30.591742"
+    },
+    {
+      "ticker": "SIRI",
+      "signal": "STRONG BUY",
+      "price": 21.33,
+      "sma": 21.2,
+      "distance_pct": 0.63,
+      "crossed_above": true,
+      "crossed_below": false,
+      "position": {
+        "shares": 23,
+        "dollars": 490.59,
+        "position_pct": 4.91,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 20.26,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:30.782893"
+    },
+    {
+      "ticker": "JD",
+      "signal": "HOLD",
+      "price": 29.87,
+      "sma": 30.13,
+      "distance_pct": -0.85,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:30.993019"
+    },
+    {
+      "ticker": "CEG",
+      "signal": "BUY",
+      "price": 361.26,
+      "sma": 352.16,
+      "distance_pct": 2.59,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 722.52,
+        "position_pct": 7.23,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 343.2,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-03T21:45:31.169367"
+    },
+    {
+      "ticker": "ARM",
+      "signal": "HOLD",
+      "price": 139.19,
+      "sma": 141.33,
+      "distance_pct": -1.51,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-03T21:45:31.310997"
+    }
+  ],
+  "backtests": [
+    {
+      "ticker": "NVDA",
+      "total_trades": 63,
+      "winning_trades": 19,
+      "losing_trades": 44,
+      "win_rate": 30.16,
+      "gross_profit": 201.48,
+      "gross_loss": -110.41,
+      "total_profit": 91.07,
+      "avg_profit": 1.45,
+      "avg_profit_pct": 4.23,
+      "stop_loss_exits": 17,
+      "signal_exits": 46,
+      "trades": [
+        {
+          "entry_date": 

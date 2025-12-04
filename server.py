@@ -13,8 +13,8 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)  # Allow dashboard to call API
 
-# Path to your algorithm
-ALGORITHM_PATH = 'merp.py'
+# Path to your algorithm (now using modular structure)
+ALGORITHM_PATH = 'run_algorithm.py'
 PYTHON_PATH = 'trading_env/Scripts/python.exe'
 
 @app.route('/')
@@ -48,7 +48,7 @@ def run_algorithm():
             }), 500
         
         # Read the generated JSON
-        with open('dashboard_data/latest.json', 'r') as f:
+        with open('output/dashboard_data/latest.json', 'r') as f:
             data = json.load(f)
         
         print(f"[{datetime.now().strftime('%H:%M:%S')}] Algorithm completed successfully")
@@ -82,7 +82,7 @@ def get_latest_data():
     This is the original refresh behavior
     """
     try:
-        with open('dashboard_data/latest.json', 'r') as f:
+        with open('output/dashboard_data/latest.json', 'r') as f:
             data = json.load(f)
         return jsonify({
             'success': True,
@@ -99,10 +99,20 @@ def get_latest_data():
             'error': str(e)
         }), 500
 
-@app.route('/dashboard_data/<path:filename>')
+@app.route('/output/dashboard_data/<path:filename>')
 def serve_json(filename):
     """Serve JSON files"""
-    return send_from_directory('dashboard_data', filename)
+    return send_from_directory('output/dashboard_data', filename)
+
+@app.route('/assets/background.jpg')
+def serve_background():
+    """Serve background image"""
+    return send_from_directory('assets', 'background.jpg')
+
+@app.route('/assets/loading.gif')
+def serve_loading_gif():
+    """Serve loading GIF"""
+    return send_from_directory('assets', 'loading.gif')
 
 if __name__ == '__main__':
     print("=" * 60)

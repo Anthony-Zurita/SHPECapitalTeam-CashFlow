@@ -1,0 +1,50 @@
+{
+  "generated_at": "2025-12-03T21:32:38.256860",
+  "config": {
+    "sma_period": 20,
+    "interval": "1d",
+    "lookback_period": "5y",
+    "portfolio_size": 10000,
+    "max_position_pct": 0.1,
+    "risk_per_trade_pct": 0.02,
+    "stop_loss_pct": 0.05,
+    "stop_loss_enabled": true
+  },
+  "portfolio_summary": {
+    "total_stocks_analyzed": 100,
+    "profitable_stocks": 55,
+    "unprofitable_stocks": 45,
+    "total_trades": 7198,
+    "winning_trades": 1878,
+    "losing_trades": 5320,
+    "overall_win_rate": 26.09,
+    "gross_profit": 31392.56,
+    "gross_loss": -29204.26,
+    "net_profit": 2188.3,
+    "avg_profit_pct_per_stock": 0.37,
+    "profit_factor": 1.07,
+    "best_performer": {
+      "ticker": "BKNG",
+      "profit": 1807.38,
+      "win_rate": 35.29
+    },
+    "worst_performer": {
+      "ticker": "CHTR",
+      "profit": -291.32,
+      "win_rate": 19.12
+    },
+    "is_profitable": "True",
+    "stop_loss_exits": 710,
+    "signal_exits": 6488,
+    "worst_trade_pct": -33.15,
+    "stop_loss_pct": 5.0,
+    "stop_loss_enabled": true
+  },
+  "signals": [
+    {
+      "ticker": "NVDA",
+      "signal": "HOLD",
+      "price": 179.59,
+      "sma": 185.35,
+      "distance_pct": -3.11,
+      "crossed_above": 
