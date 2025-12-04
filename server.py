@@ -104,15 +104,15 @@ def serve_json(filename):
     """Serve JSON files"""
     return send_from_directory('output/dashboard_data', filename)
 
-@app.route('/background.jpg')
+@app.route('/assets/background.jpg')
 def serve_background():
     """Serve background image"""
-    return send_from_directory('.', 'background.jpg')
+    return send_from_directory('assets', 'background.jpg')
 
-@app.route('/loading.gif')
+@app.route('/assets/loading.gif')
 def serve_loading_gif():
     """Serve loading GIF"""
-    return send_from_directory('.', 'loading.gif')
+    return send_from_directory('assets', 'loading.gif')
 
 if __name__ == '__main__':
     print("=" * 60)
