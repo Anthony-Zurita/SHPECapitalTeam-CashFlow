@@ -346,7 +346,7 @@ This project taught us fundamental algorithmic trading concepts:
 - Anthony Zurita
 - Marcos Viloria
 - Juan Cavallin
-- Kyle
+- Kyle Jeter
 - Max Arthay
 
 ---

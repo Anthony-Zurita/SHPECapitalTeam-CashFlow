@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-04T12:28:34.094686",
+  "generated_at": "2025-12-04T10:34:00.590234",
   "config": {
     "sma_period": 20,
     "interval": "1d",
@@ -14,23 +14,23 @@
     "total_stocks_analyzed": 100,
     "profitable_stocks": 60,
     "unprofitable_stocks": 40,
-    "total_trades": 7273,
-    "winning_trades": 1901,
-    "losing_trades": 5372,
-    "overall_win_rate": 26.14,
-    "gross_profit": 31621.99,
-    "gross_loss": -27483.68,
-    "net_profit": 4138.31,
+    "total_trades": 7272,
+    "winning_trades": 1899,
+    "losing_trades": 5373,
+    "overall_win_rate": 26.11,
+    "gross_profit": 31584.82,
+    "gross_loss": -27459.02,
+    "net_profit": 4125.8,
     "avg_profit_pct_per_stock": 0.49,
     "profit_factor": 1.15,
     "best_performer": {
       "ticker": "BKNG",
-      "profit": 1490.68,
+      "profit": 1503.78,
       "win_rate": 34.78
     },
     "worst_performer": {
       "ticker": "ILMN",
-      "profit": -184.32,
+      "profit": -185.39,
       "win_rate": 12.82
     },
     "is_profitable": "True",
@@ -44,241 +44,241 @@
     {
       "ticker": "NVDA",
       "signal": "HOLD",
-      "price": 183.86,
-      "sma": 184.79,
-      "distance_pct": -0.5,
+      "price": 181.27,
+      "sma": 184.66,
+      "distance_pct": -1.83,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:30.735429"
+      "timestamp": "2025-12-04T10:33:06.439683"
     },
     {
       "ticker": "MSFT",
       "signal": "HOLD",
-      "price": 478.4,
-      "sma": 491.21,
-      "distance_pct": -2.61,
+      "price": 478.33,
+      "sma": 491.2,
+      "distance_pct": -2.62,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:31.230096"
+      "timestamp": "2025-12-04T10:33:06.974286"
     },
     {
       "ticker": "AAPL",
       "signal": "BUY",
-      "price": 280.16,
-      "sma": 274.27,
-      "distance_pct": 2.15,
+      "price": 281.3,
+      "sma": 274.32,
+      "distance_pct": 2.54,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 560.32,
-        "position_pct": 5.6,
+        "dollars": 562.61,
+        "position_pct": 5.63,
         "risk_dollars": 200.0,
-        "stop_loss_price": 266.15,
+        "stop_loss_price": 267.24,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:31.602381"
+      "timestamp": "2025-12-04T10:33:07.612619"
     },
     {
       "ticker": "AVGO",
       "signal": "BUY",
-      "price": 381.98,
-      "sma": 363.57,
-      "distance_pct": 5.06,
+      "price": 380.34,
+      "sma": 363.49,
+      "distance_pct": 4.64,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
-        "shares": 2,
-        "dollars": 763.96,
-        "position_pct": 7.64,
+        "shares": 1,
+        "dollars": 380.34,
+        "position_pct": 3.8,
         "risk_dollars": 200.0,
-        "stop_loss_price": 362.88,
+        "stop_loss_price": 361.32,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:31.971257"
+      "timestamp": "2025-12-04T10:33:08.100776"
     },
     {
       "ticker": "AMZN",
       "signal": "HOLD",
-      "price": 227.34,
-      "sma": 233.19,
-      "distance_pct": -2.51,
+      "price": 228.78,
+      "sma": 233.26,
+      "distance_pct": -1.92,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:32.300066"
+      "timestamp": "2025-12-04T10:33:08.541976"
     },
     {
       "ticker": "META",
       "signal": "BUY",
-      "price": 668.51,
-      "sma": 621.41,
-      "distance_pct": 7.58,
+      "price": 665.9,
+      "sma": 621.28,
+      "distance_pct": 7.18,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 1,
-        "dollars": 668.51,
-        "position_pct": 6.69,
+        "dollars": 665.9,
+        "position_pct": 6.66,
         "risk_dollars": 200.0,
-        "stop_loss_price": 635.08,
+        "stop_loss_price": 632.6,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:32.797324"
+      "timestamp": "2025-12-04T10:33:09.023463"
     },
     {
       "ticker": "TSLA",
       "signal": "BUY",
-      "price": 450.27,
-      "sma": 422.4,
-      "distance_pct": 6.6,
+      "price": 449.3,
+      "sma": 422.35,
+      "distance_pct": 6.38,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 900.54,
-        "position_pct": 9.01,
+        "dollars": 898.6,
+        "position_pct": 8.99,
         "risk_dollars": 200.0,
-        "stop_loss_price": 427.76,
+        "stop_loss_price": 426.83,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:33.356286"
+      "timestamp": "2025-12-04T10:33:09.533028"
     },
     {
       "ticker": "GOOGL",
       "signal": "BUY",
-      "price": 316.57,
-      "sma": 299.35,
-      "distance_pct": 5.75,
+      "price": 316.1,
+      "sma": 299.32,
+      "distance_pct": 5.6,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 3,
-        "dollars": 949.7,
-        "position_pct": 9.5,
+        "dollars": 948.3,
+        "position_pct": 9.48,
         "risk_dollars": 200.0,
-        "stop_loss_price": 300.74,
+        "stop_loss_price": 300.3,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:33.907257"
+      "timestamp": "2025-12-04T10:33:10.116569"
     },
     {
       "ticker": "GOOG",
       "signal": "BUY",
-      "price": 317.31,
-      "sma": 299.78,
-      "distance_pct": 5.85,
+      "price": 316.89,
+      "sma": 299.76,
+      "distance_pct": 5.71,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 3,
-        "dollars": 951.93,
-        "position_pct": 9.52,
+        "dollars": 950.67,
+        "position_pct": 9.51,
         "risk_dollars": 200.0,
-        "stop_loss_price": 301.44,
+        "stop_loss_price": 301.05,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:34.663568"
+      "timestamp": "2025-12-04T10:33:10.696112"
     },
     {
       "ticker": "NFLX",
       "signal": "HOLD",
-      "price": 102.29,
-      "sma": 109.11,
-      "distance_pct": -6.26,
+      "price": 102.54,
+      "sma": 109.13,
+      "distance_pct": -6.04,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:35.194509"
+      "timestamp": "2025-12-04T10:33:11.175228"
     },
     {
       "ticker": "COST",
       "signal": "SELL",
-      "price": 891.39,
-      "sma": 908.92,
-      "distance_pct": -1.93,
+      "price": 894.4,
+      "sma": 909.07,
+      "distance_pct": -1.61,
       "crossed_above": false,
       "crossed_below": true,
       "position": null,
-      "timestamp": "2025-12-04T12:27:35.833348"
+      "timestamp": "2025-12-04T10:33:11.631000"
     },
     {
       "ticker": "PLTR",
       "signal": "BUY",
-      "price": 177.9,
-      "sma": 171.73,
-      "distance_pct": 3.59,
+      "price": 176.2,
+      "sma": 171.65,
+      "distance_pct": 2.65,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 4,
-        "dollars": 711.59,
-        "position_pct": 7.12,
+        "dollars": 704.8,
+        "position_pct": 7.05,
         "risk_dollars": 200.0,
-        "stop_loss_price": 169.0,
+        "stop_loss_price": 167.39,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:36.462956"
+      "timestamp": "2025-12-04T10:33:12.082778"
     },
     {
       "ticker": "AMD",
       "signal": "HOLD",
-      "price": 218.24,
-      "sma": 226.72,
-      "distance_pct": -3.74,
+      "price": 216.86,
+      "sma": 226.65,
+      "distance_pct": -4.32,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:37.001127"
+      "timestamp": "2025-12-04T10:33:12.541913"
     },
     {
       "ticker": "TMUS",
       "signal": "HOLD",
-      "price": 207.65,
+      "price": 207.6,
       "sma": 208.89,
-      "distance_pct": -0.59,
+      "distance_pct": -0.62,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:37.540081"
+      "timestamp": "2025-12-04T10:33:12.998853"
     },
     {
       "ticker": "CSCO",
       "signal": "BUY",
-      "price": 77.58,
-      "sma": 75.71,
-      "distance_pct": 2.47,
+      "price": 77.38,
+      "sma": 75.7,
+      "distance_pct": 2.22,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 9,
-        "dollars": 698.22,
-        "position_pct": 6.98,
+        "dollars": 696.42,
+        "position_pct": 6.96,
         "risk_dollars": 200.0,
-        "stop_loss_price": 73.7,
+        "stop_loss_price": 73.51,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:38.280304"
+      "timestamp": "2025-12-04T10:33:13.528870"
     },
     {
       "ticker": "LIN",
       "signal": "HOLD",
-      "price": 403.0,
-      "sma": 413.28,
-      "distance_pct": -2.49,
+      "price": 404.64,
+      "sma": 413.36,
+      "distance_pct": -2.11,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:38.816756"
+      "timestamp": "2025-12-04T10:33:14.016627"
     },
     {
       "ticker": "INTU",
       "signal": "STRONG BUY",
-      "price": 655.26,
-      "sma": 648.18,
-      "distance_pct": 1.09,
+      "price": 652.43,
+      "sma": 648.03,
+      "distance_pct": 0.68,
       "crossed_above": true,
       "crossed_below": false,
       "position": {
@@ -286,35 +286,35 @@
         "dollars": 0.0,
         "position_pct": 0.0,
         "risk_dollars": 200.0,
-        "stop_loss_price": 622.49,
+        "stop_loss_price": 619.81,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:39.411076"
+      "timestamp": "2025-12-04T10:33:14.516594"
     },
     {
       "ticker": "PEP",
       "signal": "BUY",
-      "price": 146.57,
-      "sma": 146.24,
-      "distance_pct": 0.23,
+      "price": 147.95,
+      "sma": 146.3,
+      "distance_pct": 1.12,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 3,
-        "dollars": 439.71,
-        "position_pct": 4.4,
+        "dollars": 443.84,
+        "position_pct": 4.44,
         "risk_dollars": 200.0,
-        "stop_loss_price": 139.24,
+        "stop_loss_price": 140.55,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:40.096539"
+      "timestamp": "2025-12-04T10:33:15.012038"
     },
     {
       "ticker": "BKNG",
       "signal": "BUY",
-      "price": 5056.9,
-      "sma": 4925.77,
-      "distance_pct": 2.66,
+      "price": 5070.0,
+      "sma": 4926.42,
+      "distance_pct": 2.91,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
@@ -322,17 +322,17 @@
         "dollars": 0.0,
         "position_pct": 0.0,
         "risk_dollars": 200.0,
-        "stop_loss_price": 4804.05,
+        "stop_loss_price": 4816.5,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:40.670663"
+      "timestamp": "2025-12-04T10:33:15.471504"
     },
     {
       "ticker": "ISRG",
       "signal": "BUY",
-      "price": 567.29,
-      "sma": 564.14,
-      "distance_pct": 0.56,
+      "price": 569.41,
+      "sma": 564.24,
+      "distance_pct": 0.92,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
@@ -340,248 +340,255 @@
         "dollars": 0.0,
         "position_pct": 0.0,
         "risk_dollars": 200.0,
-        "stop_loss_price": 538.93,
+        "stop_loss_price": 540.94,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:41.184483"
+      "timestamp": "2025-12-04T10:33:15.973158"
     },
     {
       "ticker": "TXN",
       "signal": "BUY",
-      "price": 180.54,
-      "sma": 163.61,
-      "distance_pct": 10.35,
+      "price": 180.93,
+      "sma": 163.63,
+      "distance_pct": 10.57,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 5,
-        "dollars": 902.7,
-        "position_pct": 9.03,
+        "dollars": 904.65,
+        "position_pct": 9.05,
         "risk_dollars": 200.0,
-        "stop_loss_price": 171.51,
+        "stop_loss_price": 171.88,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:42.021489"
+      "timestamp": "2025-12-04T10:33:16.576316"
     },
     {
       "ticker": "AMGN",
       "signal": "BUY",
-      "price": 343.64,
-      "sma": 335.65,
-      "distance_pct": 2.38,
+      "price": 344.41,
+      "sma": 335.69,
+      "distance_pct": 2.6,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 687.29,
-        "position_pct": 6.87,
+        "dollars": 688.82,
+        "position_pct": 6.89,
         "risk_dollars": 200.0,
-        "stop_loss_price": 326.46,
+        "stop_loss_price": 327.19,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:42.852894"
+      "timestamp": "2025-12-04T10:33:17.066513"
     },
     {
       "ticker": "QCOM",
       "signal": "BUY",
-      "price": 174.44,
-      "sma": 169.27,
-      "distance_pct": 3.05,
+      "price": 173.85,
+      "sma": 169.24,
+      "distance_pct": 2.72,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 4,
-        "dollars": 697.76,
-        "position_pct": 6.98,
+        "dollars": 695.38,
+        "position_pct": 6.95,
         "risk_dollars": 200.0,
-        "stop_loss_price": 165.72,
+        "stop_loss_price": 165.15,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:43.598671"
+      "timestamp": "2025-12-04T10:33:17.579158"
     },
     {
       "ticker": "SHOP",
       "signal": "BUY",
-      "price": 160.89,
-      "sma": 152.58,
-      "distance_pct": 5.44,
+      "price": 159.45,
+      "sma": 152.51,
+      "distance_pct": 4.55,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
-        "shares": 6,
-        "dollars": 965.34,
-        "position_pct": 9.65,
+        "shares": 4,
+        "dollars": 637.8,
+        "position_pct": 6.38,
         "risk_dollars": 200.0,
-        "stop_loss_price": 152.85,
+        "stop_loss_price": 151.48,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:44.126224"
+      "timestamp": "2025-12-04T10:33:18.001199"
     },
     {
       "ticker": "AMAT",
       "signal": "BUY",
-      "price": 269.99,
-      "sma": 238.52,
-      "distance_pct": 13.2,
+      "price": 271.08,
+      "sma": 238.57,
+      "distance_pct": 13.62,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 3,
-        "dollars": 809.97,
-        "position_pct": 8.1,
+        "dollars": 813.23,
+        "position_pct": 8.13,
         "risk_dollars": 200.0,
-        "stop_loss_price": 256.49,
+        "stop_loss_price": 257.52,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:44.817731"
+      "timestamp": "2025-12-04T10:33:18.485123"
     },
     {
       "ticker": "HON",
-      "signal": "HOLD",
-      "price": 192.23,
-      "sma": 193.35,
-      "distance_pct": -0.58,
-      "crossed_above": false,
+      "signal": "STRONG BUY",
+      "price": 193.52,
+      "sma": 193.42,
+      "distance_pct": 0.05,
+      "crossed_above": true,
       "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:27:45.613821"
+      "position": {
+        "shares": 2,
+        "dollars": 387.05,
+        "position_pct": 3.87,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 183.85,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:19.367001"
     },
     {
       "ticker": "CMCSA",
       "signal": "BUY",
-      "price": 27.38,
+      "price": 27.25,
       "sma": 27.14,
-      "distance_pct": 0.86,
+      "distance_pct": 0.4,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 18,
-        "dollars": 492.75,
-        "position_pct": 4.93,
+        "dollars": 490.41,
+        "position_pct": 4.9,
         "risk_dollars": 200.0,
-        "stop_loss_price": 26.01,
+        "stop_loss_price": 25.88,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:46.312121"
+      "timestamp": "2025-12-04T10:33:19.850340"
     },
     {
       "ticker": "PANW",
       "signal": "HOLD",
-      "price": 194.72,
-      "sma": 198.1,
-      "distance_pct": -1.7,
+      "price": 194.62,
+      "sma": 198.09,
+      "distance_pct": -1.75,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:46.847936"
+      "timestamp": "2025-12-04T10:33:20.255360"
     },
     {
       "ticker": "ADP",
       "signal": "BUY",
-      "price": 262.02,
-      "sma": 254.13,
-      "distance_pct": 3.1,
+      "price": 261.54,
+      "sma": 254.1,
+      "distance_pct": 2.93,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 524.03,
-        "position_pct": 5.24,
+        "dollars": 523.07,
+        "position_pct": 5.23,
         "risk_dollars": 200.0,
-        "stop_loss_price": 248.91,
+        "stop_loss_price": 248.46,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:47.453254"
+      "timestamp": "2025-12-04T10:33:20.752417"
     },
     {
       "ticker": "VRTX",
       "signal": "BUY",
-      "price": 458.98,
-      "sma": 431.11,
-      "distance_pct": 6.47,
+      "price": 455.7,
+      "sma": 430.94,
+      "distance_pct": 5.75,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 917.96,
-        "position_pct": 9.18,
+        "dollars": 911.4,
+        "position_pct": 9.11,
         "risk_dollars": 200.0,
-        "stop_loss_price": 436.03,
+        "stop_loss_price": 432.92,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:47.960536"
+      "timestamp": "2025-12-04T10:33:21.242016"
     },
     {
       "ticker": "SBUX",
       "signal": "BUY",
-      "price": 85.55,
-      "sma": 84.91,
-      "distance_pct": 0.76,
+      "price": 86.56,
+      "sma": 84.96,
+      "distance_pct": 1.89,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 5,
-        "dollars": 427.75,
-        "position_pct": 4.28,
+        "dollars": 432.8,
+        "position_pct": 4.33,
         "risk_dollars": 200.0,
-        "stop_loss_price": 81.27,
+        "stop_loss_price": 82.23,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:48.565064"
+      "timestamp": "2025-12-04T10:33:21.757609"
     },
     {
       "ticker": "GILD",
       "signal": "SELL",
-      "price": 123.99,
-      "sma": 124.53,
-      "distance_pct": -0.43,
+      "price": 124.36,
+      "sma": 124.54,
+      "distance_pct": -0.15,
       "crossed_above": false,
       "crossed_below": true,
       "position": null,
-      "timestamp": "2025-12-04T12:27:49.185936"
+      "timestamp": "2025-12-04T10:33:22.224970"
     },
     {
       "ticker": "ADI",
       "signal": "BUY",
-      "price": 278.2,
-      "sma": 245.05,
-      "distance_pct": 13.53,
+      "price": 277.03,
+      "sma": 244.99,
+      "distance_pct": 13.08,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 3,
-        "dollars": 834.61,
-        "position_pct": 8.35,
+        "dollars": 831.09,
+        "position_pct": 8.31,
         "risk_dollars": 200.0,
-        "stop_loss_price": 264.29,
+        "stop_loss_price": 263.18,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:49.790005"
+      "timestamp": "2025-12-04T10:33:22.723889"
     },
     {
       "ticker": "LRCX",
       "signal": "BUY",
-      "price": 157.13,
-      "sma": 153.53,
-      "distance_pct": 2.35,
+      "price": 157.26,
+      "sma": 153.54,
+      "distance_pct": 2.42,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 4,
-        "dollars": 628.52,
+        "dollars": 629.02,
         "position_pct": 6.29,
         "risk_dollars": 200.0,
-        "stop_loss_price": 149.27,
+        "stop_loss_price": 149.39,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:50.475366"
+      "timestamp": "2025-12-04T10:33:23.341064"
     },
     {
       "ticker": "REGN",
       "signal": "BUY",
-      "price": 726.03,
-      "sma": 718.8,
-      "distance_pct": 1.01,
+      "price": 728.77,
+      "sma": 718.94,
+      "distance_pct": 1.37,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
@@ -589,39 +596,39 @@
         "dollars": 0.0,
         "position_pct": 0.0,
         "risk_dollars": 200.0,
-        "stop_loss_price": 689.72,
+        "stop_loss_price": 692.33,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:51.011835"
+      "timestamp": "2025-12-04T10:33:23.833134"
     },
     {
       "ticker": "MU",
       "signal": "SELL",
-      "price": 228.69,
-      "sma": 233.12,
-      "distance_pct": -1.9,
+      "price": 226.62,
+      "sma": 233.02,
+      "distance_pct": -2.74,
       "crossed_above": false,
       "crossed_below": true,
       "position": null,
-      "timestamp": "2025-12-04T12:27:51.616560"
+      "timestamp": "2025-12-04T10:33:24.336975"
     },
     {
       "ticker": "MDLZ",
       "signal": "HOLD",
-      "price": 55.92,
+      "price": 55.94,
       "sma": 56.48,
-      "distance_pct": -0.99,
+      "distance_pct": -0.95,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:52.162361"
+      "timestamp": "2025-12-04T10:33:24.879473"
     },
     {
       "ticker": "KLAC",
       "signal": "BUY",
-      "price": 1206.74,
-      "sma": 1164.81,
-      "distance_pct": 3.6,
+      "price": 1213.42,
+      "sma": 1165.15,
+      "distance_pct": 4.14,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
@@ -629,64 +636,64 @@
         "dollars": 0.0,
         "position_pct": 0.0,
         "risk_dollars": 200.0,
-        "stop_loss_price": 1146.4,
+        "stop_loss_price": 1152.74,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:52.709364"
+      "timestamp": "2025-12-04T10:33:25.608492"
     },
     {
       "ticker": "PYPL",
       "signal": "HOLD",
-      "price": 61.28,
+      "price": 61.21,
       "sma": 62.79,
-      "distance_pct": -2.4,
+      "distance_pct": -2.51,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:27:53.290436"
+      "timestamp": "2025-12-04T10:33:26.423543"
     },
     {
       "ticker": "SNPS",
       "signal": "BUY",
-      "price": 464.93,
-      "sma": 407.79,
-      "distance_pct": 14.01,
+      "price": 460.59,
+      "sma": 407.57,
+      "distance_pct": 13.01,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 929.86,
-        "position_pct": 9.3,
+        "dollars": 921.18,
+        "position_pct": 9.21,
         "risk_dollars": 200.0,
-        "stop_loss_price": 441.68,
+        "stop_loss_price": 437.56,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:53.801595"
+      "timestamp": "2025-12-04T10:33:26.889404"
     },
     {
       "ticker": "CDNS",
       "signal": "BUY",
-      "price": 337.26,
-      "sma": 314.73,
-      "distance_pct": 7.16,
+      "price": 334.59,
+      "sma": 314.6,
+      "distance_pct": 6.35,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 674.51,
-        "position_pct": 6.75,
+        "dollars": 669.18,
+        "position_pct": 6.69,
         "risk_dollars": 200.0,
-        "stop_loss_price": 320.39,
+        "stop_loss_price": 317.86,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:54.318462"
+      "timestamp": "2025-12-04T10:33:27.368323"
     },
     {
       "ticker": "MELI",
       "signal": "BUY",
-      "price": 2142.22,
-      "sma": 2063.46,
-      "distance_pct": 3.82,
+      "price": 2115.32,
+      "sma": 2062.11,
+      "distance_pct": 2.58,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
@@ -694,418 +701,411 @@
         "dollars": 0.0,
         "position_pct": 0.0,
         "risk_dollars": 200.0,
-        "stop_loss_price": 2035.11,
+        "stop_loss_price": 2009.55,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:54.999514"
+      "timestamp": "2025-12-04T10:33:27.825914"
     },
     {
       "ticker": "CRWD",
       "signal": "SELL",
-      "price": 512.72,
-      "sma": 522.16,
-      "distance_pct": -1.81,
+      "price": 520.72,
+      "sma": 522.56,
+      "distance_pct": -0.35,
       "crossed_above": false,
       "crossed_below": true,
       "position": null,
-      "timestamp": "2025-12-04T12:27:55.497665"
+      "timestamp": "2025-12-04T10:33:28.290876"
     },
     {
       "ticker": "MAR",
       "signal": "BUY",
-      "price": 296.49,
-      "sma": 293.1,
-      "distance_pct": 1.16,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 1,
-        "dollars": 296.49,
-        "position_pct": 2.96,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 281.67,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:27:56.073270"
-    },
-    {
-      "ticker": "ORLY",
-      "signal": "STRONG BUY",
-      "price": 99.66,
-      "sma": 99.18,
-      "distance_pct": 0.48,
-      "crossed_above": true,
-      "crossed_below": false,
-      "position": {
-        "shares": 5,
-        "dollars": 498.3,
-        "position_pct": 4.98,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 94.68,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:27:56.653649"
-    },
-    {
-      "ticker": "FTNT",
-      "signal": "BUY",
-      "price": 84.71,
-      "sma": 81.35,
-      "distance_pct": 4.13,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 8,
-        "dollars": 677.72,
-        "position_pct": 6.78,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 80.48,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:27:57.291489"
-    },
-    {
-      "ticker": "ADSK",
-      "signal": "BUY",
-      "price": 304.43,
-      "sma": 298.0,
-      "distance_pct": 2.16,
+      "price": 301.63,
+      "sma": 293.35,
+      "distance_pct": 2.82,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 608.87,
-        "position_pct": 6.09,
+        "dollars": 603.26,
+        "position_pct": 6.03,
         "risk_dollars": 200.0,
-        "stop_loss_price": 289.21,
+        "stop_loss_price": 286.55,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:27:57.971752"
+      "timestamp": "2025-12-04T10:33:28.826437"
+    },
+    {
+      "ticker": "ORLY",
+      "signal": "HOLD",
+      "price": 98.98,
+      "sma": 99.15,
+      "distance_pct": -0.17,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:29.373225"
+    },
+    {
+      "ticker": "FTNT",
+      "signal": "BUY",
+      "price": 83.68,
+      "sma": 81.3,
+      "distance_pct": 2.93,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 8,
+        "dollars": 669.44,
+        "position_pct": 6.69,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 79.5,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:29.795450"
+    },
+    {
+      "ticker": "ADSK",
+      "signal": "BUY",
+      "price": 305.84,
+      "sma": 298.07,
+      "distance_pct": 2.61,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 611.68,
+        "position_pct": 6.12,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 290.55,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:30.306877"
     },
     {
       "ticker": "ABNB",
       "signal": "BUY",
-      "price": 119.92,
-      "sma": 118.32,
-      "distance_pct": 1.35,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 4,
-        "dollars": 479.68,
-        "position_pct": 4.8,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 113.92,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:27:58.470221"
-    },
-    {
-      "ticker": "DASH",
-      "signal": "BUY",
-      "price": 222.08,
-      "sma": 202.58,
-      "distance_pct": 9.63,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 4,
-        "dollars": 888.32,
-        "position_pct": 8.88,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 210.98,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:27:58.983836"
-    },
-    {
-      "ticker": "CTAS",
-      "signal": "HOLD",
-      "price": 183.85,
-      "sma": 184.65,
-      "distance_pct": -0.43,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:27:59.648816"
-    },
-    {
-      "ticker": "WDAY",
-      "signal": "HOLD",
-      "price": 215.33,
-      "sma": 222.46,
-      "distance_pct": -3.2,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:00.218450"
-    },
-    {
-      "ticker": "CHTR",
-      "signal": "HOLD",
-      "price": 200.8,
-      "sma": 203.4,
-      "distance_pct": -1.28,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:00.713253"
-    },
-    {
-      "ticker": "PCAR",
-      "signal": "BUY",
-      "price": 108.75,
-      "sma": 100.82,
-      "distance_pct": 7.87,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 9,
-        "dollars": 978.79,
-        "position_pct": 9.79,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 103.32,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:01.366424"
-    },
-    {
-      "ticker": "NXPI",
-      "signal": "BUY",
-      "price": 225.03,
-      "sma": 200.24,
-      "distance_pct": 12.38,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 4,
-        "dollars": 900.12,
-        "position_pct": 9.0,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 213.78,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:01.995901"
-    },
-    {
-      "ticker": "MNST",
-      "signal": "BUY",
-      "price": 73.45,
-      "sma": 72.42,
-      "distance_pct": 1.43,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 6,
-        "dollars": 440.7,
-        "position_pct": 4.41,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 69.78,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:02.562143"
-    },
-    {
-      "ticker": "PAYX",
-      "signal": "BUY",
-      "price": 112.67,
-      "sma": 111.21,
+      "price": 119.87,
+      "sma": 118.31,
       "distance_pct": 1.31,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 4,
-        "dollars": 450.68,
-        "position_pct": 4.51,
+        "dollars": 479.48,
+        "position_pct": 4.79,
         "risk_dollars": 200.0,
-        "stop_loss_price": 107.04,
+        "stop_loss_price": 113.88,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:03.189599"
+      "timestamp": "2025-12-04T10:33:30.823728"
+    },
+    {
+      "ticker": "DASH",
+      "signal": "BUY",
+      "price": 221.41,
+      "sma": 202.55,
+      "distance_pct": 9.31,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 885.64,
+        "position_pct": 8.86,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 210.34,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:31.315597"
+    },
+    {
+      "ticker": "CTAS",
+      "signal": "HOLD",
+      "price": 184.55,
+      "sma": 184.68,
+      "distance_pct": -0.07,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:31.854198"
+    },
+    {
+      "ticker": "WDAY",
+      "signal": "HOLD",
+      "price": 213.93,
+      "sma": 222.39,
+      "distance_pct": -3.8,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:32.422479"
+    },
+    {
+      "ticker": "CHTR",
+      "signal": "HOLD",
+      "price": 198.99,
+      "sma": 203.31,
+      "distance_pct": -2.13,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:32.961717"
+    },
+    {
+      "ticker": "PCAR",
+      "signal": "BUY",
+      "price": 109.31,
+      "sma": 100.85,
+      "distance_pct": 8.39,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 9,
+        "dollars": 983.79,
+        "position_pct": 9.84,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 103.84,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:33.506747"
+    },
+    {
+      "ticker": "NXPI",
+      "signal": "BUY",
+      "price": 225.8,
+      "sma": 200.28,
+      "distance_pct": 12.74,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 903.2,
+        "position_pct": 9.03,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 214.51,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:33.954809"
+    },
+    {
+      "ticker": "MNST",
+      "signal": "BUY",
+      "price": 73.88,
+      "sma": 72.44,
+      "distance_pct": 1.99,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 6,
+        "dollars": 443.28,
+        "position_pct": 4.43,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 70.19,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:34.492297"
+    },
+    {
+      "ticker": "PAYX",
+      "signal": "BUY",
+      "price": 112.63,
+      "sma": 111.21,
+      "distance_pct": 1.28,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 450.52,
+        "position_pct": 4.51,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 107.0,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:35.009582"
     },
     {
       "ticker": "AEP",
       "signal": "HOLD",
-      "price": 118.5,
-      "sma": 121.35,
-      "distance_pct": -2.35,
+      "price": 118.72,
+      "sma": 121.36,
+      "distance_pct": -2.17,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:28:03.816586"
+      "timestamp": "2025-12-04T10:33:35.624185"
     },
     {
       "ticker": "CPRT",
       "signal": "HOLD",
       "price": 38.83,
       "sma": 40.22,
-      "distance_pct": -3.48,
+      "distance_pct": -3.47,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:28:04.424815"
+      "timestamp": "2025-12-04T10:33:36.110765"
     },
     {
       "ticker": "ROST",
       "signal": "BUY",
-      "price": 177.94,
-      "sma": 168.06,
-      "distance_pct": 5.88,
+      "price": 177.59,
+      "sma": 168.04,
+      "distance_pct": 5.68,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 5,
-        "dollars": 889.7,
-        "position_pct": 8.9,
+        "dollars": 887.95,
+        "position_pct": 8.88,
         "risk_dollars": 200.0,
-        "stop_loss_price": 169.04,
+        "stop_loss_price": 168.71,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:05.046026"
+      "timestamp": "2025-12-04T10:33:36.651691"
     },
     {
       "ticker": "ODFL",
       "signal": "BUY",
-      "price": 152.51,
-      "sma": 136.34,
-      "distance_pct": 11.86,
+      "price": 151.72,
+      "sma": 136.3,
+      "distance_pct": 11.32,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 6,
-        "dollars": 915.03,
-        "position_pct": 9.15,
+        "dollars": 910.32,
+        "position_pct": 9.1,
         "risk_dollars": 200.0,
-        "stop_loss_price": 144.88,
+        "stop_loss_price": 144.13,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:05.612864"
+      "timestamp": "2025-12-04T10:33:37.139115"
     },
     {
       "ticker": "EA",
       "signal": "BUY",
-      "price": 203.34,
-      "sma": 201.52,
-      "distance_pct": 0.9,
+      "price": 203.14,
+      "sma": 201.51,
+      "distance_pct": 0.81,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 406.68,
-        "position_pct": 4.07,
+        "dollars": 406.28,
+        "position_pct": 4.06,
         "risk_dollars": 200.0,
-        "stop_loss_price": 193.17,
+        "stop_loss_price": 192.98,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:06.141222"
+      "timestamp": "2025-12-04T10:33:37.610830"
     },
     {
       "ticker": "TTD",
       "signal": "HOLD",
-      "price": 39.38,
-      "sma": 40.91,
-      "distance_pct": -3.74,
+      "price": 38.69,
+      "sma": 40.87,
+      "distance_pct": -5.34,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:28:06.635690"
+      "timestamp": "2025-12-04T10:33:38.086653"
     },
     {
       "ticker": "KDP",
       "signal": "BUY",
-      "price": 28.47,
-      "sma": 27.28,
-      "distance_pct": 4.36,
+      "price": 28.33,
+      "sma": 27.27,
+      "distance_pct": 3.88,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 26,
-        "dollars": 740.09,
-        "position_pct": 7.4,
+        "dollars": 736.46,
+        "position_pct": 7.36,
         "risk_dollars": 200.0,
-        "stop_loss_price": 27.04,
+        "stop_loss_price": 26.91,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:07.152217"
+      "timestamp": "2025-12-04T10:33:38.710829"
     },
     {
       "ticker": "MCHP",
       "signal": "BUY",
-      "price": 64.81,
-      "sma": 54.25,
-      "distance_pct": 19.47,
+      "price": 63.62,
+      "sma": 54.19,
+      "distance_pct": 17.39,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 15,
-        "dollars": 972.15,
-        "position_pct": 9.72,
+        "dollars": 954.23,
+        "position_pct": 9.54,
         "risk_dollars": 200.0,
-        "stop_loss_price": 61.57,
+        "stop_loss_price": 60.43,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:07.829323"
+      "timestamp": "2025-12-04T10:33:39.414755"
     },
     {
       "ticker": "DXCM",
       "signal": "BUY",
-      "price": 64.55,
-      "sma": 60.38,
-      "distance_pct": 6.9,
+      "price": 64.28,
+      "sma": 60.37,
+      "distance_pct": 6.48,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 15,
-        "dollars": 968.25,
-        "position_pct": 9.68,
+        "dollars": 964.24,
+        "position_pct": 9.64,
         "risk_dollars": 200.0,
-        "stop_loss_price": 61.32,
+        "stop_loss_price": 61.07,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:08.341191"
+      "timestamp": "2025-12-04T10:33:39.896977"
     },
     {
       "ticker": "FAST",
       "signal": "BUY",
-      "price": 41.9,
+      "price": 41.87,
       "sma": 40.44,
-      "distance_pct": 3.6,
+      "distance_pct": 3.53,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 17,
-        "dollars": 712.22,
+        "dollars": 711.71,
         "position_pct": 7.12,
         "risk_dollars": 200.0,
-        "stop_loss_price": 39.8,
+        "stop_loss_price": 39.77,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:08.937177"
+      "timestamp": "2025-12-04T10:33:40.504143"
     },
     {
       "ticker": "BKR",
       "signal": "BUY",
-      "price": 50.56,
-      "sma": 48.86,
-      "distance_pct": 3.47,
+      "price": 50.16,
+      "sma": 48.84,
+      "distance_pct": 2.7,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 14,
-        "dollars": 707.84,
-        "position_pct": 7.08,
+        "dollars": 702.24,
+        "position_pct": 7.02,
         "risk_dollars": 200.0,
-        "stop_loss_price": 48.03,
+        "stop_loss_price": 47.65,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:09.626725"
+      "timestamp": "2025-12-04T10:33:41.251258"
     },
     {
       "ticker": "IDXX",
       "signal": "BUY",
-      "price": 718.35,
-      "sma": 716.72,
-      "distance_pct": 0.23,
+      "price": 720.67,
+      "sma": 716.84,
+      "distance_pct": 0.54,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
@@ -1113,530 +1113,523 @@
         "dollars": 0.0,
         "position_pct": 0.0,
         "risk_dollars": 200.0,
-        "stop_loss_price": 682.44,
+        "stop_loss_price": 684.64,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:10.267289"
+      "timestamp": "2025-12-04T10:33:41.703123"
     },
     {
       "ticker": "LULU",
       "signal": "BUY",
-      "price": 184.45,
-      "sma": 172.65,
-      "distance_pct": 6.83,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 5,
-        "dollars": 922.25,
-        "position_pct": 9.22,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 175.23,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:10.763239"
-    },
-    {
-      "ticker": "VRSK",
-      "signal": "BUY",
-      "price": 223.6,
-      "sma": 220.14,
-      "distance_pct": 1.57,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 2,
-        "dollars": 447.19,
-        "position_pct": 4.47,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 212.42,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:11.471503"
-    },
-    {
-      "ticker": "EXC",
-      "signal": "HOLD",
-      "price": 44.15,
-      "sma": 45.71,
-      "distance_pct": -3.42,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:12.592602"
-    },
-    {
-      "ticker": "CCEP",
-      "signal": "BUY",
-      "price": 91.04,
-      "sma": 90.63,
-      "distance_pct": 0.45,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 5,
-        "dollars": 455.2,
-        "position_pct": 4.55,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 86.49,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:13.244271"
-    },
-    {
-      "ticker": "GEHC",
-      "signal": "BUY",
-      "price": 82.53,
-      "sma": 76.29,
-      "distance_pct": 8.18,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 12,
-        "dollars": 990.36,
-        "position_pct": 9.9,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 78.4,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:13.693722"
-    },
-    {
-      "ticker": "XEL",
-      "signal": "HOLD",
-      "price": 77.93,
-      "sma": 80.23,
-      "distance_pct": -2.88,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:14.266251"
-    },
-    {
-      "ticker": "ZS",
-      "signal": "HOLD",
-      "price": 240.73,
-      "sma": 285.04,
-      "distance_pct": -15.54,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:14.796213"
-    },
-    {
-      "ticker": "ON",
-      "signal": "BUY",
-      "price": 55.66,
-      "sma": 48.88,
-      "distance_pct": 13.88,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 17,
-        "dollars": 946.22,
-        "position_pct": 9.46,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 52.88,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:15.332496"
-    },
-    {
-      "ticker": "CTSH",
-      "signal": "BUY",
-      "price": 80.09,
-      "sma": 74.7,
-      "distance_pct": 7.22,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 12,
-        "dollars": 961.08,
-        "position_pct": 9.61,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 76.09,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:15.998989"
-    },
-    {
-      "ticker": "DDOG",
-      "signal": "HOLD",
-      "price": 152.52,
-      "sma": 172.51,
-      "distance_pct": -11.59,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:19.755925"
-    },
-    {
-      "ticker": "BIIB",
-      "signal": "BUY",
-      "price": 182.35,
-      "sma": 170.53,
-      "distance_pct": 6.93,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 5,
-        "dollars": 911.75,
-        "position_pct": 9.12,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 173.23,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:20.404916"
-    },
-    {
-      "ticker": "ILMN",
-      "signal": "BUY",
-      "price": 127.9,
-      "sma": 124.21,
-      "distance_pct": 2.97,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 5,
-        "dollars": 639.5,
-        "position_pct": 6.4,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 121.51,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:21.029661"
-    },
-    {
-      "ticker": "WBD",
-      "signal": "BUY",
-      "price": 24.29,
-      "sma": 23.25,
-      "distance_pct": 4.47,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 30,
-        "dollars": 728.7,
-        "position_pct": 7.29,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 23.08,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:21.549927"
-    },
-    {
-      "ticker": "CDW",
-      "signal": "BUY",
-      "price": 144.45,
-      "sma": 142.33,
-      "distance_pct": 1.49,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 3,
-        "dollars": 433.35,
-        "position_pct": 4.33,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 137.23,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:22.163006"
-    },
-    {
-      "ticker": "MRNA",
-      "signal": "BUY",
-      "price": 25.8,
-      "sma": 24.78,
-      "distance_pct": 4.12,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 29,
-        "dollars": 748.06,
-        "position_pct": 7.48,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 24.51,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:22.824209"
-    },
-    {
-      "ticker": "CSGP",
-      "signal": "BUY",
-      "price": 68.45,
-      "sma": 67.79,
-      "distance_pct": 0.98,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 7,
-        "dollars": 479.15,
-        "position_pct": 4.79,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 65.03,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:23.589165"
-    },
-    {
-      "ticker": "GFS",
-      "signal": "BUY",
-      "price": 37.36,
-      "sma": 34.58,
-      "distance_pct": 8.03,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 26,
-        "dollars": 971.36,
-        "position_pct": 9.71,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 35.49,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:24.100766"
-    },
-    {
-      "ticker": "DLTR",
-      "signal": "BUY",
-      "price": 116.68,
-      "sma": 105.73,
-      "distance_pct": 10.36,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 8,
-        "dollars": 933.44,
-        "position_pct": 9.33,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 110.85,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:24.613211"
-    },
-    {
-      "ticker": "FANG",
-      "signal": "BUY",
-      "price": 160.43,
-      "sma": 148.85,
-      "distance_pct": 7.78,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 6,
-        "dollars": 962.58,
-        "position_pct": 9.63,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 152.41,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:25.311393"
-    },
-    {
-      "ticker": "SMCI",
-      "signal": "HOLD",
-      "price": 34.1,
-      "sma": 35.08,
-      "distance_pct": -2.81,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:27.702560"
-    },
-    {
-      "ticker": "MDB",
-      "signal": "BUY",
-      "price": 403.77,
-      "sma": 352.89,
-      "distance_pct": 14.42,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 2,
-        "dollars": 807.54,
-        "position_pct": 8.08,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 383.58,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:28.261189"
-    },
-    {
-      "ticker": "TEAM",
-      "signal": "BUY",
-      "price": 154.86,
-      "sma": 151.59,
-      "distance_pct": 2.16,
+      "price": 180.01,
+      "sma": 172.43,
+      "distance_pct": 4.4,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 4,
-        "dollars": 619.44,
-        "position_pct": 6.19,
+        "dollars": 720.02,
+        "position_pct": 7.2,
         "risk_dollars": 200.0,
-        "stop_loss_price": 147.12,
+        "stop_loss_price": 171.01,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:28.756122"
+      "timestamp": "2025-12-04T10:33:42.156039"
     },
     {
-      "ticker": "TTWO",
+      "ticker": "VRSK",
       "signal": "BUY",
-      "price": 244.88,
-      "sma": 240.63,
-      "distance_pct": 1.77,
+      "price": 224.29,
+      "sma": 220.18,
+      "distance_pct": 1.87,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 489.77,
-        "position_pct": 4.9,
+        "dollars": 448.58,
+        "position_pct": 4.49,
         "risk_dollars": 200.0,
-        "stop_loss_price": 232.64,
+        "stop_loss_price": 213.08,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:29.304528"
+      "timestamp": "2025-12-04T10:33:42.593014"
     },
     {
-      "ticker": "PDD",
+      "ticker": "EXC",
       "signal": "HOLD",
-      "price": 115.14,
-      "sma": 123.55,
-      "distance_pct": -6.8,
+      "price": 44.35,
+      "sma": 45.72,
+      "distance_pct": -2.98,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:28:29.807836"
+      "timestamp": "2025-12-04T10:33:43.245245"
     },
     {
-      "ticker": "ZM",
+      "ticker": "CCEP",
       "signal": "BUY",
-      "price": 85.74,
-      "sma": 83.04,
-      "distance_pct": 3.25,
+      "price": 91.29,
+      "sma": 90.65,
+      "distance_pct": 0.71,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 456.45,
+        "position_pct": 4.56,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 86.73,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:43.812048"
+    },
+    {
+      "ticker": "GEHC",
+      "signal": "BUY",
+      "price": 83.24,
+      "sma": 76.32,
+      "distance_pct": 9.06,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 12,
+        "dollars": 998.88,
+        "position_pct": 9.99,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 79.08,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:44.299788"
+    },
+    {
+      "ticker": "XEL",
+      "signal": "HOLD",
+      "price": 78.27,
+      "sma": 80.25,
+      "distance_pct": -2.47,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:44.757201"
+    },
+    {
+      "ticker": "ZS",
+      "signal": "HOLD",
+      "price": 242.66,
+      "sma": 285.13,
+      "distance_pct": -14.9,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:45.288543"
+    },
+    {
+      "ticker": "ON",
+      "signal": "BUY",
+      "price": 55.21,
+      "sma": 48.85,
+      "distance_pct": 13.02,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 18,
+        "dollars": 993.84,
+        "position_pct": 9.94,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 52.45,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:45.725682"
+    },
+    {
+      "ticker": "CTSH",
+      "signal": "BUY",
+      "price": 79.51,
+      "sma": 74.67,
+      "distance_pct": 6.49,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 12,
+        "dollars": 954.18,
+        "position_pct": 9.54,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 75.54,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:46.246573"
+    },
+    {
+      "ticker": "DDOG",
+      "signal": "HOLD",
+      "price": 153.85,
+      "sma": 172.58,
+      "distance_pct": -10.85,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:47.867159"
+    },
+    {
+      "ticker": "BIIB",
+      "signal": "BUY",
+      "price": 181.41,
+      "sma": 170.48,
+      "distance_pct": 6.41,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 907.05,
+        "position_pct": 9.07,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 172.34,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:48.318851"
+    },
+    {
+      "ticker": "ILMN",
+      "signal": "BUY",
+      "price": 126.83,
+      "sma": 124.16,
+      "distance_pct": 2.16,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 5,
+        "dollars": 634.17,
+        "position_pct": 6.34,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 120.49,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:49.044009"
+    },
+    {
+      "ticker": "WBD",
+      "signal": "BUY",
+      "price": 24.4,
+      "sma": 23.26,
+      "distance_pct": 4.92,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 30,
+        "dollars": 732.0,
+        "position_pct": 7.32,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 23.18,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:49.701232"
+    },
+    {
+      "ticker": "CDW",
+      "signal": "BUY",
+      "price": 144.22,
+      "sma": 142.32,
+      "distance_pct": 1.33,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 3,
+        "dollars": 432.66,
+        "position_pct": 4.33,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 137.01,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:50.292444"
+    },
+    {
+      "ticker": "MRNA",
+      "signal": "BUY",
+      "price": 24.86,
+      "sma": 24.73,
+      "distance_pct": 0.53,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 20,
+        "dollars": 497.2,
+        "position_pct": 4.97,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 23.62,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:50.777663"
+    },
+    {
+      "ticker": "CSGP",
+      "signal": "BUY",
+      "price": 68.53,
+      "sma": 67.79,
+      "distance_pct": 1.09,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 7,
+        "dollars": 479.71,
+        "position_pct": 4.8,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 65.1,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:51.341251"
+    },
+    {
+      "ticker": "GFS",
+      "signal": "BUY",
+      "price": 37.65,
+      "sma": 34.6,
+      "distance_pct": 8.82,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 26,
+        "dollars": 978.9,
+        "position_pct": 9.79,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 35.77,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:51.852387"
+    },
+    {
+      "ticker": "DLTR",
+      "signal": "BUY",
+      "price": 118.14,
+      "sma": 105.8,
+      "distance_pct": 11.66,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 8,
-        "dollars": 685.88,
-        "position_pct": 6.86,
+        "dollars": 945.15,
+        "position_pct": 9.45,
         "risk_dollars": 200.0,
-        "stop_loss_price": 81.45,
+        "stop_loss_price": 112.24,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:30.355680"
+      "timestamp": "2025-12-04T10:33:52.198451"
     },
     {
-      "ticker": "LCID",
+      "ticker": "FANG",
+      "signal": "BUY",
+      "price": 159.16,
+      "sma": 148.78,
+      "distance_pct": 6.98,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 6,
+        "dollars": 954.99,
+        "position_pct": 9.55,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 151.21,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:52.689192"
+    },
+    {
+      "ticker": "SMCI",
       "signal": "HOLD",
-      "price": 13.83,
-      "sma": 14.17,
-      "distance_pct": -2.4,
+      "price": 33.68,
+      "sma": 35.06,
+      "distance_pct": -3.93,
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-04T12:28:30.905963"
+      "timestamp": "2025-12-04T10:33:54.157222"
     },
     {
-      "ticker": "RIVN",
+      "ticker": "MDB",
       "signal": "BUY",
-      "price": 17.51,
-      "sma": 16.06,
-      "distance_pct": 9.03,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 57,
-        "dollars": 998.08,
-        "position_pct": 9.98,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 16.63,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:31.400471"
-    },
-    {
-      "ticker": "ENPH",
-      "signal": "BUY",
-      "price": 30.06,
-      "sma": 28.84,
-      "distance_pct": 4.24,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 24,
-        "dollars": 721.44,
-        "position_pct": 7.21,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 28.56,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:31.857908"
-    },
-    {
-      "ticker": "SIRI",
-      "signal": "BUY",
-      "price": 21.58,
-      "sma": 21.17,
-      "distance_pct": 1.94,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": {
-        "shares": 23,
-        "dollars": 496.34,
-        "position_pct": 4.96,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 20.5,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:32.402555"
-    },
-    {
-      "ticker": "JD",
-      "signal": "HOLD",
-      "price": 29.83,
-      "sma": 30.02,
-      "distance_pct": -0.62,
-      "crossed_above": false,
-      "crossed_below": false,
-      "position": null,
-      "timestamp": "2025-12-04T12:28:32.944144"
-    },
-    {
-      "ticker": "CEG",
-      "signal": "BUY",
-      "price": 374.22,
-      "sma": 352.73,
-      "distance_pct": 6.09,
+      "price": 402.14,
+      "sma": 352.81,
+      "distance_pct": 13.98,
       "crossed_above": false,
       "crossed_below": false,
       "position": {
         "shares": 2,
-        "dollars": 748.44,
-        "position_pct": 7.48,
+        "dollars": 804.28,
+        "position_pct": 8.04,
         "risk_dollars": 200.0,
-        "stop_loss_price": 355.51,
+        "stop_loss_price": 382.03,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-04T12:28:33.473398"
+      "timestamp": "2025-12-04T10:33:54.695257"
+    },
+    {
+      "ticker": "TEAM",
+      "signal": "BUY",
+      "price": 155.04,
+      "sma": 151.59,
+      "distance_pct": 2.28,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 4,
+        "dollars": 620.18,
+        "position_pct": 6.2,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 147.29,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:55.209122"
+    },
+    {
+      "ticker": "TTWO",
+      "signal": "BUY",
+      "price": 243.28,
+      "sma": 240.55,
+      "distance_pct": 1.13,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 486.56,
+        "position_pct": 4.87,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 231.12,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:55.719183"
+    },
+    {
+      "ticker": "PDD",
+      "signal": "HOLD",
+      "price": 116.31,
+      "sma": 123.6,
+      "distance_pct": -5.9,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:56.300384"
+    },
+    {
+      "ticker": "ZM",
+      "signal": "BUY",
+      "price": 85.87,
+      "sma": 83.04,
+      "distance_pct": 3.4,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 8,
+        "dollars": 686.96,
+        "position_pct": 6.87,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 81.58,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:56.773436"
+    },
+    {
+      "ticker": "LCID",
+      "signal": "HOLD",
+      "price": 13.69,
+      "sma": 14.16,
+      "distance_pct": -3.3,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:57.340050"
+    },
+    {
+      "ticker": "RIVN",
+      "signal": "BUY",
+      "price": 17.67,
+      "sma": 16.07,
+      "distance_pct": 10.0,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 56,
+        "dollars": 989.8,
+        "position_pct": 9.9,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 16.79,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:57.905017"
+    },
+    {
+      "ticker": "ENPH",
+      "signal": "BUY",
+      "price": 29.62,
+      "sma": 28.82,
+      "distance_pct": 2.79,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 25,
+        "dollars": 740.5,
+        "position_pct": 7.41,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 28.14,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:58.359346"
+    },
+    {
+      "ticker": "SIRI",
+      "signal": "BUY",
+      "price": 21.48,
+      "sma": 21.16,
+      "distance_pct": 1.49,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 23,
+        "dollars": 494.04,
+        "position_pct": 4.94,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 20.41,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:33:58.934186"
+    },
+    {
+      "ticker": "JD",
+      "signal": "HOLD",
+      "price": 29.82,
+      "sma": 30.01,
+      "distance_pct": -0.65,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": null,
+      "timestamp": "2025-12-04T10:33:59.475444"
+    },
+    {
+      "ticker": "CEG",
+      "signal": "BUY",
+      "price": 372.91,
+      "sma": 352.66,
+      "distance_pct": 5.74,
+      "crossed_above": false,
+      "crossed_below": false,
+      "position": {
+        "shares": 2,
+        "dollars": 745.82,
+        "position_pct": 7.46,
+        "risk_dollars": 200.0,
+        "stop_loss_price": 354.26,
+        "stop_loss_pct": 5.0
+      },
+      "timestamp": "2025-12-04T10:34:00.025480"
     },
     {
       "ticker": "ARM",
-      "signal": "STRONG BUY",
-      "price": 140.73,
-      "sma": 140.36,
-      "distance_pct": 0.27,
-      "crossed_above": true,
+      "signal": "HOLD",
+      "price": 140.3,
+      "sma": 140.34,
+      "distance_pct": -0.02,
+      "crossed_above": false,
       "crossed_below": false,
-      "position": {
-        "shares": 3,
-        "dollars": 422.19,
-        "position_pct": 4.22,
-        "risk_dollars": 200.0,
-        "stop_loss_price": 133.69,
-        "stop_loss_pct": 5.0
-      },
-      "timestamp": "2025-12-04T12:28:33.879144"
+      "position": null,
+      "timestamp": "2025-12-04T10:34:00.411237"
     }
   ],
   "backtests": [
@@ -2866,11 +2859,11 @@
       "winning_trades": 22,
       "losing_trades": 35,
       "win_rate": 38.6,
-      "gross_profit": 269.45,
+      "gross_profit": 270.59,
       "gross_loss": -130.41,
-      "total_profit": 139.04,
-      "avg_profit": 2.44,
-      "avg_profit_pct": 1.57,
+      "total_profit": 140.18,
+      "avg_profit": 2.46,
+      "avg_profit_pct": 1.58,
       "stop_loss_exits": 3,
       "signal_exits": 53,
       "trades": [
@@ -3382,9 +3375,9 @@
           "entry_date": "2025-11-21",
           "entry_price": 271.49,
           "exit_date": "2025-12-04",
-          "exit_price": 280.16,
-          "profit": 8.67,
-          "profit_pct": 3.19,
+          "exit_price": 281.3,
+          "profit": 9.81,
+          "profit_pct": 3.61,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -3395,11 +3388,11 @@
       "winning_trades": 27,
       "losing_trades": 50,
       "win_rate": 35.06,
-      "gross_profit": 321.02,
-      "gross_loss": -173.95,
-      "total_profit": 147.07,
-      "avg_profit": 1.91,
-      "avg_profit_pct": 1.55,
+      "gross_profit": 319.38,
+      "gross_loss": -173.94,
+      "total_profit": 145.44,
+      "avg_profit": 1.89,
+      "avg_profit_pct": 1.54,
       "stop_loss_exits": 12,
       "signal_exits": 64,
       "trades": [
@@ -3642,7 +3635,7 @@
           "entry_price": 54.5,
           "exit_date": "2022-06-03",
           "exit_price": 52.63,
-          "profit": -1.87,
+          "profit": -1.86,
           "profit_pct": -3.42,
           "exit_reason": "signal"
         },
@@ -4091,9 +4084,9 @@
           "entry_date": "2025-11-24",
           "entry_price": 377.96,
           "exit_date": "2025-12-04",
-          "exit_price": 381.98,
-          "profit": 4.02,
-          "profit_pct": 1.06,
+          "exit_price": 380.34,
+          "profit": 2.38,
+          "profit_pct": 0.63,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -4741,11 +4734,11 @@
       "winning_trades": 24,
       "losing_trades": 45,
       "win_rate": 34.78,
-      "gross_profit": 746.08,
+      "gross_profit": 743.47,
       "gross_loss": -481.88,
-      "total_profit": 264.2,
-      "avg_profit": 3.83,
-      "avg_profit_pct": 1.37,
+      "total_profit": 261.59,
+      "avg_profit": 3.79,
+      "avg_profit_pct": 1.36,
       "stop_loss_exits": 12,
       "signal_exits": 56,
       "trades": [
@@ -5104,7 +5097,7 @@
           "entry_date": "2023-10-23",
           "entry_price": 312.09,
           "exit_date": "2023-10-24",
-          "exit_price": 310.63,
+          "exit_price": 310.64,
           "profit": -1.45,
           "profit_pct": -0.46,
           "exit_reason": "signal"
@@ -5365,9 +5358,9 @@
           "entry_date": "2025-11-25",
           "entry_price": 636.22,
           "exit_date": "2025-12-04",
-          "exit_price": 668.51,
-          "profit": 32.29,
-          "profit_pct": 5.08,
+          "exit_price": 665.9,
+          "profit": 29.68,
+          "profit_pct": 4.66,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -5378,10 +5371,10 @@
       "winning_trades": 18,
       "losing_trades": 50,
       "win_rate": 26.47,
-      "gross_profit": 586.18,
+      "gross_profit": 585.21,
       "gross_loss": -478.51,
-      "total_profit": 107.67,
-      "avg_profit": 1.58,
+      "total_profit": 106.7,
+      "avg_profit": 1.57,
       "avg_profit_pct": 1.09,
       "stop_loss_exits": 25,
       "signal_exits": 42,
@@ -5993,9 +5986,9 @@
           "entry_date": "2025-11-28",
           "entry_price": 430.17,
           "exit_date": "2025-12-04",
-          "exit_price": 450.27,
-          "profit": 20.1,
-          "profit_pct": 4.67,
+          "exit_price": 449.3,
+          "profit": 19.13,
+          "profit_pct": 4.45,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -6006,9 +5999,9 @@
       "winning_trades": 26,
       "losing_trades": 45,
       "win_rate": 36.62,
-      "gross_profit": 298.13,
+      "gross_profit": 297.66,
       "gross_loss": -114.63,
-      "total_profit": 183.5,
+      "total_profit": 183.03,
       "avg_profit": 2.58,
       "avg_profit_pct": 1.56,
       "stop_loss_exits": 4,
@@ -6290,7 +6283,7 @@
           "exit_date": "2023-03-07",
           "exit_price": 93.22,
           "profit": -1.26,
-          "profit_pct": -1.34,
+          "profit_pct": -1.33,
           "exit_reason": "signal"
         },
         {
@@ -6648,9 +6641,9 @@
           "entry_date": "2025-10-15",
           "entry_price": 251.03,
           "exit_date": "2025-12-04",
-          "exit_price": 316.57,
-          "profit": 65.54,
-          "profit_pct": 26.11,
+          "exit_price": 316.1,
+          "profit": 65.07,
+          "profit_pct": 25.92,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -6661,11 +6654,11 @@
       "winning_trades": 27,
       "losing_trades": 46,
       "win_rate": 36.99,
-      "gross_profit": 300.35,
+      "gross_profit": 299.93,
       "gross_loss": -130.32,
-      "total_profit": 170.03,
-      "avg_profit": 2.33,
-      "avg_profit_pct": 1.4,
+      "total_profit": 169.61,
+      "avg_profit": 2.32,
+      "avg_profit_pct": 1.39,
       "stop_loss_exits": 5,
       "signal_exits": 67,
       "trades": [
@@ -7321,9 +7314,9 @@
           "entry_date": "2025-10-15",
           "entry_price": 251.71,
           "exit_date": "2025-12-04",
-          "exit_price": 317.31,
-          "profit": 65.6,
-          "profit_pct": 26.06,
+          "exit_price": 316.89,
+          "profit": 65.18,
+          "profit_pct": 25.89,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -7909,10 +7902,10 @@
       "losing_trades": 47,
       "win_rate": 29.85,
       "gross_profit": 902.95,
-      "gross_loss": -467.93,
-      "total_profit": 435.02,
-      "avg_profit": 6.49,
-      "avg_profit_pct": 1.42,
+      "gross_loss": -464.93,
+      "total_profit": 438.02,
+      "avg_profit": 6.54,
+      "avg_profit_pct": 1.43,
       "stop_loss_exits": 2,
       "signal_exits": 65,
       "trades": [
@@ -7954,7 +7947,7 @@
         },
         {
           "entry_date": "2021-06-03",
-          "entry_price": 364.71,
+          "entry_price": 364.7,
           "exit_date": "2021-06-07",
           "exit_price": 361.41,
           "profit": -3.3,
@@ -8101,7 +8094,7 @@
           "entry_price": 527.66,
           "exit_date": "2022-08-26",
           "exit_price": 509.51,
-          "profit": -18.15,
+          "profit": -18.16,
           "profit_pct": -3.44,
           "exit_reason": "signal"
         },
@@ -8514,9 +8507,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 922.03,
           "exit_date": "2025-12-04",
-          "exit_price": 891.39,
-          "profit": -30.64,
-          "profit_pct": -3.32,
+          "exit_price": 894.4,
+          "profit": -27.63,
+          "profit_pct": -3.0,
           "exit_reason": "signal"
         }
       ]
@@ -8527,11 +8520,11 @@
       "winning_trades": 20,
       "losing_trades": 48,
       "win_rate": 29.41,
-      "gross_profit": 88.45,
+      "gross_profit": 86.75,
       "gross_loss": -74.13,
-      "total_profit": 14.32,
-      "avg_profit": 0.21,
-      "avg_profit_pct": 0.9,
+      "total_profit": 12.62,
+      "avg_profit": 0.19,
+      "avg_profit_pct": 0.88,
       "stop_loss_exits": 24,
       "signal_exits": 43,
       "trades": [
@@ -9142,9 +9135,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 176.08,
           "exit_date": "2025-12-04",
-          "exit_price": 177.9,
-          "profit": 1.82,
-          "profit_pct": 1.03,
+          "exit_price": 176.2,
+          "profit": 0.12,
+          "profit_pct": 0.07,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -9712,8 +9705,8 @@
       "losing_trades": 50,
       "win_rate": 31.51,
       "gross_profit": 180.29,
-      "gross_loss": -159.19,
-      "total_profit": 21.1,
+      "gross_loss": -159.2,
+      "total_profit": 21.09,
       "avg_profit": 0.29,
       "avg_profit_pct": 0.23,
       "stop_loss_exits": 6,
@@ -10027,7 +10020,7 @@
         },
         {
           "entry_date": "2023-03-15",
-          "entry_price": 139.53,
+          "entry_price": 139.52,
           "exit_date": "2023-03-16",
           "exit_price": 136.71,
           "profit": -2.81,
@@ -10264,7 +10257,7 @@
           "entry_price": 215.61,
           "exit_date": "2025-01-23",
           "exit_price": 212.72,
-          "profit": -2.88,
+          "profit": -2.89,
           "profit_pct": -1.34,
           "exit_reason": "signal"
         },
@@ -10384,11 +10377,11 @@
       "winning_trades": 29,
       "losing_trades": 48,
       "win_rate": 37.66,
-      "gross_profit": 56.28,
+      "gross_profit": 56.08,
       "gross_loss": -43.36,
-      "total_profit": 12.92,
+      "total_profit": 12.72,
       "avg_profit": 0.17,
-      "avg_profit_pct": 0.36,
+      "avg_profit_pct": 0.35,
       "stop_loss_exits": 4,
       "signal_exits": 72,
       "trades": [
@@ -11080,9 +11073,9 @@
           "entry_date": "2025-10-14",
           "entry_price": 68.66,
           "exit_date": "2025-12-04",
-          "exit_price": 77.58,
-          "profit": 8.92,
-          "profit_pct": 12.99,
+          "exit_price": 77.38,
+          "profit": 8.72,
+          "profit_pct": 12.7,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -12532,9 +12525,9 @@
         },
         {
           "entry_date": "2025-12-04",
-          "entry_price": 655.26,
+          "entry_price": 652.43,
           "exit_date": "2025-12-04",
-          "exit_price": 655.26,
+          "exit_price": 652.43,
           "profit": 0.0,
           "profit_pct": 0.0,
           "exit_reason": "END-OF-DATA"
@@ -12544,14 +12537,14 @@
     {
       "ticker": "PEP",
       "total_trades": 65,
-      "winning_trades": 20,
-      "losing_trades": 45,
-      "win_rate": 30.77,
-      "gross_profit": 96.71,
-      "gross_loss": -83.91,
-      "total_profit": 12.8,
-      "avg_profit": 0.2,
-      "avg_profit_pct": 0.18,
+      "winning_trades": 21,
+      "losing_trades": 44,
+      "win_rate": 32.31,
+      "gross_profit": 96.83,
+      "gross_loss": -82.65,
+      "total_profit": 14.18,
+      "avg_profit": 0.22,
+      "avg_profit_pct": 0.2,
       "stop_loss_exits": 1,
       "signal_exits": 63,
       "trades": [
@@ -13135,9 +13128,9 @@
           "entry_date": "2025-11-17",
           "entry_price": 147.83,
           "exit_date": "2025-12-04",
-          "exit_price": 146.57,
-          "profit": -1.26,
-          "profit_pct": -0.85,
+          "exit_price": 147.95,
+          "profit": 0.12,
+          "profit_pct": 0.08,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -13149,9 +13142,9 @@
       "losing_trades": 45,
       "win_rate": 34.78,
       "gross_profit": 4712.49,
-      "gross_loss": -3221.81,
-      "total_profit": 1490.68,
-      "avg_profit": 21.6,
+      "gross_loss": -3208.71,
+      "total_profit": 1503.78,
+      "avg_profit": 21.79,
       "avg_profit_pct": 0.87,
       "stop_loss_exits": 5,
       "signal_exits": 63,
@@ -13179,7 +13172,7 @@
           "entry_price": 2290.5,
           "exit_date": "2021-04-20",
           "exit_price": 2311.66,
-          "profit": 21.16,
+          "profit": 21.17,
           "profit_pct": 0.92,
           "exit_reason": "signal"
         },
@@ -13311,7 +13304,7 @@
         },
         {
           "entry_date": "2022-04-27",
-          "entry_price": 2226.83,
+          "entry_price": 2226.84,
           "exit_date": "2022-04-29",
           "exit_price": 2178.89,
           "profit": -47.95,
@@ -13331,7 +13324,7 @@
           "entry_date": "2022-07-19",
           "entry_price": 1808.72,
           "exit_date": "2022-08-22",
-          "exit_price": 1944.63,
+          "exit_price": 1944.62,
           "profit": 135.91,
           "profit_pct": 7.51,
           "exit_reason": "signal"
@@ -13386,7 +13379,7 @@
           "entry_price": 2388.58,
           "exit_date": "2023-02-21",
           "exit_price": 2391.01,
-          "profit": 2.43,
+          "profit": 2.42,
           "profit_pct": 0.1,
           "exit_reason": "signal"
         },
@@ -13482,7 +13475,7 @@
         },
         {
           "entry_date": "2023-07-10",
-          "entry_price": 2690.04,
+          "entry_price": 2690.03,
           "exit_date": "2023-08-03",
           "exit_price": 2799.54,
           "profit": 109.5,
@@ -13772,9 +13765,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 5135.07,
           "exit_date": "2025-12-04",
-          "exit_price": 5056.9,
-          "profit": -78.17,
-          "profit_pct": -1.52,
+          "exit_price": 5070.0,
+          "profit": -65.07,
+          "profit_pct": -1.27,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -13785,11 +13778,11 @@
       "winning_trades": 18,
       "losing_trades": 55,
       "win_rate": 24.66,
-      "gross_profit": 677.88,
+      "gross_profit": 680.0,
       "gross_loss": -516.18,
-      "total_profit": 161.7,
-      "avg_profit": 2.22,
-      "avg_profit_pct": 1.06,
+      "total_profit": 163.82,
+      "avg_profit": 2.24,
+      "avg_profit_pct": 1.07,
       "stop_loss_exits": 8,
       "signal_exits": 64,
       "trades": [
@@ -14445,9 +14438,9 @@
           "entry_date": "2025-11-19",
           "entry_price": 564.64,
           "exit_date": "2025-12-04",
-          "exit_price": 567.29,
-          "profit": 2.65,
-          "profit_pct": 0.47,
+          "exit_price": 569.41,
+          "profit": 4.77,
+          "profit_pct": 0.85,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -14458,10 +14451,10 @@
       "winning_trades": 19,
       "losing_trades": 66,
       "win_rate": 22.35,
-      "gross_profit": 152.67,
+      "gross_profit": 153.06,
       "gross_loss": -223.93,
-      "total_profit": -71.26,
-      "avg_profit": -0.84,
+      "total_profit": -70.87,
+      "avg_profit": -0.83,
       "avg_profit_pct": -0.41,
       "stop_loss_exits": 6,
       "signal_exits": 78,
@@ -15226,9 +15219,9 @@
           "entry_date": "2025-11-24",
           "entry_price": 161.26,
           "exit_date": "2025-12-04",
-          "exit_price": 180.54,
-          "profit": 19.28,
-          "profit_pct": 11.96,
+          "exit_price": 180.93,
+          "profit": 19.67,
+          "profit_pct": 12.2,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -15239,10 +15232,10 @@
       "winning_trades": 20,
       "losing_trades": 42,
       "win_rate": 32.26,
-      "gross_profit": 324.48,
+      "gross_profit": 325.24,
       "gross_loss": -185.36,
-      "total_profit": 139.12,
-      "avg_profit": 2.24,
+      "total_profit": 139.88,
+      "avg_profit": 2.26,
       "avg_profit_pct": 1.02,
       "stop_loss_exits": 4,
       "signal_exits": 57,
@@ -15269,7 +15262,7 @@
           "entry_date": "2021-05-06",
           "entry_price": 216.29,
           "exit_date": "2021-05-12",
-          "exit_price": 215.89,
+          "exit_price": 215.88,
           "profit": -0.4,
           "profit_pct": -0.19,
           "exit_reason": "signal"
@@ -15800,9 +15793,9 @@
           "entry_date": "2025-10-31",
           "entry_price": 296.32,
           "exit_date": "2025-12-04",
-          "exit_price": 343.64,
-          "profit": 47.33,
-          "profit_pct": 15.97,
+          "exit_price": 344.41,
+          "profit": 48.09,
+          "profit_pct": 16.23,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -15813,10 +15806,10 @@
       "winning_trades": 20,
       "losing_trades": 62,
       "win_rate": 24.39,
-      "gross_profit": 183.61,
-      "gross_loss": -223.06,
-      "total_profit": -39.45,
-      "avg_profit": -0.48,
+      "gross_profit": 183.02,
+      "gross_loss": -223.05,
+      "total_profit": -40.03,
+      "avg_profit": -0.49,
       "avg_profit_pct": -0.15,
       "stop_loss_exits": 13,
       "signal_exits": 68,
@@ -15979,7 +15972,7 @@
           "entry_price": 162.8,
           "exit_date": "2022-02-07",
           "exit_price": 160.93,
-          "profit": -1.88,
+          "profit": -1.87,
           "profit_pct": -1.15,
           "exit_reason": "signal"
         },
@@ -16554,9 +16547,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 170.7,
           "exit_date": "2025-12-04",
-          "exit_price": 174.44,
-          "profit": 3.74,
-          "profit_pct": 2.19,
+          "exit_price": 173.85,
+          "profit": 3.15,
+          "profit_pct": 1.84,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -16567,11 +16560,11 @@
       "winning_trades": 25,
       "losing_trades": 48,
       "win_rate": 34.25,
-      "gross_profit": 189.71,
+      "gross_profit": 188.27,
       "gross_loss": -128.98,
-      "total_profit": 60.73,
-      "avg_profit": 0.83,
-      "avg_profit_pct": 1.16,
+      "total_profit": 59.29,
+      "avg_profit": 0.81,
+      "avg_profit_pct": 1.15,
       "stop_loss_exits": 23,
       "signal_exits": 49,
       "trades": [
@@ -17227,9 +17220,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 156.83,
           "exit_date": "2025-12-04",
-          "exit_price": 160.89,
-          "profit": 4.06,
-          "profit_pct": 2.59,
+          "exit_price": 159.45,
+          "profit": 2.62,
+          "profit_pct": 1.67,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -17240,11 +17233,11 @@
       "winning_trades": 22,
       "losing_trades": 58,
       "win_rate": 27.5,
-      "gross_profit": 299.73,
+      "gross_profit": 300.82,
       "gross_loss": -267.22,
-      "total_profit": 32.51,
-      "avg_profit": 0.41,
-      "avg_profit_pct": 0.53,
+      "total_profit": 33.6,
+      "avg_profit": 0.42,
+      "avg_profit_pct": 0.54,
       "stop_loss_exits": 18,
       "signal_exits": 61,
       "trades": [
@@ -17963,19 +17956,19 @@
           "entry_date": "2025-11-24",
           "entry_price": 230.91,
           "exit_date": "2025-12-04",
-          "exit_price": 269.99,
-          "profit": 39.08,
-          "profit_pct": 16.92,
+          "exit_price": 271.08,
+          "profit": 40.17,
+          "profit_pct": 17.39,
           "exit_reason": "END-OF-DATA"
         }
       ]
     },
     {
       "ticker": "HON",
-      "total_trades": 84,
+      "total_trades": 85,
       "winning_trades": 17,
-      "losing_trades": 67,
-      "win_rate": 20.24,
+      "losing_trades": 68,
+      "win_rate": 20.0,
       "gross_profit": 139.96,
       "gross_loss": -194.8,
       "total_profit": -54.84,
@@ -18739,6 +18732,15 @@
           "profit": -3.14,
           "profit_pct": -1.57,
           "exit_reason": "signal"
+        },
+        {
+          "entry_date": "2025-12-04",
+          "entry_price": 193.52,
+          "exit_date": "2025-12-04",
+          "exit_price": 193.52,
+          "profit": 0.0,
+          "profit_pct": 0.0,
+          "exit_reason": "END-OF-DATA"
         }
       ]
     },
@@ -18749,10 +18751,10 @@
       "losing_trades": 62,
       "win_rate": 22.5,
       "gross_profit": 21.12,
-      "gross_loss": -41.12,
-      "total_profit": -20.0,
+      "gross_loss": -41.23,
+      "total_profit": -20.11,
       "avg_profit": -0.25,
-      "avg_profit_pct": -0.53,
+      "avg_profit_pct": -0.54,
       "stop_loss_exits": 4,
       "signal_exits": 75,
       "trades": [
@@ -18814,8 +18816,8 @@
           "entry_date": "2021-04-29",
           "entry_price": 49.5,
           "exit_date": "2021-05-17",
-          "exit_price": 48.67,
-          "profit": -0.83,
+          "exit_price": 48.68,
+          "profit": -0.82,
           "profit_pct": -1.67,
           "exit_reason": "signal"
         },
@@ -19471,9 +19473,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 27.43,
           "exit_date": "2025-12-04",
-          "exit_price": 27.38,
-          "profit": -0.06,
-          "profit_pct": -0.2,
+          "exit_price": 27.25,
+          "profit": -0.18,
+          "profit_pct": -0.67,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -20076,11 +20078,11 @@
       "winning_trades": 16,
       "losing_trades": 60,
       "win_rate": 21.05,
-      "gross_profit": 279.02,
-      "gross_loss": -209.39,
-      "total_profit": 69.63,
-      "avg_profit": 0.92,
-      "avg_profit_pct": 0.52,
+      "gross_profit": 278.54,
+      "gross_loss": -209.4,
+      "total_profit": 69.14,
+      "avg_profit": 0.91,
+      "avg_profit_pct": 0.51,
       "stop_loss_exits": 3,
       "signal_exits": 72,
       "trades": [
@@ -20125,7 +20127,7 @@
           "entry_price": 177.49,
           "exit_date": "2021-05-18",
           "exit_price": 175.58,
-          "profit": -1.91,
+          "profit": -1.92,
           "profit_pct": -1.08,
           "exit_reason": "signal"
         },
@@ -20763,9 +20765,9 @@
           "entry_date": "2025-11-28",
           "entry_price": 255.3,
           "exit_date": "2025-12-04",
-          "exit_price": 262.02,
-          "profit": 6.72,
-          "profit_pct": 2.63,
+          "exit_price": 261.54,
+          "profit": 6.24,
+          "profit_pct": 2.44,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -20776,11 +20778,11 @@
       "winning_trades": 17,
       "losing_trades": 73,
       "win_rate": 18.89,
-      "gross_profit": 398.18,
+      "gross_profit": 394.9,
       "gross_loss": -449.28,
-      "total_profit": -51.1,
-      "avg_profit": -0.57,
-      "avg_profit_pct": -0.14,
+      "total_profit": -54.38,
+      "avg_profit": -0.6,
+      "avg_profit_pct": -0.15,
       "stop_loss_exits": 7,
       "signal_exits": 82,
       "trades": [
@@ -21589,9 +21591,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 433.15,
           "exit_date": "2025-12-04",
-          "exit_price": 458.98,
-          "profit": 25.83,
-          "profit_pct": 5.96,
+          "exit_price": 455.7,
+          "profit": 22.55,
+          "profit_pct": 5.21,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -21599,14 +21601,14 @@
     {
       "ticker": "SBUX",
       "total_trades": 84,
-      "winning_trades": 15,
-      "losing_trades": 69,
-      "win_rate": 17.86,
-      "gross_profit": 78.84,
-      "gross_loss": -134.62,
-      "total_profit": -55.78,
-      "avg_profit": -0.66,
-      "avg_profit_pct": -0.69,
+      "winning_trades": 16,
+      "losing_trades": 68,
+      "win_rate": 19.05,
+      "gross_profit": 79.49,
+      "gross_loss": -134.26,
+      "total_profit": -54.77,
+      "avg_profit": -0.65,
+      "avg_profit_pct": -0.68,
       "stop_loss_exits": 8,
       "signal_exits": 75,
       "trades": [
@@ -22361,9 +22363,9 @@
           "entry_date": "2025-11-25",
           "entry_price": 85.91,
           "exit_date": "2025-12-04",
-          "exit_price": 85.55,
-          "profit": -0.36,
-          "profit_pct": -0.42,
+          "exit_price": 86.56,
+          "profit": 0.65,
+          "profit_pct": 0.76,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -22375,9 +22377,9 @@
       "losing_trades": 59,
       "win_rate": 26.25,
       "gross_profit": 83.55,
-      "gross_loss": -72.95,
-      "total_profit": 10.6,
-      "avg_profit": 0.13,
+      "gross_loss": -72.58,
+      "total_profit": 10.97,
+      "avg_profit": 0.14,
       "avg_profit_pct": 0.37,
       "stop_loss_exits": 0,
       "signal_exits": 80,
@@ -23097,9 +23099,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 125.0,
           "exit_date": "2025-12-04",
-          "exit_price": 123.99,
-          "profit": -1.01,
-          "profit_pct": -0.81,
+          "exit_price": 124.36,
+          "profit": -0.64,
+          "profit_pct": -0.51,
           "exit_reason": "signal"
         }
       ]
@@ -23110,10 +23112,10 @@
       "winning_trades": 17,
       "losing_trades": 73,
       "win_rate": 18.89,
-      "gross_profit": 226.88,
+      "gross_profit": 225.71,
       "gross_loss": -248.65,
-      "total_profit": -21.77,
-      "avg_profit": -0.24,
+      "total_profit": -22.94,
+      "avg_profit": -0.25,
       "avg_profit_pct": -0.13,
       "stop_loss_exits": 2,
       "signal_exits": 87,
@@ -23923,9 +23925,9 @@
           "entry_date": "2025-11-24",
           "entry_price": 239.4,
           "exit_date": "2025-12-04",
-          "exit_price": 278.2,
-          "profit": 38.8,
-          "profit_pct": 16.21,
+          "exit_price": 277.03,
+          "profit": 37.63,
+          "profit_pct": 15.72,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -23936,9 +23938,9 @@
       "winning_trades": 25,
       "losing_trades": 49,
       "win_rate": 33.78,
-      "gross_profit": 151.3,
-      "gross_loss": -91.47,
-      "total_profit": 59.83,
+      "gross_profit": 151.42,
+      "gross_loss": -91.46,
+      "total_profit": 59.96,
       "avg_profit": 0.81,
       "avg_profit_pct": 0.97,
       "stop_loss_exits": 12,
@@ -24048,7 +24050,7 @@
           "entry_price": 60.62,
           "exit_date": "2021-08-10",
           "exit_price": 58.7,
-          "profit": -1.93,
+          "profit": -1.92,
           "profit_pct": -3.18,
           "exit_reason": "signal"
         },
@@ -24605,9 +24607,9 @@
           "entry_date": "2025-11-26",
           "entry_price": 154.89,
           "exit_date": "2025-12-04",
-          "exit_price": 157.13,
-          "profit": 2.25,
-          "profit_pct": 1.45,
+          "exit_price": 157.26,
+          "profit": 2.37,
+          "profit_pct": 1.53,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -24618,10 +24620,10 @@
       "winning_trades": 26,
       "losing_trades": 50,
       "win_rate": 34.21,
-      "gross_profit": 817.78,
+      "gross_profit": 820.52,
       "gross_loss": -747.4,
-      "total_profit": 70.38,
-      "avg_profit": 0.93,
+      "total_profit": 73.12,
+      "avg_profit": 0.96,
       "avg_profit_pct": 0.18,
       "stop_loss_exits": 10,
       "signal_exits": 65,
@@ -25305,9 +25307,9 @@
           "entry_date": "2025-10-24",
           "entry_price": 577.23,
           "exit_date": "2025-12-04",
-          "exit_price": 726.03,
-          "profit": 148.8,
-          "profit_pct": 25.78,
+          "exit_price": 728.77,
+          "profit": 151.54,
+          "profit_pct": 26.25,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -26637,10 +26639,10 @@
       "winning_trades": 19,
       "losing_trades": 60,
       "win_rate": 24.05,
-      "gross_profit": 1124.44,
+      "gross_profit": 1131.12,
       "gross_loss": -889.58,
-      "total_profit": 234.86,
-      "avg_profit": 2.97,
+      "total_profit": 241.54,
+      "avg_profit": 3.06,
       "avg_profit_pct": 0.58,
       "stop_loss_exits": 16,
       "signal_exits": 62,
@@ -27099,7 +27101,7 @@
           "entry_date": "2024-03-18",
           "entry_price": 680.32,
           "exit_date": "2024-03-19",
-          "exit_price": 670.83,
+          "exit_price": 670.82,
           "profit": -9.5,
           "profit_pct": -1.4,
           "exit_reason": "signal"
@@ -27351,9 +27353,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 1189.86,
           "exit_date": "2025-12-04",
-          "exit_price": 1206.74,
-          "profit": 16.88,
-          "profit_pct": 1.42,
+          "exit_price": 1213.42,
+          "profit": 23.56,
+          "profit_pct": 1.98,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -28010,11 +28012,11 @@
       "winning_trades": 21,
       "losing_trades": 49,
       "win_rate": 30.0,
-      "gross_profit": 668.91,
+      "gross_profit": 664.57,
       "gross_loss": -533.32,
-      "total_profit": 135.59,
-      "avg_profit": 1.94,
-      "avg_profit_pct": 0.85,
+      "total_profit": 131.25,
+      "avg_profit": 1.88,
+      "avg_profit_pct": 0.84,
       "stop_loss_exits": 6,
       "signal_exits": 63,
       "trades": [
@@ -28643,9 +28645,9 @@
           "entry_date": "2025-11-26",
           "entry_price": 409.68,
           "exit_date": "2025-12-04",
-          "exit_price": 464.93,
-          "profit": 55.25,
-          "profit_pct": 13.49,
+          "exit_price": 460.59,
+          "profit": 50.91,
+          "profit_pct": 12.43,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -28656,11 +28658,11 @@
       "winning_trades": 20,
       "losing_trades": 53,
       "win_rate": 27.4,
-      "gross_profit": 324.22,
+      "gross_profit": 321.55,
       "gross_loss": -354.25,
-      "total_profit": -30.03,
-      "avg_profit": -0.41,
-      "avg_profit_pct": 0.1,
+      "total_profit": -32.7,
+      "avg_profit": -0.45,
+      "avg_profit_pct": 0.08,
       "stop_loss_exits": 14,
       "signal_exits": 58,
       "trades": [
@@ -29316,9 +29318,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 317.94,
           "exit_date": "2025-12-04",
-          "exit_price": 337.26,
-          "profit": 19.32,
-          "profit_pct": 6.08,
+          "exit_price": 334.59,
+          "profit": 16.65,
+          "profit_pct": 5.24,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -29326,14 +29328,14 @@
     {
       "ticker": "MELI",
       "total_trades": 74,
-      "winning_trades": 18,
-      "losing_trades": 56,
-      "win_rate": 24.32,
-      "gross_profit": 2785.8,
-      "gross_loss": -2887.86,
-      "total_profit": -102.06,
-      "avg_profit": -1.38,
-      "avg_profit_pct": 0.37,
+      "winning_trades": 17,
+      "losing_trades": 57,
+      "win_rate": 22.97,
+      "gross_profit": 2759.49,
+      "gross_loss": -2888.45,
+      "total_profit": -128.96,
+      "avg_profit": -1.74,
+      "avg_profit_pct": 0.36,
       "stop_loss_exits": 22,
       "signal_exits": 51,
       "trades": [
@@ -29998,9 +30000,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 2115.91,
           "exit_date": "2025-12-04",
-          "exit_price": 2142.22,
-          "profit": 26.31,
-          "profit_pct": 1.24,
+          "exit_price": 2115.32,
+          "profit": -0.59,
+          "profit_pct": -0.03,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -30012,10 +30014,10 @@
       "losing_trades": 45,
       "win_rate": 30.77,
       "gross_profit": 582.89,
-      "gross_loss": -369.68,
-      "total_profit": 213.21,
-      "avg_profit": 3.28,
-      "avg_profit_pct": 1.04,
+      "gross_loss": -361.68,
+      "total_profit": 221.21,
+      "avg_profit": 3.4,
+      "avg_profit_pct": 1.06,
       "stop_loss_exits": 16,
       "signal_exits": 49,
       "trades": [
@@ -30599,9 +30601,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 524.17,
           "exit_date": "2025-12-04",
-          "exit_price": 512.72,
-          "profit": -11.45,
-          "profit_pct": -2.19,
+          "exit_price": 520.72,
+          "profit": -3.45,
+          "profit_pct": -0.66,
           "exit_reason": "signal"
         }
       ]
@@ -30612,11 +30614,11 @@
       "winning_trades": 22,
       "losing_trades": 62,
       "win_rate": 26.19,
-      "gross_profit": 262.23,
+      "gross_profit": 267.36,
       "gross_loss": -214.92,
-      "total_profit": 47.31,
-      "avg_profit": 0.56,
-      "avg_profit_pct": 0.37,
+      "total_profit": 52.44,
+      "avg_profit": 0.62,
+      "avg_profit_pct": 0.39,
       "stop_loss_exits": 3,
       "signal_exits": 80,
       "trades": [
@@ -31371,24 +31373,24 @@
           "entry_date": "2025-11-04",
           "entry_price": 271.6,
           "exit_date": "2025-12-04",
-          "exit_price": 296.49,
-          "profit": 24.9,
-          "profit_pct": 9.17,
+          "exit_price": 301.63,
+          "profit": 30.03,
+          "profit_pct": 11.06,
           "exit_reason": "END-OF-DATA"
         }
       ]
     },
     {
       "ticker": "ORLY",
-      "total_trades": 79,
+      "total_trades": 78,
       "winning_trades": 24,
-      "losing_trades": 55,
-      "win_rate": 30.38,
+      "losing_trades": 54,
+      "win_rate": 30.77,
       "gross_profit": 77.08,
       "gross_loss": -48.93,
       "total_profit": 28.15,
       "avg_profit": 0.36,
-      "avg_profit_pct": 0.79,
+      "avg_profit_pct": 0.8,
       "stop_loss_exits": 2,
       "signal_exits": 76,
       "trades": [
@@ -32093,15 +32095,6 @@
           "profit": 0.51,
           "profit_pct": 0.52,
           "exit_reason": "signal"
-        },
-        {
-          "entry_date": "2025-12-04",
-          "entry_price": 99.66,
-          "exit_date": "2025-12-04",
-          "exit_price": 99.66,
-          "profit": 0.0,
-          "profit_pct": 0.0,
-          "exit_reason": "END-OF-DATA"
         }
       ]
     },
@@ -32111,11 +32104,11 @@
       "winning_trades": 21,
       "losing_trades": 61,
       "win_rate": 25.61,
-      "gross_profit": 108.44,
+      "gross_profit": 107.41,
       "gross_loss": -109.17,
-      "total_profit": -0.73,
-      "avg_profit": -0.01,
-      "avg_profit_pct": 0.37,
+      "total_profit": -1.76,
+      "avg_profit": -0.02,
+      "avg_profit_pct": 0.36,
       "stop_loss_exits": 12,
       "signal_exits": 69,
       "trades": [
@@ -32852,9 +32845,9 @@
           "entry_date": "2025-12-01",
           "entry_price": 81.82,
           "exit_date": "2025-12-04",
-          "exit_price": 84.71,
-          "profit": 2.89,
-          "profit_pct": 3.54,
+          "exit_price": 83.68,
+          "profit": 1.86,
+          "profit_pct": 2.27,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -32865,10 +32858,10 @@
       "winning_trades": 22,
       "losing_trades": 54,
       "win_rate": 28.95,
-      "gross_profit": 284.09,
+      "gross_profit": 285.5,
       "gross_loss": -391.57,
-      "total_profit": -107.48,
-      "avg_profit": -1.41,
+      "total_profit": -106.07,
+      "avg_profit": -1.4,
       "avg_profit_pct": -0.5,
       "stop_loss_exits": 16,
       "signal_exits": 59,
@@ -33552,9 +33545,9 @@
           "entry_date": "2025-11-26",
           "entry_price": 301.38,
           "exit_date": "2025-12-04",
-          "exit_price": 304.43,
-          "profit": 3.05,
-          "profit_pct": 1.01,
+          "exit_price": 305.84,
+          "profit": 4.46,
+          "profit_pct": 1.48,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -33566,10 +33559,10 @@
       "losing_trades": 57,
       "win_rate": 22.97,
       "gross_profit": 183.71,
-      "gross_loss": -234.43,
-      "total_profit": -50.72,
+      "gross_loss": -234.48,
+      "total_profit": -50.77,
       "avg_profit": -0.69,
-      "avg_profit_pct": -0.06,
+      "avg_profit_pct": -0.07,
       "stop_loss_exits": 8,
       "signal_exits": 65,
       "trades": [
@@ -34234,9 +34227,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 120.13,
           "exit_date": "2025-12-04",
-          "exit_price": 119.92,
-          "profit": -0.21,
-          "profit_pct": -0.17,
+          "exit_price": 119.87,
+          "profit": -0.26,
+          "profit_pct": -0.22,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -34247,10 +34240,10 @@
       "winning_trades": 22,
       "losing_trades": 41,
       "win_rate": 34.92,
-      "gross_profit": 346.5,
+      "gross_profit": 345.83,
       "gross_loss": -201.83,
-      "total_profit": 144.67,
-      "avg_profit": 2.3,
+      "total_profit": 144.0,
+      "avg_profit": 2.29,
       "avg_profit_pct": 2.14,
       "stop_loss_exits": 21,
       "signal_exits": 41,
@@ -34817,9 +34810,9 @@
           "entry_date": "2025-12-01",
           "entry_price": 205.58,
           "exit_date": "2025-12-04",
-          "exit_price": 222.08,
-          "profit": 16.5,
-          "profit_pct": 8.03,
+          "exit_price": 221.41,
+          "profit": 15.83,
+          "profit_pct": 7.7,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -36957,10 +36950,10 @@
       "winning_trades": 18,
       "losing_trades": 70,
       "win_rate": 20.45,
-      "gross_profit": 99.64,
+      "gross_profit": 100.2,
       "gross_loss": -94.91,
-      "total_profit": 4.73,
-      "avg_profit": 0.05,
+      "total_profit": 5.29,
+      "avg_profit": 0.06,
       "avg_profit_pct": 0.17,
       "stop_loss_exits": 4,
       "signal_exits": 83,
@@ -37752,9 +37745,9 @@
           "entry_date": "2025-11-21",
           "entry_price": 102.99,
           "exit_date": "2025-12-04",
-          "exit_price": 108.75,
-          "profit": 5.76,
-          "profit_pct": 5.6,
+          "exit_price": 109.31,
+          "profit": 6.32,
+          "profit_pct": 6.14,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -37765,11 +37758,11 @@
       "winning_trades": 21,
       "losing_trades": 73,
       "win_rate": 22.34,
-      "gross_profit": 279.87,
+      "gross_profit": 280.65,
       "gross_loss": -367.81,
-      "total_profit": -87.94,
-      "avg_profit": -0.94,
-      "avg_profit_pct": -0.32,
+      "total_profit": -87.16,
+      "avg_profit": -0.93,
+      "avg_profit_pct": -0.31,
       "stop_loss_exits": 9,
       "signal_exits": 84,
       "trades": [
@@ -38057,7 +38050,7 @@
           "entry_price": 145.68,
           "exit_date": "2022-08-09",
           "exit_price": 160.74,
-          "profit": 15.06,
+          "profit": 15.07,
           "profit_pct": 10.34,
           "exit_reason": "signal"
         },
@@ -38614,9 +38607,9 @@
           "entry_date": "2025-12-01",
           "entry_price": 199.49,
           "exit_date": "2025-12-04",
-          "exit_price": 225.03,
-          "profit": 25.54,
-          "profit_pct": 12.8,
+          "exit_price": 225.8,
+          "profit": 26.31,
+          "profit_pct": 13.19,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -38627,11 +38620,11 @@
       "winning_trades": 22,
       "losing_trades": 54,
       "win_rate": 28.95,
-      "gross_profit": 55.89,
+      "gross_profit": 56.32,
       "gross_loss": -47.93,
-      "total_profit": 7.96,
-      "avg_profit": 0.1,
-      "avg_profit_pct": 0.24,
+      "total_profit": 8.39,
+      "avg_profit": 0.11,
+      "avg_profit_pct": 0.25,
       "stop_loss_exits": 3,
       "signal_exits": 72,
       "trades": [
@@ -39314,9 +39307,9 @@
           "entry_date": "2025-11-07",
           "entry_price": 69.73,
           "exit_date": "2025-12-04",
-          "exit_price": 73.45,
-          "profit": 3.72,
-          "profit_pct": 5.33,
+          "exit_price": 73.88,
+          "profit": 4.15,
+          "profit_pct": 5.95,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -39328,8 +39321,8 @@
       "losing_trades": 50,
       "win_rate": 27.54,
       "gross_profit": 102.17,
-      "gross_loss": -108.3,
-      "total_profit": -6.13,
+      "gross_loss": -108.34,
+      "total_profit": -6.17,
       "avg_profit": -0.09,
       "avg_profit_pct": 0.03,
       "stop_loss_exits": 4,
@@ -39951,9 +39944,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 113.39,
           "exit_date": "2025-12-04",
-          "exit_price": 112.67,
-          "profit": -0.72,
-          "profit_pct": -0.63,
+          "exit_price": 112.63,
+          "profit": -0.76,
+          "profit_pct": -0.67,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -41274,9 +41267,9 @@
       "winning_trades": 20,
       "losing_trades": 50,
       "win_rate": 28.57,
-      "gross_profit": 135.19,
+      "gross_profit": 134.84,
       "gross_loss": -110.65,
-      "total_profit": 24.54,
+      "total_profit": 24.19,
       "avg_profit": 0.35,
       "avg_profit_pct": 0.43,
       "stop_loss_exits": 5,
@@ -41907,9 +41900,9 @@
           "entry_date": "2025-11-21",
           "entry_price": 174.0,
           "exit_date": "2025-12-04",
-          "exit_price": 177.94,
-          "profit": 3.94,
-          "profit_pct": 2.26,
+          "exit_price": 177.59,
+          "profit": 3.59,
+          "profit_pct": 2.06,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -41920,10 +41913,10 @@
       "winning_trades": 16,
       "losing_trades": 78,
       "win_rate": 17.02,
-      "gross_profit": 242.35,
-      "gross_loss": -312.63,
-      "total_profit": -70.28,
-      "avg_profit": -0.75,
+      "gross_profit": 241.57,
+      "gross_loss": -312.62,
+      "total_profit": -71.05,
+      "avg_profit": -0.76,
       "avg_profit_pct": -0.24,
       "stop_loss_exits": 12,
       "signal_exits": 81,
@@ -42446,7 +42439,7 @@
           "entry_price": 215.3,
           "exit_date": "2024-03-08",
           "exit_price": 211.76,
-          "profit": -3.55,
+          "profit": -3.54,
           "profit_pct": -1.65,
           "exit_reason": "signal"
         },
@@ -42769,9 +42762,9 @@
           "entry_date": "2025-12-01",
           "entry_price": 139.39,
           "exit_date": "2025-12-04",
-          "exit_price": 152.51,
-          "profit": 13.11,
-          "profit_pct": 9.41,
+          "exit_price": 151.72,
+          "profit": 12.33,
+          "profit_pct": 8.84,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -42782,9 +42775,9 @@
       "winning_trades": 22,
       "losing_trades": 64,
       "win_rate": 25.58,
-      "gross_profit": 116.85,
-      "gross_loss": -137.61,
-      "total_profit": -20.76,
+      "gross_profit": 116.65,
+      "gross_loss": -137.62,
+      "total_profit": -20.97,
       "avg_profit": -0.24,
       "avg_profit_pct": -0.18,
       "stop_loss_exits": 2,
@@ -42957,7 +42950,7 @@
           "entry_price": 134.44,
           "exit_date": "2021-10-15",
           "exit_price": 131.67,
-          "profit": -2.77,
+          "profit": -2.78,
           "profit_pct": -2.06,
           "exit_reason": "signal"
         },
@@ -43559,9 +43552,9 @@
           "entry_date": "2025-11-24",
           "entry_price": 200.86,
           "exit_date": "2025-12-04",
-          "exit_price": 203.34,
-          "profit": 2.48,
-          "profit_pct": 1.23,
+          "exit_price": 203.14,
+          "profit": 2.28,
+          "profit_pct": 1.13,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -44137,11 +44130,11 @@
       "winning_trades": 21,
       "losing_trades": 63,
       "win_rate": 25.0,
-      "gross_profit": 24.54,
+      "gross_profit": 24.4,
       "gross_loss": -27.11,
-      "total_profit": -2.57,
+      "total_profit": -2.71,
       "avg_profit": -0.03,
-      "avg_profit_pct": -0.02,
+      "avg_profit_pct": -0.03,
       "stop_loss_exits": 3,
       "signal_exits": 80,
       "trades": [
@@ -44896,9 +44889,9 @@
           "entry_date": "2025-11-20",
           "entry_price": 27.21,
           "exit_date": "2025-12-04",
-          "exit_price": 28.47,
-          "profit": 1.26,
-          "profit_pct": 4.61,
+          "exit_price": 28.33,
+          "profit": 1.12,
+          "profit_pct": 4.1,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -44909,11 +44902,11 @@
       "winning_trades": 15,
       "losing_trades": 74,
       "win_rate": 16.85,
-      "gross_profit": 71.69,
+      "gross_profit": 70.5,
       "gross_loss": -137.84,
-      "total_profit": -66.15,
-      "avg_profit": -0.74,
-      "avg_profit_pct": -0.95,
+      "total_profit": -67.34,
+      "avg_profit": -0.76,
+      "avg_profit_pct": -0.98,
       "stop_loss_exits": 14,
       "signal_exits": 74,
       "trades": [
@@ -45713,9 +45706,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 56.71,
           "exit_date": "2025-12-04",
-          "exit_price": 64.81,
-          "profit": 8.1,
-          "profit_pct": 14.28,
+          "exit_price": 63.62,
+          "profit": 6.91,
+          "profit_pct": 12.18,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -45726,11 +45719,11 @@
       "winning_trades": 19,
       "losing_trades": 51,
       "win_rate": 27.14,
-      "gross_profit": 179.88,
+      "gross_profit": 179.61,
       "gross_loss": -165.92,
-      "total_profit": 13.96,
+      "total_profit": 13.69,
       "avg_profit": 0.2,
-      "avg_profit_pct": 0.4,
+      "avg_profit_pct": 0.39,
       "stop_loss_exits": 18,
       "signal_exits": 51,
       "trades": [
@@ -46359,9 +46352,9 @@
           "entry_date": "2025-11-24",
           "entry_price": 62.21,
           "exit_date": "2025-12-04",
-          "exit_price": 64.55,
-          "profit": 2.34,
-          "profit_pct": 3.76,
+          "exit_price": 64.28,
+          "profit": 2.07,
+          "profit_pct": 3.33,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -46372,9 +46365,9 @@
       "winning_trades": 21,
       "losing_trades": 52,
       "win_rate": 28.77,
-      "gross_profit": 34.89,
+      "gross_profit": 34.87,
       "gross_loss": -26.62,
-      "total_profit": 8.27,
+      "total_profit": 8.25,
       "avg_profit": 0.11,
       "avg_profit_pct": 0.39,
       "stop_loss_exits": 3,
@@ -47032,9 +47025,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 40.47,
           "exit_date": "2025-12-04",
-          "exit_price": 41.9,
-          "profit": 1.42,
-          "profit_pct": 3.52,
+          "exit_price": 41.87,
+          "profit": 1.4,
+          "profit_pct": 3.45,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -47045,11 +47038,11 @@
       "winning_trades": 24,
       "losing_trades": 55,
       "win_rate": 30.38,
-      "gross_profit": 57.79,
+      "gross_profit": 57.39,
       "gross_loss": -37.2,
-      "total_profit": 20.59,
+      "total_profit": 20.19,
       "avg_profit": 0.26,
-      "avg_profit_pct": 1.0,
+      "avg_profit_pct": 0.99,
       "stop_loss_exits": 8,
       "signal_exits": 70,
       "trades": [
@@ -47759,9 +47752,9 @@
           "entry_date": "2025-11-05",
           "entry_price": 47.04,
           "exit_date": "2025-12-04",
-          "exit_price": 50.56,
-          "profit": 3.52,
-          "profit_pct": 7.48,
+          "exit_price": 50.16,
+          "profit": 3.12,
+          "profit_pct": 6.63,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -47772,10 +47765,10 @@
       "winning_trades": 13,
       "losing_trades": 64,
       "win_rate": 16.88,
-      "gross_profit": 644.81,
+      "gross_profit": 647.13,
       "gross_loss": -816.82,
-      "total_profit": -172.01,
-      "avg_profit": -2.23,
+      "total_profit": -169.69,
+      "avg_profit": -2.2,
       "avg_profit_pct": -0.13,
       "stop_loss_exits": 12,
       "signal_exits": 64,
@@ -48468,9 +48461,9 @@
           "entry_date": "2025-11-19",
           "entry_price": 697.1,
           "exit_date": "2025-12-04",
-          "exit_price": 718.35,
-          "profit": 21.26,
-          "profit_pct": 3.05,
+          "exit_price": 720.67,
+          "profit": 23.58,
+          "profit_pct": 3.38,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -48481,11 +48474,11 @@
       "winning_trades": 15,
       "losing_trades": 62,
       "win_rate": 19.48,
-      "gross_profit": 425.77,
+      "gross_profit": 421.33,
       "gross_loss": -516.13,
-      "total_profit": -90.36,
-      "avg_profit": -1.17,
-      "avg_profit_pct": -0.32,
+      "total_profit": -94.8,
+      "avg_profit": -1.23,
+      "avg_profit_pct": -0.36,
       "stop_loss_exits": 13,
       "signal_exits": 63,
       "trades": [
@@ -49177,9 +49170,9 @@
           "entry_date": "2025-11-24",
           "entry_price": 169.67,
           "exit_date": "2025-12-04",
-          "exit_price": 184.45,
-          "profit": 14.78,
-          "profit_pct": 8.71,
+          "exit_price": 180.01,
+          "profit": 10.34,
+          "profit_pct": 6.09,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -49190,11 +49183,11 @@
       "winning_trades": 18,
       "losing_trades": 49,
       "win_rate": 26.87,
-      "gross_profit": 190.55,
+      "gross_profit": 191.25,
       "gross_loss": -210.74,
-      "total_profit": -20.19,
-      "avg_profit": -0.3,
-      "avg_profit_pct": 0.0,
+      "total_profit": -19.49,
+      "avg_profit": -0.29,
+      "avg_profit_pct": 0.01,
       "stop_loss_exits": 3,
       "signal_exits": 63,
       "trades": [
@@ -49796,9 +49789,9 @@
           "entry_date": "2025-11-18",
           "entry_price": 222.96,
           "exit_date": "2025-12-04",
-          "exit_price": 223.6,
-          "profit": 0.63,
-          "profit_pct": 0.28,
+          "exit_price": 224.29,
+          "profit": 1.33,
+          "profit_pct": 0.6,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -50428,10 +50421,10 @@
       "winning_trades": 21,
       "losing_trades": 68,
       "win_rate": 23.6,
-      "gross_profit": 63.63,
+      "gross_profit": 63.88,
       "gross_loss": -60.6,
-      "total_profit": 3.03,
-      "avg_profit": 0.03,
+      "total_profit": 3.28,
+      "avg_profit": 0.04,
       "avg_profit_pct": 0.17,
       "stop_loss_exits": 1,
       "signal_exits": 87,
@@ -51232,9 +51225,9 @@
           "entry_date": "2025-11-07",
           "entry_price": 89.98,
           "exit_date": "2025-12-04",
-          "exit_price": 91.04,
-          "profit": 1.06,
-          "profit_pct": 1.17,
+          "exit_price": 91.29,
+          "profit": 1.31,
+          "profit_pct": 1.45,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -51245,11 +51238,11 @@
       "winning_trades": 12,
       "losing_trades": 27,
       "win_rate": 30.77,
-      "gross_profit": 49.68,
+      "gross_profit": 50.39,
       "gross_loss": -42.59,
-      "total_profit": 7.09,
-      "avg_profit": 0.18,
-      "avg_profit_pct": 0.32,
+      "total_profit": 7.8,
+      "avg_profit": 0.2,
+      "avg_profit_pct": 0.34,
       "stop_loss_exits": 3,
       "signal_exits": 35,
       "trades": [
@@ -51599,9 +51592,9 @@
           "entry_date": "2025-11-20",
           "entry_price": 74.75,
           "exit_date": "2025-12-04",
-          "exit_price": 82.53,
-          "profit": 7.78,
-          "profit_pct": 10.41,
+          "exit_price": 83.24,
+          "profit": 8.49,
+          "profit_pct": 11.36,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -52985,11 +52978,11 @@
       "winning_trades": 14,
       "losing_trades": 69,
       "win_rate": 16.87,
-      "gross_profit": 100.01,
+      "gross_profit": 99.56,
       "gross_loss": -150.89,
-      "total_profit": -50.88,
-      "avg_profit": -0.61,
-      "avg_profit_pct": -0.62,
+      "total_profit": -51.33,
+      "avg_profit": -0.62,
+      "avg_profit_pct": -0.63,
       "stop_loss_exits": 28,
       "signal_exits": 54,
       "trades": [
@@ -53735,9 +53728,9 @@
           "entry_date": "2025-11-25",
           "entry_price": 48.31,
           "exit_date": "2025-12-04",
-          "exit_price": 55.66,
-          "profit": 7.35,
-          "profit_pct": 15.21,
+          "exit_price": 55.21,
+          "profit": 6.9,
+          "profit_pct": 14.29,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -53748,11 +53741,11 @@
       "winning_trades": 21,
       "losing_trades": 41,
       "win_rate": 33.87,
-      "gross_profit": 73.73,
-      "gross_loss": -55.21,
-      "total_profit": 18.52,
-      "avg_profit": 0.3,
-      "avg_profit_pct": 0.49,
+      "gross_profit": 73.15,
+      "gross_loss": -55.22,
+      "total_profit": 17.93,
+      "avg_profit": 0.29,
+      "avg_profit_pct": 0.47,
       "stop_loss_exits": 5,
       "signal_exits": 56,
       "trades": [
@@ -54202,7 +54195,7 @@
           "entry_price": 75.24,
           "exit_date": "2024-10-07",
           "exit_price": 74.5,
-          "profit": -0.74,
+          "profit": -0.75,
           "profit_pct": -0.99,
           "exit_reason": "signal"
         },
@@ -54309,9 +54302,9 @@
           "entry_date": "2025-11-18",
           "entry_price": 71.75,
           "exit_date": "2025-12-04",
-          "exit_price": 80.09,
-          "profit": 8.34,
-          "profit_pct": 11.62,
+          "exit_price": 79.51,
+          "profit": 7.76,
+          "profit_pct": 10.82,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -54977,11 +54970,11 @@
       "winning_trades": 18,
       "losing_trades": 54,
       "win_rate": 25.0,
-      "gross_profit": 199.91,
+      "gross_profit": 198.97,
       "gross_loss": -248.79,
-      "total_profit": -48.88,
-      "avg_profit": -0.68,
-      "avg_profit_pct": -0.34,
+      "total_profit": -49.82,
+      "avg_profit": -0.69,
+      "avg_profit_pct": -0.35,
       "stop_loss_exits": 4,
       "signal_exits": 67,
       "trades": [
@@ -55628,9 +55621,9 @@
           "entry_date": "2025-10-30",
           "entry_price": 149.61,
           "exit_date": "2025-12-04",
-          "exit_price": 182.35,
-          "profit": 32.74,
-          "profit_pct": 21.88,
+          "exit_price": 181.41,
+          "profit": 31.8,
+          "profit_pct": 21.26,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -55641,11 +55634,11 @@
       "winning_trades": 10,
       "losing_trades": 68,
       "win_rate": 12.82,
-      "gross_profit": 249.3,
+      "gross_profit": 248.23,
       "gross_loss": -433.62,
-      "total_profit": -184.32,
-      "avg_profit": -2.36,
-      "avg_profit_pct": -1.26,
+      "total_profit": -185.39,
+      "avg_profit": -2.38,
+      "avg_profit_pct": -1.27,
       "stop_loss_exits": 29,
       "signal_exits": 48,
       "trades": [
@@ -56346,9 +56339,9 @@
           "entry_date": "2025-10-30",
           "entry_price": 99.01,
           "exit_date": "2025-12-04",
-          "exit_price": 127.9,
-          "profit": 28.89,
-          "profit_pct": 29.18,
+          "exit_price": 126.83,
+          "profit": 27.82,
+          "profit_pct": 28.1,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -56359,9 +56352,9 @@
       "winning_trades": 12,
       "losing_trades": 66,
       "win_rate": 15.38,
-      "gross_profit": 20.17,
+      "gross_profit": 20.28,
       "gross_loss": -32.64,
-      "total_profit": -12.47,
+      "total_profit": -12.36,
       "avg_profit": -0.16,
       "avg_profit_pct": -0.46,
       "stop_loss_exits": 19,
@@ -57064,9 +57057,9 @@
           "entry_date": "2025-10-21",
           "entry_price": 20.33,
           "exit_date": "2025-12-04",
-          "exit_price": 24.29,
-          "profit": 3.96,
-          "profit_pct": 19.48,
+          "exit_price": 24.4,
+          "profit": 4.07,
+          "profit_pct": 20.02,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -57074,12 +57067,12 @@
     {
       "ticker": "CDW",
       "total_trades": 62,
-      "winning_trades": 19,
-      "losing_trades": 43,
-      "win_rate": 30.65,
-      "gross_profit": 213.44,
-      "gross_loss": -148.71,
-      "total_profit": 64.73,
+      "winning_trades": 18,
+      "losing_trades": 44,
+      "win_rate": 29.03,
+      "gross_profit": 213.39,
+      "gross_loss": -148.89,
+      "total_profit": 64.5,
       "avg_profit": 1.04,
       "avg_profit_pct": 0.75,
       "stop_loss_exits": 5,
@@ -57638,9 +57631,9 @@
           "entry_date": "2025-11-26",
           "entry_price": 144.4,
           "exit_date": "2025-12-04",
-          "exit_price": 144.45,
-          "profit": 0.05,
-          "profit_pct": 0.03,
+          "exit_price": 144.22,
+          "profit": -0.18,
+          "profit_pct": -0.12,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -57648,14 +57641,14 @@
     {
       "ticker": "MRNA",
       "total_trades": 67,
-      "winning_trades": 12,
-      "losing_trades": 55,
-      "win_rate": 17.91,
-      "gross_profit": 405.21,
-      "gross_loss": -296.47,
-      "total_profit": 108.74,
-      "avg_profit": 1.62,
-      "avg_profit_pct": 1.56,
+      "winning_trades": 11,
+      "losing_trades": 56,
+      "win_rate": 16.42,
+      "gross_profit": 404.6,
+      "gross_loss": -296.79,
+      "total_profit": 107.81,
+      "avg_profit": 1.61,
+      "avg_profit_pct": 1.5,
       "stop_loss_exits": 30,
       "signal_exits": 36,
       "trades": [
@@ -58257,9 +58250,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 25.18,
           "exit_date": "2025-12-04",
-          "exit_price": 25.8,
-          "profit": 0.61,
-          "profit_pct": 2.44,
+          "exit_price": 24.86,
+          "profit": -0.32,
+          "profit_pct": -1.27,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -58271,8 +58264,8 @@
       "losing_trades": 56,
       "win_rate": 23.29,
       "gross_profit": 60.99,
-      "gross_loss": -112.55,
-      "total_profit": -51.56,
+      "gross_loss": -112.47,
+      "total_profit": -51.48,
       "avg_profit": -0.71,
       "avg_profit_pct": -0.8,
       "stop_loss_exits": 11,
@@ -58930,9 +58923,9 @@
           "entry_date": "2025-11-28",
           "entry_price": 68.8,
           "exit_date": "2025-12-04",
-          "exit_price": 68.45,
-          "profit": -0.35,
-          "profit_pct": -0.51,
+          "exit_price": 68.53,
+          "profit": -0.27,
+          "profit_pct": -0.39,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -58943,11 +58936,11 @@
       "winning_trades": 18,
       "losing_trades": 44,
       "win_rate": 29.03,
-      "gross_profit": 52.95,
+      "gross_profit": 53.24,
       "gross_loss": -69.88,
-      "total_profit": -16.93,
+      "total_profit": -16.64,
       "avg_profit": -0.27,
-      "avg_profit_pct": -0.48,
+      "avg_profit_pct": -0.46,
       "stop_loss_exits": 14,
       "signal_exits": 47,
       "trades": [
@@ -59504,9 +59497,9 @@
           "entry_date": "2025-11-24",
           "entry_price": 34.64,
           "exit_date": "2025-12-04",
-          "exit_price": 37.36,
-          "profit": 2.72,
-          "profit_pct": 7.85,
+          "exit_price": 37.65,
+          "profit": 3.01,
+          "profit_pct": 8.69,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -59517,11 +59510,11 @@
       "winning_trades": 12,
       "losing_trades": 48,
       "win_rate": 20.0,
-      "gross_profit": 117.94,
+      "gross_profit": 119.4,
       "gross_loss": -132.31,
-      "total_profit": -14.37,
-      "avg_profit": -0.24,
-      "avg_profit_pct": -0.34,
+      "total_profit": -12.91,
+      "avg_profit": -0.22,
+      "avg_profit_pct": -0.32,
       "stop_loss_exits": 7,
       "signal_exits": 52,
       "trades": [
@@ -60060,9 +60053,9 @@
           "entry_date": "2025-11-25",
           "entry_price": 105.66,
           "exit_date": "2025-12-04",
-          "exit_price": 116.68,
-          "profit": 11.02,
-          "profit_pct": 10.43,
+          "exit_price": 118.14,
+          "profit": 12.48,
+          "profit_pct": 11.82,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -60073,11 +60066,11 @@
       "winning_trades": 22,
       "losing_trades": 65,
       "win_rate": 25.29,
-      "gross_profit": 208.2,
+      "gross_profit": 206.94,
       "gross_loss": -215.63,
-      "total_profit": -7.43,
-      "avg_profit": -0.09,
-      "avg_profit_pct": 0.31,
+      "total_profit": -8.69,
+      "avg_profit": -0.1,
+      "avg_profit_pct": 0.3,
       "stop_loss_exits": 17,
       "signal_exits": 69,
       "trades": [
@@ -60859,9 +60852,9 @@
           "entry_date": "2025-11-07",
           "entry_price": 142.67,
           "exit_date": "2025-12-04",
-          "exit_price": 160.43,
-          "profit": 17.76,
-          "profit_pct": 12.45,
+          "exit_price": 159.16,
+          "profit": 16.5,
+          "profit_pct": 11.56,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -61554,10 +61547,10 @@
       "winning_trades": 25,
       "losing_trades": 55,
       "win_rate": 31.25,
-      "gross_profit": 640.87,
+      "gross_profit": 639.24,
       "gross_loss": -553.25,
-      "total_profit": 87.62,
-      "avg_profit": 1.1,
+      "total_profit": 85.99,
+      "avg_profit": 1.07,
       "avg_profit_pct": 0.5,
       "stop_loss_exits": 21,
       "signal_exits": 58,
@@ -62277,9 +62270,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 401.99,
           "exit_date": "2025-12-04",
-          "exit_price": 403.77,
-          "profit": 1.78,
-          "profit_pct": 0.44,
+          "exit_price": 402.14,
+          "profit": 0.15,
+          "profit_pct": 0.04,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -62290,9 +62283,9 @@
       "winning_trades": 15,
       "losing_trades": 44,
       "win_rate": 25.42,
-      "gross_profit": 481.47,
+      "gross_profit": 481.65,
       "gross_loss": -306.36,
-      "total_profit": 175.11,
+      "total_profit": 175.29,
       "avg_profit": 2.97,
       "avg_profit_pct": 1.45,
       "stop_loss_exits": 18,
@@ -62824,9 +62817,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 153.91,
           "exit_date": "2025-12-04",
-          "exit_price": 154.86,
-          "profit": 0.95,
-          "profit_pct": 0.62,
+          "exit_price": 155.04,
+          "profit": 1.13,
+          "profit_pct": 0.74,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -62834,14 +62827,14 @@
     {
       "ticker": "TTWO",
       "total_trades": 74,
-      "winning_trades": 18,
-      "losing_trades": 56,
-      "win_rate": 24.32,
-      "gross_profit": 159.64,
-      "gross_loss": -187.44,
-      "total_profit": -27.8,
-      "avg_profit": -0.38,
-      "avg_profit_pct": -0.26,
+      "winning_trades": 17,
+      "losing_trades": 57,
+      "win_rate": 22.97,
+      "gross_profit": 158.39,
+      "gross_loss": -187.79,
+      "total_profit": -29.4,
+      "avg_profit": -0.4,
+      "avg_profit_pct": -0.27,
       "stop_loss_exits": 8,
       "signal_exits": 65,
       "trades": [
@@ -63506,9 +63499,9 @@
           "entry_date": "2025-11-26",
           "entry_price": 243.63,
           "exit_date": "2025-12-04",
-          "exit_price": 244.88,
-          "profit": 1.25,
-          "profit_pct": 0.52,
+          "exit_price": 243.28,
+          "profit": -0.35,
+          "profit_pct": -0.14,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -64112,10 +64105,10 @@
       "losing_trades": 50,
       "win_rate": 24.24,
       "gross_profit": 119.62,
-      "gross_loss": -186.64,
-      "total_profit": -67.02,
-      "avg_profit": -1.02,
-      "avg_profit_pct": -0.14,
+      "gross_loss": -186.51,
+      "total_profit": -66.89,
+      "avg_profit": -1.01,
+      "avg_profit_pct": -0.13,
       "stop_loss_exits": 8,
       "signal_exits": 57,
       "trades": [
@@ -64708,9 +64701,9 @@
           "entry_date": "2025-11-25",
           "entry_price": 86.34,
           "exit_date": "2025-12-04",
-          "exit_price": 85.74,
-          "profit": -0.6,
-          "profit_pct": -0.7,
+          "exit_price": 85.87,
+          "profit": -0.47,
+          "profit_pct": -0.54,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -65340,11 +65333,11 @@
       "winning_trades": 10,
       "losing_trades": 43,
       "win_rate": 18.87,
-      "gross_profit": 31.89,
+      "gross_profit": 32.05,
       "gross_loss": -40.32,
-      "total_profit": -8.43,
+      "total_profit": -8.27,
       "avg_profit": -0.16,
-      "avg_profit_pct": 0.49,
+      "avg_profit_pct": 0.51,
       "stop_loss_exits": 30,
       "signal_exits": 22,
       "trades": [
@@ -65820,9 +65813,9 @@
           "entry_date": "2025-11-21",
           "entry_price": 14.86,
           "exit_date": "2025-12-04",
-          "exit_price": 17.51,
-          "profit": 2.65,
-          "profit_pct": 17.83,
+          "exit_price": 17.67,
+          "profit": 2.81,
+          "profit_pct": 18.94,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -65833,11 +65826,11 @@
       "winning_trades": 15,
       "losing_trades": 56,
       "win_rate": 21.13,
-      "gross_profit": 282.09,
+      "gross_profit": 281.65,
       "gross_loss": -286.63,
-      "total_profit": -4.54,
-      "avg_profit": -0.06,
-      "avg_profit_pct": -0.65,
+      "total_profit": -4.98,
+      "avg_profit": -0.07,
+      "avg_profit_pct": -0.67,
       "stop_loss_exits": 34,
       "signal_exits": 36,
       "trades": [
@@ -66475,9 +66468,9 @@
           "entry_date": "2025-12-02",
           "entry_price": 29.12,
           "exit_date": "2025-12-04",
-          "exit_price": 30.06,
-          "profit": 0.94,
-          "profit_pct": 3.23,
+          "exit_price": 29.62,
+          "profit": 0.5,
+          "profit_pct": 1.72,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -66488,10 +66481,10 @@
       "winning_trades": 18,
       "losing_trades": 58,
       "win_rate": 23.68,
-      "gross_profit": 39.27,
+      "gross_profit": 39.17,
       "gross_loss": -56.29,
-      "total_profit": -17.02,
-      "avg_profit": -0.22,
+      "total_profit": -17.12,
+      "avg_profit": -0.23,
       "avg_profit_pct": -0.32,
       "stop_loss_exits": 14,
       "signal_exits": 61,
@@ -67175,9 +67168,9 @@
           "entry_date": "2025-12-03",
           "entry_price": 21.33,
           "exit_date": "2025-12-04",
-          "exit_price": 21.58,
-          "profit": 0.25,
-          "profit_pct": 1.17,
+          "exit_price": 21.48,
+          "profit": 0.15,
+          "profit_pct": 0.7,
           "exit_reason": "END-OF-DATA"
         }
       ]
@@ -67906,11 +67899,11 @@
       "winning_trades": 20,
       "losing_trades": 35,
       "win_rate": 36.36,
-      "gross_profit": 390.54,
+      "gross_profit": 389.23,
       "gross_loss": -152.38,
-      "total_profit": 238.16,
-      "avg_profit": 4.33,
-      "avg_profit_pct": 3.22,
+      "total_profit": 236.85,
+      "avg_profit": 4.31,
+      "avg_profit_pct": 3.21,
       "stop_loss_exits": 9,
       "signal_exits": 45,
       "trades": [
@@ -68404,24 +68397,24 @@
           "entry_date": "2025-11-26",
           "entry_price": 359.09,
           "exit_date": "2025-12-04",
-          "exit_price": 374.22,
-          "profit": 15.13,
-          "profit_pct": 4.21,
+          "exit_price": 372.91,
+          "profit": 13.82,
+          "profit_pct": 3.85,
           "exit_reason": "END-OF-DATA"
         }
       ]
     },
     {
       "ticker": "ARM",
-      "total_trades": 30,
+      "total_trades": 29,
       "winning_trades": 8,
-      "losing_trades": 22,
-      "win_rate": 26.67,
+      "losing_trades": 21,
+      "win_rate": 27.59,
       "gross_profit": 184.55,
       "gross_loss": -104.58,
       "total_profit": 79.97,
-      "avg_profit": 2.67,
-      "avg_profit_pct": 3.45,
+      "avg_profit": 2.76,
+      "avg_profit_pct": 3.57,
       "stop_loss_exits": 11,
       "signal_exits": 18,
       "trades": [
@@ -68685,15 +68678,6 @@
           "profit": -8.49,
           "profit_pct": -5.0,
           "exit_reason": "stop_loss"
-        },
-        {
-          "entry_date": "2025-12-04",
-          "entry_price": 140.73,
-          "exit_date": "2025-12-04",
-          "exit_price": 140.73,
-          "profit": 0.0,
-          "profit_pct": 0.0,
-          "exit_reason": "END-OF-DATA"
         }
       ]
     }
