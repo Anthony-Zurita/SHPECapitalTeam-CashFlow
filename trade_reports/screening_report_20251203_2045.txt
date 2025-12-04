@@ -1,0 +1,275 @@
+================================================================================
+STOCK SCREENING & BACKTEST REPORT v3.0 (WITH STOP-LOSS)
+Generated: 2025-12-03 20:45:02
+Strategy: 20-period SMA Crossover on 1d intervals
+Stop-Loss: 5% (ENABLED)
+Lookback Period: 5y
+Portfolio Size: $10,000
+================================================================================
+
+💰 PORTFOLIO SUMMARY
+================================================================================
+
+📈 STATUS: PROFITABLE ✅
+
+  Gross Profit:    $+31,592.89
+  Gross Loss:      $-27,440.52
+  ─────────────────────────────
+  NET PROFIT/LOSS: $ +4,152.37
+
+  Profit Factor:   1.15x
+  (Profit Factor > 1.0 means profitable)
+
+  TRADE STATISTICS:
+    Total Trades:      7270
+    Winning Trades:    1902
+    Losing Trades:     5358
+    Overall Win Rate:  26.2%
+
+  🛡️ STOP-LOSS STATISTICS:
+    Stop-Loss Setting: 5%
+    Stop-Loss Exits:   1120
+    Signal Exits:      6078
+    Worst Trade:       -5.00%
+
+  STOCK PERFORMANCE:
+    Stocks Analyzed:   100
+    Profitable:        60
+    Unprofitable:      40
+
+  🏆 Best:  BKNG ($+1480.99, 35% WR)
+  💀 Worst: ILMN ($-184.32, 13% WR)
+
+================================================================================
+
+📊 CURRENT MARKET SIGNALS
+--------------------------------------------------------------------------------
+Strong Buys (just crossed above SMA): 8
+Buys (above SMA):                     64
+Sells (just crossed below SMA):       2
+Holds (below SMA):                    26
+Total Analyzed:                       100
+
+
+🔥 STRONG BUY SIGNALS (Just Crossed Above SMA)
+================================================================================
+
+PLTR
+  Price: $176.08 | SMA: $172.23 | Distance: +2.23%
+  📦 POSITION SIZE: 4 shares ($704.32 = 7.04% of portfolio)
+  🛡️ STOP-LOSS: $167.28 (-5% from entry)
+  📈 Backtest: 68 trades | Win Rate: 27.9% | Avg P/L: +0.88%
+
+MRNA
+  Price: $25.18 | SMA: $24.66 | Distance: +2.09%
+  📦 POSITION SIZE: 29 shares ($730.22 = 7.3% of portfolio)
+  🛡️ STOP-LOSS: $23.92 (-5% from entry)
+  📈 Backtest: 67 trades | Win Rate: 16.4% | Avg P/L: +1.52%
+
+PAYX
+  Price: $113.39 | SMA: $111.35 | Distance: +1.84%
+  📦 POSITION SIZE: 4 shares ($453.56 = 4.54% of portfolio)
+  🛡️ STOP-LOSS: $107.72 (-5% from entry)
+  📈 Backtest: 69 trades | Win Rate: 27.5% | Avg P/L: +0.04%
+
+ABNB
+  Price: $120.13 | SMA: $118.45 | Distance: +1.42%
+  📦 POSITION SIZE: 4 shares ($480.52 = 4.81% of portfolio)
+  🛡️ STOP-LOSS: $114.12 (-5% from entry)
+  📈 Backtest: 74 trades | Win Rate: 23.0% | Avg P/L: -0.06%
+
+CMCSA
+  Price: $27.43 | SMA: $27.17 | Distance: +0.96%
+  📦 POSITION SIZE: 18 shares ($493.74 = 4.94% of portfolio)
+  🛡️ STOP-LOSS: $26.06 (-5% from entry)
+  📈 Backtest: 80 trades | Win Rate: 22.5% | Avg P/L: -0.53%
+
+SIRI
+  Price: $21.33 | SMA: $21.20 | Distance: +0.63%
+  📦 POSITION SIZE: 23 shares ($490.59 = 4.91% of portfolio)
+  🛡️ STOP-LOSS: $20.26 (-5% from entry)
+  📈 Backtest: 76 trades | Win Rate: 22.4% | Avg P/L: -0.33%
+
+GILD
+  Price: $125.00 | SMA: $124.45 | Distance: +0.44%
+  📦 POSITION SIZE: 4 shares ($500.00 = 5.0% of portfolio)
+  🛡️ STOP-LOSS: $118.75 (-5% from entry)
+  📈 Backtest: 80 trades | Win Rate: 26.2% | Avg P/L: +0.38%
+
+CRWD
+  Price: $524.17 | SMA: $523.23 | Distance: +0.18%
+  📦 POSITION SIZE: 0 shares ($0.00 = 0.0% of portfolio)
+  🛡️ STOP-LOSS: $497.96 (-5% from entry)
+  📈 Backtest: 65 trades | Win Rate: 30.8% | Avg P/L: +1.07%
+
+🟢 TOP 10 BUY SIGNALS (Above SMA)
+================================================================================
+
+MCHP
+  Price: $63.61 | SMA: $54.02 | Distance: +17.75%
+  📦 POSITION SIZE: 15 shares ($954.15 = 9.54% of portfolio)
+  🛡️ STOP-LOSS: $60.43 (-5% from entry)
+  📈 Backtest: 89 trades | Win Rate: 16.9% | Avg P/L: -0.98%
+
+ON
+  Price: $57.15 | SMA: $48.60 | Distance: +17.60%
+  📦 POSITION SIZE: 17 shares ($971.55 = 9.72% of portfolio)
+  🛡️ STOP-LOSS: $54.29 (-5% from entry)
+  📈 Backtest: 83 trades | Win Rate: 16.9% | Avg P/L: -0.58%
+
+MDB
+  Price: $405.94 | SMA: $350.22 | Distance: +15.91%
+  📦 POSITION SIZE: 2 shares ($811.88 = 8.12% of portfolio)
+  🛡️ STOP-LOSS: $385.64 (-5% from entry)
+  📈 Backtest: 80 trades | Win Rate: 31.2% | Avg P/L: +0.51%
+
+SNPS
+  Price: $466.44 | SMA: $405.00 | Distance: +15.17%
+  📦 POSITION SIZE: 2 shares ($932.88 = 9.33% of portfolio)
+  🛡️ STOP-LOSS: $443.12 (-5% from entry)
+  📈 Backtest: 70 trades | Win Rate: 30.0% | Avg P/L: +0.86%
+
+ADI
+  Price: $278.24 | SMA: $242.94 | Distance: +14.53%
+  📦 POSITION SIZE: 3 shares ($834.72 = 8.35% of portfolio)
+  🛡️ STOP-LOSS: $264.33 (-5% from entry)
+  📈 Backtest: 90 trades | Win Rate: 18.9% | Avg P/L: -0.13%
+
+NXPI
+  Price: $227.56 | SMA: $199.51 | Distance: +14.06%
+  📦 POSITION SIZE: 4 shares ($910.24 = 9.1% of portfolio)
+  🛡️ STOP-LOSS: $216.18 (-5% from entry)
+  📈 Backtest: 94 trades | Win Rate: 22.3% | Avg P/L: -0.30%
+
+AMAT
+  Price: $268.63 | SMA: $237.04 | Distance: +13.33%
+  📦 POSITION SIZE: 3 shares ($805.89 = 8.06% of portfolio)
+  🛡️ STOP-LOSS: $255.20 (-5% from entry)
+  📈 Backtest: 80 trades | Win Rate: 27.5% | Avg P/L: +0.52%
+
+TXN
+  Price: $182.60 | SMA: $162.76 | Distance: +12.19%
+  📦 POSITION SIZE: 5 shares ($913.00 = 9.13% of portfolio)
+  🛡️ STOP-LOSS: $173.47 (-5% from entry)
+  📈 Backtest: 85 trades | Win Rate: 22.4% | Avg P/L: -0.40%
+
+ODFL
+  Price: $150.95 | SMA: $135.99 | Distance: +11.00%
+  📦 POSITION SIZE: 6 shares ($905.67 = 9.06% of portfolio)
+  🛡️ STOP-LOSS: $143.40 (-5% from entry)
+  📈 Backtest: 94 trades | Win Rate: 17.0% | Avg P/L: -0.25%
+
+GFS
+  Price: $38.09 | SMA: $34.50 | Distance: +10.42%
+  📦 POSITION SIZE: 26 shares ($990.34 = 9.9% of portfolio)
+  🛡️ STOP-LOSS: $36.19 (-5% from entry)
+  📈 Backtest: 62 trades | Win Rate: 29.0% | Avg P/L: -0.44%
+
+  ... and 54 more BUY signals
+
+
+================================================================================
+DETAILED BACKTEST RESULTS (Top 10 by Profit)
+================================================================================
+
+BKNG
+--------------------------------------------------------------------------------
+Total Trades: 69 (Stop-Loss: 5 | Signal: 63)
+Wins: 24 | Losses: 45 | Win Rate: 34.8%
+Avg Profit/Loss: +0.86%
+Avg Winner: +6.53% | Avg Loser: -2.16%
+Max Loss: -5.00% | Total Profit: $+1480.99
+
+COST
+--------------------------------------------------------------------------------
+Total Trades: 67 (Stop-Loss: 2 | Signal: 64)
+Wins: 21 | Losses: 46 | Win Rate: 31.3%
+Avg Profit/Loss: +1.47%
+Avg Winner: +7.80% | Avg Loser: -1.42%
+Max Loss: -5.00% | Total Profit: $+465.89
+
+KLAC
+--------------------------------------------------------------------------------
+Total Trades: 79 (Stop-Loss: 16 | Signal: 62)
+Wins: 19 | Losses: 60 | Win Rate: 24.1%
+Avg Profit/Loss: +0.58%
+Avg Winner: +11.23% | Avg Loser: -2.79%
+Max Loss: -5.00% | Total Profit: $+239.86
+
+META
+--------------------------------------------------------------------------------
+Total Trades: 69 (Stop-Loss: 12 | Signal: 56)
+Wins: 24 | Losses: 45 | Win Rate: 34.8%
+Avg Profit/Loss: +1.30%
+Avg Winner: +8.89% | Avg Loser: -2.74%
+Max Loss: -5.00% | Total Profit: $+235.29
+
+CEG
+--------------------------------------------------------------------------------
+Total Trades: 55 (Stop-Loss: 9 | Signal: 45)
+Wins: 20 | Losses: 35 | Win Rate: 36.4%
+Avg Profit/Loss: +3.15%
+Avg Winner: +12.98% | Avg Loser: -2.46%
+Max Loss: -5.00% | Total Profit: $+225.18
+
+CRWD
+--------------------------------------------------------------------------------
+Total Trades: 65 (Stop-Loss: 16 | Signal: 48)
+Wins: 20 | Losses: 44 | Win Rate: 30.8%
+Avg Profit/Loss: +1.07%
+Avg Winner: +10.75% | Avg Loser: -3.31%
+Max Loss: -5.00% | Total Profit: $+224.65
+
+GOOGL
+--------------------------------------------------------------------------------
+Total Trades: 71 (Stop-Loss: 4 | Signal: 66)
+Wins: 26 | Losses: 45 | Win Rate: 36.6%
+Avg Profit/Loss: +1.58%
+Avg Winner: +7.66% | Avg Loser: -1.93%
+Max Loss: -5.00% | Total Profit: $+186.54
+
+TEAM
+--------------------------------------------------------------------------------
+Total Trades: 59 (Stop-Loss: 18 | Signal: 40)
+Wins: 15 | Losses: 44 | Win Rate: 25.4%
+Avg Profit/Loss: +1.47%
+Avg Winner: +15.37% | Avg Loser: -3.27%
+Max Loss: -5.00% | Total Profit: $+177.03
+
+GOOG
+--------------------------------------------------------------------------------
+Total Trades: 73 (Stop-Loss: 5 | Signal: 67)
+Wins: 27 | Losses: 46 | Win Rate: 37.0%
+Avg Profit/Loss: +1.41%
+Avg Winner: +7.40% | Avg Loser: -2.10%
+Max Loss: -5.00% | Total Profit: $+173.32
+
+ISRG
+--------------------------------------------------------------------------------
+Total Trades: 73 (Stop-Loss: 8 | Signal: 64)
+Wins: 18 | Losses: 55 | Win Rate: 24.7%
+Avg Profit/Loss: +1.07%
+Avg Winner: +12.19% | Avg Loser: -2.57%
+Max Loss: -5.00% | Total Profit: $+164.12
+
+================================================================================
+STRATEGY EXPLANATION
+--------------------------------------------------------------------------------
+Entry Signal: Price crosses above 20-period SMA
+Exit Signals:
+  1. Price crosses below 20-period SMA (trend reversal)
+  2. Price drops 5% below entry (stop-loss protection)
+Data: 1d intervals
+
+SIGNAL TYPES:
+  STRONG BUY: Stock just crossed above SMA (fresh entry signal)
+  BUY: Stock is above SMA (in uptrend)
+  SELL: Stock just crossed below SMA (exit signal)
+  HOLD: Stock is below SMA (wait for entry)
+
+RISK MANAGEMENT:
+  Portfolio Size: $10,000
+  Max Position: 10% per stock ($1,000)
+  Stop-Loss: 5% below entry price
+  Risk Per Trade: 2% of portfolio ($200)
+================================================================================
