@@ -1,22 +1,22 @@
 # SHPECapital - Team CashFlow Swing Trading Algorithm
 
-A stock screening and backtesting tool that analyzes 100+ stocks from the QQQ ETF (Nasdaq 100) using a Simple Moving Average crossover strategy. Built for educational purposes as part of the SHPECapital algorithmic trading program.
+A stock screening and backtesting tool that analyzes 100+ stocks from the QQQ ETF (Nasdaq 100) using a Simple Moving Average crossover strategy.
 
 ---
 
 ## Algorithmic Trading Concepts Used
 
 ### Market Data Feed
-We use **Yahoo Finance** (via the `yfinance` Python library) as our market data feed, which provides historical OHLCV data (Open, High, Low, Close, Volume) for each trading day. For swing trading, we download **5 years of daily price data** (2020-2025) to ensure our backtests capture multiple market cycles including bull markets (2020-2021), corrections (2022), and recovery periods (2023-2024). Yahoo Finance is free and doesn't require authentication, making it ideal for educational projects. The 15-minute data delay is acceptable since we're analyzing daily candles for swing trades, not executing high-frequency strategies.
+We use **Yahoo Finance** (via the `yfinance` Python library) as our market data feed, which provides historical OHLCV data (Open, High, Low, Close, Volume) for each trading day. For swing trading, we pulled **5 years of daily price data** (2020-2025) to ensure our backtests capture multiple market cycles including bull markets (2020-2021), corrections (2022), and recovery periods (2023-2024). Yahoo Finance is free and doesn't require authentication, making it ideal for our project. The 15-minute data delay is acceptable since we're analyzing daily candles for swing trades, not executing high-frequency strategies.
 
 ### Trading Platform
-Our Python backtesting engine simulates a trading platform by processing historical data day-by-day and executing trades based on our SMA crossover rules. The engine tracks cash balances, open positions, entry prices, and calculates profit/loss for each completed trade. In a production environment, this logic would connect to a broker API (like Alpaca or Interactive Brokers) to execute real trades with real capital, but for educational purposes we simulate everything in Python to understand the mechanics before risking money.
+Our Python backtesting engine simulates a trading platform by processing historical data day-by-day and executing trades based on our SMA crossover rules. The engine tracks cash balances, open positions, entry prices, and calculates profit/loss for each completed trade. In a production environment, this logic would connect to a broker API (like Alpaca or Interactive Brokers) to execute real trades with real capital, but for the purpose of this project we simulate everything in Python to understand the mechanics without risking any real money.
 
 ### Connectivity & Latency
-For swing trading strategies that hold positions for 2-10 days, millisecond-level latency is not critical. We use Yahoo Finance's free API which has slight delays in data delivery, but this doesn't impact our strategy since we make decisions based on daily closing prices, not intraday tick data. Unlike high-frequency trading where microseconds matter, swing trading gives us the luxury of using free, delayed data sources without sacrificing performance.
+For swing trading strategies that hold positions for 2-10 days, millisecond-level latency is not critical. We use Yahoo Finance's free API which has slight delays in data delivery, but this doesn't impact our strategy since we make decisions based on daily closing prices. Unlike high-frequency trading where microseconds matter, swing trading gives us the luxury of using free, delayed data sources without sacrificing performance.
 
 ### Why Backtesting Matters
-Backtesting is essential because it lets us test our strategy against **5 years of real market data** (7,272 simulated trades) before risking actual capital. By walking through historical price data day-by-day and simulating buy/sell decisions, we can identify fatal flaws like strategies that only work in bull markets or that suffer catastrophic losses during corrections. Our backtest revealed critical insights: without a stop-loss, our worst single trade would have lost -15%, but with a 5% stop-loss implemented, losses are capped and the strategy becomes consistently profitable with a 1.15x profit factor across 100 stocks.
+Backtesting is essential because it lets us test our strategy against **5 years of real market data** (7,272 simulated trades) before risking actual money. Our backtest revealed a critical insight: without a stop-loss, our worst single trade would have lost -15%, but with a 5% stop-loss implemented, losses are capped and the strategy becomes consistently profitable with a 1.15x profit factor across 100 stocks.
 
 ### Risk Controls Implementation
 We implement multiple safeguards to prevent catastrophic losses and protect capital. **Stop-loss rules** (5% threshold) automatically exit positions that move against us, preventing any single trade from destroying the portfolio. **Position sizing limits** (max 10% per stock) ensure diversification across multiple positions, so no single stock failure can wipe out the account. **Risk-per-trade calculations** (2% portfolio risk) determine exact share quantities to buy, ensuring that even if the stop-loss triggers, we only lose 2% of total capital. These controls were discussed in Week 2 as essential components of professional algorithmic trading systems.
@@ -32,7 +32,7 @@ We implement multiple safeguards to prevent catastrophic losses and protect capi
 ### Time Windows
 - **Daily (1d) candles**: Each data point represents one full trading day
 - **5-year lookback period**: Historical data from 2020-2025 for comprehensive backtesting
-- **20-day calculation window**: SMA uses the most recent 20 trading days (~1 month)
+- **20-day calculation window**: SMA uses the most recent 20 trading days
 
 ### Entry Rules (BUY)
 - **Price crosses above 20-day SMA**: When yesterday's close was below the SMA and today's close is above, generate BUY signal
@@ -300,13 +300,13 @@ This project taught us fundamental algorithmic trading concepts:
 ## Team
 
 **SHPECapital - Team CashFlow**  
-Algorithmic Trading Education Program
 
 **Contributors:**
-- Anthony Capobianco - Lead Developer
-
-**Project Advisor:**
-- SHPECapital Program
+- Anthony Zurita
+- Marcos Viloria
+- Juan Cavallin
+- Kyle
+- Max Arthay
 
 ---
 
@@ -314,30 +314,7 @@ Algorithmic Trading Education Program
 
 ⚠️ **IMPORTANT: This is an educational project only.**
 
-- Nothing in this project constitutes financial advice
-- Past performance does not guarantee future results
-- The backtest uses historical data which may not reflect future market conditions
-- Real trading involves risks including loss of principal
-- Always consult a licensed financial advisor before making investment decisions
-- Do your own research before trading with real capital
-
 **Current backtest results (+$4,178.90 profit) are simulated.** Real trading involves slippage, commissions, market impact, and execution delays not modeled in this backtest.
-
----
-
-## Future Improvements
-
-Ideas for extending this project:
-- [ ] Add equity curve visualization (cumulative portfolio value over time)
-- [ ] Calculate maximum drawdown (worst peak-to-trough loss)
-- [ ] Implement Sharpe Ratio or other risk-adjusted metrics
-- [ ] Add multiple indicator confirmation (RSI, MACD, volume)
-- [ ] Test different SMA periods (10-day, 50-day, 200-day)
-- [ ] Implement trailing stop-loss (moves with profitable trades)
-- [ ] Add transaction cost modeling (commissions, slippage)
-- [ ] Optimize parameters using walk-forward analysis
-- [ ] Paper trading integration with live data feeds
-- [ ] Alerts/notifications for STRONG BUY signals
 
 ---
 
