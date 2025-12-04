@@ -104,6 +104,16 @@ def serve_json(filename):
     """Serve JSON files"""
     return send_from_directory('output/dashboard_data', filename)
 
+@app.route('/background.jpg')
+def serve_background():
+    """Serve background image"""
+    return send_from_directory('.', 'background.jpg')
+
+@app.route('/loading.gif')
+def serve_loading_gif():
+    """Serve loading GIF"""
+    return send_from_directory('.', 'loading.gif')
+
 if __name__ == '__main__':
     print("=" * 60)
     print("🚀 SHPE Capital Trading Dashboard Server")

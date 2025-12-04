@@ -1,5 +1,5 @@
 {
-  "generated_at": "2025-12-03T23:58:14.967204",
+  "generated_at": "2025-12-03T23:51:54.566576",
   "config": {
     "sma_period": 20,
     "interval": "1d",
@@ -18,9 +18,9 @@
     "winning_trades": 1901,
     "losing_trades": 5369,
     "overall_win_rate": 26.15,
-    "gross_profit": 31591.78,
-    "gross_loss": -27438.44,
-    "net_profit": 4153.34,
+    "gross_profit": 31591.77,
+    "gross_loss": -27438.66,
+    "net_profit": 4153.11,
     "avg_profit_pct_per_stock": 0.49,
     "profit_factor": 1.15,
     "best_performer": {
@@ -50,7 +50,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:41.551086"
+      "timestamp": "2025-12-03T23:51:17.455765"
     },
     {
       "ticker": "MSFT",
@@ -61,7 +61,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:41.836644"
+      "timestamp": "2025-12-03T23:51:17.822877"
     },
     {
       "ticker": "AAPL",
@@ -79,7 +79,7 @@
         "stop_loss_price": 269.94,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:42.247920"
+      "timestamp": "2025-12-03T23:51:18.219496"
     },
     {
       "ticker": "AVGO",
@@ -97,7 +97,7 @@
         "stop_loss_price": 361.58,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:42.543746"
+      "timestamp": "2025-12-03T23:51:18.600692"
     },
     {
       "ticker": "AMZN",
@@ -108,7 +108,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:42.827236"
+      "timestamp": "2025-12-03T23:51:18.888212"
     },
     {
       "ticker": "META",
@@ -126,7 +126,7 @@
         "stop_loss_price": 607.62,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:43.101511"
+      "timestamp": "2025-12-03T23:51:19.219912"
     },
     {
       "ticker": "TSLA",
@@ -144,7 +144,7 @@
         "stop_loss_price": 424.4,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:43.403126"
+      "timestamp": "2025-12-03T23:51:19.520609"
     },
     {
       "ticker": "GOOGL",
@@ -162,7 +162,7 @@
         "stop_loss_price": 303.65,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:43.695864"
+      "timestamp": "2025-12-03T23:51:19.842941"
     },
     {
       "ticker": "GOOG",
@@ -180,7 +180,7 @@
         "stop_loss_price": 304.59,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:43.983334"
+      "timestamp": "2025-12-03T23:51:20.195139"
     },
     {
       "ticker": "NFLX",
@@ -191,7 +191,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:44.299921"
+      "timestamp": "2025-12-03T23:51:20.496972"
     },
     {
       "ticker": "COST",
@@ -209,7 +209,7 @@
         "stop_loss_price": 876.15,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:44.683231"
+      "timestamp": "2025-12-03T23:51:20.866096"
     },
     {
       "ticker": "PLTR",
@@ -227,7 +227,7 @@
         "stop_loss_price": 167.28,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:44.957696"
+      "timestamp": "2025-12-03T23:51:21.150282"
     },
     {
       "ticker": "AMD",
@@ -238,7 +238,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:45.261483"
+      "timestamp": "2025-12-03T23:51:21.476520"
     },
     {
       "ticker": "TMUS",
@@ -249,7 +249,7 @@
       "crossed_above": false,
       "crossed_below": true,
       "position": null,
-      "timestamp": "2025-12-03T23:57:45.561271"
+      "timestamp": "2025-12-03T23:51:21.829749"
     },
     {
       "ticker": "CSCO",
@@ -267,7 +267,7 @@
         "stop_loss_price": 73.86,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:45.887328"
+      "timestamp": "2025-12-03T23:51:22.154934"
     },
     {
       "ticker": "LIN",
@@ -278,7 +278,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:46.245215"
+      "timestamp": "2025-12-03T23:51:22.607315"
     },
     {
       "ticker": "INTU",
@@ -289,7 +289,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:46.584158"
+      "timestamp": "2025-12-03T23:51:22.930545"
     },
     {
       "ticker": "PEP",
@@ -307,7 +307,7 @@
         "stop_loss_price": 140.66,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:46.989929"
+      "timestamp": "2025-12-03T23:51:23.309714"
     },
     {
       "ticker": "BKNG",
@@ -325,7 +325,7 @@
         "stop_loss_price": 4794.85,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:47.295139"
+      "timestamp": "2025-12-03T23:51:23.653782"
     },
     {
       "ticker": "ISRG",
@@ -343,7 +343,7 @@
         "stop_loss_price": 541.22,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:47.610597"
+      "timestamp": "2025-12-03T23:51:23.987672"
     },
     {
       "ticker": "TXN",
@@ -361,7 +361,7 @@
         "stop_loss_price": 173.47,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:48.189926"
+      "timestamp": "2025-12-03T23:51:24.467032"
     },
     {
       "ticker": "AMGN",
@@ -379,7 +379,7 @@
         "stop_loss_price": 328.15,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:48.628577"
+      "timestamp": "2025-12-03T23:51:24.858405"
     },
     {
       "ticker": "QCOM",
@@ -397,7 +397,7 @@
         "stop_loss_price": 166.32,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:48.933741"
+      "timestamp": "2025-12-03T23:51:25.201672"
     },
     {
       "ticker": "SHOP",
@@ -415,7 +415,7 @@
         "stop_loss_price": 152.0,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:49.251146"
+      "timestamp": "2025-12-03T23:51:25.511761"
     },
     {
       "ticker": "AMAT",
@@ -433,7 +433,7 @@
         "stop_loss_price": 255.2,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:49.574598"
+      "timestamp": "2025-12-03T23:51:25.836915"
     },
     {
       "ticker": "HON",
@@ -444,7 +444,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:50.043657"
+      "timestamp": "2025-12-03T23:51:26.312407"
     },
     {
       "ticker": "CMCSA",
@@ -462,7 +462,7 @@
         "stop_loss_price": 26.06,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:50.441406"
+      "timestamp": "2025-12-03T23:51:26.730841"
     },
     {
       "ticker": "PANW",
@@ -473,7 +473,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:50.741587"
+      "timestamp": "2025-12-03T23:51:27.032640"
     },
     {
       "ticker": "ADP",
@@ -491,7 +491,7 @@
         "stop_loss_price": 247.21,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:51.155191"
+      "timestamp": "2025-12-03T23:51:27.427172"
     },
     {
       "ticker": "VRTX",
@@ -509,7 +509,7 @@
         "stop_loss_price": 439.97,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:51.436141"
+      "timestamp": "2025-12-03T23:51:27.754423"
     },
     {
       "ticker": "SBUX",
@@ -527,7 +527,7 @@
         "stop_loss_price": 82.75,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:51.751980"
+      "timestamp": "2025-12-03T23:51:28.084856"
     },
     {
       "ticker": "GILD",
@@ -545,7 +545,7 @@
         "stop_loss_price": 118.75,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:52.055907"
+      "timestamp": "2025-12-03T23:51:28.449638"
     },
     {
       "ticker": "ADI",
@@ -563,7 +563,7 @@
         "stop_loss_price": 264.33,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:52.388475"
+      "timestamp": "2025-12-03T23:51:28.897227"
     },
     {
       "ticker": "LRCX",
@@ -581,7 +581,7 @@
         "stop_loss_price": 151.76,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:52.702466"
+      "timestamp": "2025-12-03T23:51:29.337344"
     },
     {
       "ticker": "REGN",
@@ -599,7 +599,7 @@
         "stop_loss_price": 687.49,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:53.030869"
+      "timestamp": "2025-12-03T23:51:29.693481"
     },
     {
       "ticker": "MU",
@@ -617,7 +617,7 @@
         "stop_loss_price": 222.45,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:53.405243"
+      "timestamp": "2025-12-03T23:51:30.092756"
     },
     {
       "ticker": "MDLZ",
@@ -628,7 +628,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:53.732070"
+      "timestamp": "2025-12-03T23:51:30.507814"
     },
     {
       "ticker": "KLAC",
@@ -646,7 +646,7 @@
         "stop_loss_price": 1151.16,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:54.039322"
+      "timestamp": "2025-12-03T23:51:30.936488"
     },
     {
       "ticker": "PYPL",
@@ -657,7 +657,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:54.292047"
+      "timestamp": "2025-12-03T23:51:31.336608"
     },
     {
       "ticker": "SNPS",
@@ -675,7 +675,7 @@
         "stop_loss_price": 443.12,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:54.559362"
+      "timestamp": "2025-12-03T23:51:31.742068"
     },
     {
       "ticker": "CDNS",
@@ -693,7 +693,7 @@
         "stop_loss_price": 319.3,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:54.804195"
+      "timestamp": "2025-12-03T23:51:32.135633"
     },
     {
       "ticker": "MELI",
@@ -711,7 +711,7 @@
         "stop_loss_price": 2013.84,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:55.246317"
+      "timestamp": "2025-12-03T23:51:32.450037"
     },
     {
       "ticker": "CRWD",
@@ -729,7 +729,7 @@
         "stop_loss_price": 497.96,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:55.517835"
+      "timestamp": "2025-12-03T23:51:32.755041"
     },
     {
       "ticker": "MAR",
@@ -747,7 +747,7 @@
         "stop_loss_price": 291.32,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:55.876091"
+      "timestamp": "2025-12-03T23:51:33.133251"
     },
     {
       "ticker": "ORLY",
@@ -758,7 +758,7 @@
       "crossed_above": false,
       "crossed_below": true,
       "position": null,
-      "timestamp": "2025-12-03T23:57:56.159372"
+      "timestamp": "2025-12-03T23:51:33.606595"
     },
     {
       "ticker": "FTNT",
@@ -776,7 +776,7 @@
         "stop_loss_price": 78.62,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:56.457897"
+      "timestamp": "2025-12-03T23:51:33.919420"
     },
     {
       "ticker": "ADSK",
@@ -794,7 +794,7 @@
         "stop_loss_price": 291.88,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:56.784569"
+      "timestamp": "2025-12-03T23:51:34.246399"
     },
     {
       "ticker": "ABNB",
@@ -812,7 +812,7 @@
         "stop_loss_price": 114.12,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:57.057932"
+      "timestamp": "2025-12-03T23:51:34.548443"
     },
     {
       "ticker": "DASH",
@@ -830,7 +830,7 @@
         "stop_loss_price": 211.36,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:57.363498"
+      "timestamp": "2025-12-03T23:51:34.888918"
     },
     {
       "ticker": "CTAS",
@@ -841,7 +841,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:57.684670"
+      "timestamp": "2025-12-03T23:51:35.318668"
     },
     {
       "ticker": "WDAY",
@@ -852,7 +852,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:57.965951"
+      "timestamp": "2025-12-03T23:51:35.627900"
     },
     {
       "ticker": "CHTR",
@@ -863,7 +863,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:57:58.252507"
+      "timestamp": "2025-12-03T23:51:35.922814"
     },
     {
       "ticker": "PCAR",
@@ -881,7 +881,7 @@
         "stop_loss_price": 103.11,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:58.637601"
+      "timestamp": "2025-12-03T23:51:36.324167"
     },
     {
       "ticker": "NXPI",
@@ -899,7 +899,7 @@
         "stop_loss_price": 216.18,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:58.923419"
+      "timestamp": "2025-12-03T23:51:36.629935"
     },
     {
       "ticker": "MNST",
@@ -917,7 +917,7 @@
         "stop_loss_price": 70.29,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:59.210938"
+      "timestamp": "2025-12-03T23:51:36.976465"
     },
     {
       "ticker": "PAYX",
@@ -935,7 +935,7 @@
         "stop_loss_price": 107.72,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:57:59.642899"
+      "timestamp": "2025-12-03T23:51:37.382043"
     },
     {
       "ticker": "AEP",
@@ -946,7 +946,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:00.037062"
+      "timestamp": "2025-12-03T23:51:37.879241"
     },
     {
       "ticker": "CPRT",
@@ -957,7 +957,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:00.331088"
+      "timestamp": "2025-12-03T23:51:38.208531"
     },
     {
       "ticker": "ROST",
@@ -975,7 +975,7 @@
         "stop_loss_price": 169.1,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:00.669744"
+      "timestamp": "2025-12-03T23:51:38.694055"
     },
     {
       "ticker": "ODFL",
@@ -993,7 +993,7 @@
         "stop_loss_price": 143.4,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:00.968480"
+      "timestamp": "2025-12-03T23:51:39.016062"
     },
     {
       "ticker": "EA",
@@ -1011,7 +1011,7 @@
         "stop_loss_price": 193.05,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:01.294711"
+      "timestamp": "2025-12-03T23:51:39.392373"
     },
     {
       "ticker": "TTD",
@@ -1022,7 +1022,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:01.630526"
+      "timestamp": "2025-12-03T23:51:39.715992"
     },
     {
       "ticker": "KDP",
@@ -1040,7 +1040,7 @@
         "stop_loss_price": 26.91,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:01.953552"
+      "timestamp": "2025-12-03T23:51:40.048561"
     },
     {
       "ticker": "MCHP",
@@ -1058,7 +1058,7 @@
         "stop_loss_price": 60.43,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:02.290570"
+      "timestamp": "2025-12-03T23:51:40.397423"
     },
     {
       "ticker": "DXCM",
@@ -1076,7 +1076,7 @@
         "stop_loss_price": 61.61,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:02.569360"
+      "timestamp": "2025-12-03T23:51:40.727704"
     },
     {
       "ticker": "FAST",
@@ -1094,7 +1094,7 @@
         "stop_loss_price": 39.16,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:02.974347"
+      "timestamp": "2025-12-03T23:51:41.177422"
     },
     {
       "ticker": "BKR",
@@ -1112,7 +1112,7 @@
         "stop_loss_price": 47.97,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:03.352610"
+      "timestamp": "2025-12-03T23:51:41.709437"
     },
     {
       "ticker": "IDXX",
@@ -1130,7 +1130,7 @@
         "stop_loss_price": 689.63,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:03.745692"
+      "timestamp": "2025-12-03T23:51:42.069196"
     },
     {
       "ticker": "LULU",
@@ -1148,7 +1148,7 @@
         "stop_loss_price": 173.19,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:04.056188"
+      "timestamp": "2025-12-03T23:51:42.364151"
     },
     {
       "ticker": "VRSK",
@@ -1166,7 +1166,7 @@
         "stop_loss_price": 213.26,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:04.354869"
+      "timestamp": "2025-12-03T23:51:42.838688"
     },
     {
       "ticker": "EXC",
@@ -1177,7 +1177,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:04.752218"
+      "timestamp": "2025-12-03T23:51:43.223085"
     },
     {
       "ticker": "CCEP",
@@ -1195,7 +1195,7 @@
         "stop_loss_price": 87.06,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:05.179444"
+      "timestamp": "2025-12-03T23:51:43.610789"
     },
     {
       "ticker": "GEHC",
@@ -1213,7 +1213,7 @@
         "stop_loss_price": 79.41,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:05.428230"
+      "timestamp": "2025-12-03T23:51:43.877403"
     },
     {
       "ticker": "XEL",
@@ -1224,7 +1224,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:05.787444"
+      "timestamp": "2025-12-03T23:51:44.223041"
     },
     {
       "ticker": "ZS",
@@ -1235,7 +1235,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:06.083923"
+      "timestamp": "2025-12-03T23:51:44.499999"
     },
     {
       "ticker": "ON",
@@ -1253,7 +1253,7 @@
         "stop_loss_price": 54.29,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:06.354685"
+      "timestamp": "2025-12-03T23:51:44.809069"
     },
     {
       "ticker": "CTSH",
@@ -1271,7 +1271,7 @@
         "stop_loss_price": 75.28,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:06.643974"
+      "timestamp": "2025-12-03T23:51:45.120806"
     },
     {
       "ticker": "DDOG",
@@ -1282,7 +1282,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:07.712197"
+      "timestamp": "2025-12-03T23:51:46.317285"
     },
     {
       "ticker": "BIIB",
@@ -1300,7 +1300,7 @@
         "stop_loss_price": 171.71,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:08.002611"
+      "timestamp": "2025-12-03T23:51:46.665319"
     },
     {
       "ticker": "ILMN",
@@ -1318,7 +1318,7 @@
         "stop_loss_price": 121.55,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:08.287595"
+      "timestamp": "2025-12-03T23:51:47.178076"
     },
     {
       "ticker": "WBD",
@@ -1336,7 +1336,7 @@
         "stop_loss_price": 23.34,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:08.585188"
+      "timestamp": "2025-12-03T23:51:47.654545"
     },
     {
       "ticker": "CDW",
@@ -1354,7 +1354,7 @@
         "stop_loss_price": 136.5,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:08.891810"
+      "timestamp": "2025-12-03T23:51:48.010463"
     },
     {
       "ticker": "MRNA",
@@ -1372,7 +1372,7 @@
         "stop_loss_price": 23.92,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:09.177189"
+      "timestamp": "2025-12-03T23:51:48.358653"
     },
     {
       "ticker": "CSGP",
@@ -1390,7 +1390,7 @@
         "stop_loss_price": 65.57,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:09.460056"
+      "timestamp": "2025-12-03T23:51:48.827920"
     },
     {
       "ticker": "GFS",
@@ -1408,7 +1408,7 @@
         "stop_loss_price": 36.19,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:09.737411"
+      "timestamp": "2025-12-03T23:51:49.230866"
     },
     {
       "ticker": "DLTR",
@@ -1426,7 +1426,7 @@
         "stop_loss_price": 107.27,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:10.060447"
+      "timestamp": "2025-12-03T23:51:49.545226"
     },
     {
       "ticker": "FANG",
@@ -1444,7 +1444,7 @@
         "stop_loss_price": 150.46,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:10.436234"
+      "timestamp": "2025-12-03T23:51:49.812123"
     },
     {
       "ticker": "SMCI",
@@ -1455,7 +1455,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:11.469656"
+      "timestamp": "2025-12-03T23:51:50.864526"
     },
     {
       "ticker": "MDB",
@@ -1473,7 +1473,7 @@
         "stop_loss_price": 385.64,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:11.737027"
+      "timestamp": "2025-12-03T23:51:51.309511"
     },
     {
       "ticker": "TEAM",
@@ -1491,7 +1491,7 @@
         "stop_loss_price": 148.92,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:12.050666"
+      "timestamp": "2025-12-03T23:51:51.623437"
     },
     {
       "ticker": "TTWO",
@@ -1509,7 +1509,7 @@
         "stop_loss_price": 232.7,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:12.353845"
+      "timestamp": "2025-12-03T23:51:51.995441"
     },
     {
       "ticker": "PDD",
@@ -1520,7 +1520,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:12.617536"
+      "timestamp": "2025-12-03T23:51:52.234957"
     },
     {
       "ticker": "ZM",
@@ -1538,7 +1538,7 @@
         "stop_loss_price": 81.36,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:12.877658"
+      "timestamp": "2025-12-03T23:51:52.494200"
     },
     {
       "ticker": "LCID",
@@ -1549,7 +1549,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:13.169871"
+      "timestamp": "2025-12-03T23:51:52.806137"
     },
     {
       "ticker": "RIVN",
@@ -1567,7 +1567,7 @@
         "stop_loss_price": 16.65,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:13.443672"
+      "timestamp": "2025-12-03T23:51:53.026968"
     },
     {
       "ticker": "ENPH",
@@ -1585,7 +1585,7 @@
         "stop_loss_price": 27.92,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:13.692762"
+      "timestamp": "2025-12-03T23:51:53.221242"
     },
     {
       "ticker": "SIRI",
@@ -1603,7 +1603,7 @@
         "stop_loss_price": 20.26,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:14.024596"
+      "timestamp": "2025-12-03T23:51:53.495104"
     },
     {
       "ticker": "JD",
@@ -1614,7 +1614,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:14.394154"
+      "timestamp": "2025-12-03T23:51:53.771756"
     },
     {
       "ticker": "CEG",
@@ -1632,7 +1632,7 @@
         "stop_loss_price": 343.2,
         "stop_loss_pct": 5.0
       },
-      "timestamp": "2025-12-03T23:58:14.687922"
+      "timestamp": "2025-12-03T23:51:54.253451"
     },
     {
       "ticker": "ARM",
@@ -1643,7 +1643,7 @@
       "crossed_above": false,
       "crossed_below": false,
       "position": null,
-      "timestamp": "2025-12-03T23:58:14.898012"
+      "timestamp": "2025-12-03T23:51:54.477770"
     }
   ],
   "backtests": [
@@ -3403,8 +3403,8 @@
       "losing_trades": 50,
       "win_rate": 35.06,
       "gross_profit": 319.65,
-      "gross_loss": -173.95,
-      "total_profit": 145.7,
+      "gross_loss": -173.94,
+      "total_profit": 145.71,
       "avg_profit": 1.89,
       "avg_profit_pct": 1.55,
       "stop_loss_exits": 12,
@@ -3649,7 +3649,7 @@
           "entry_price": 54.5,
           "exit_date": "2022-06-03",
           "exit_price": 52.63,
-          "profit": -1.87,
+          "profit": -1.86,
           "profit_pct": -3.42,
           "exit_reason": "signal"
         },
@@ -5111,7 +5111,7 @@
           "entry_date": "2023-10-23",
           "entry_price": 312.09,
           "exit_date": "2023-10-24",
-          "exit_price": 310.64,
+          "exit_price": 310.63,
           "profit": -1.45,
           "profit_pct": -0.46,
           "exit_reason": "signal"
@@ -7961,7 +7961,7 @@
         },
         {
           "entry_date": "2021-06-03",
-          "entry_price": 364.7,
+          "entry_price": 364.71,
           "exit_date": "2021-06-07",
           "exit_price": 361.41,
           "profit": -3.3,
@@ -9719,8 +9719,8 @@
       "losing_trades": 50,
       "win_rate": 31.51,
       "gross_profit": 180.29,
-      "gross_loss": -159.19,
-      "total_profit": 21.1,
+      "gross_loss": -159.2,
+      "total_profit": 21.09,
       "avg_profit": 0.29,
       "avg_profit_pct": 0.23,
       "stop_loss_exits": 6,
@@ -10271,7 +10271,7 @@
           "entry_price": 215.61,
           "exit_date": "2025-01-23",
           "exit_price": 212.72,
-          "profit": -2.88,
+          "profit": -2.89,
           "profit_pct": -1.34,
           "exit_reason": "signal"
         },
@@ -11481,7 +11481,7 @@
           "entry_date": "2023-08-25",
           "entry_price": 369.62,
           "exit_date": "2023-09-20",
-          "exit_price": 368.14,
+          "exit_price": 368.15,
           "profit": -1.47,
           "profit_pct": -0.4,
           "exit_reason": "signal"
@@ -11819,8 +11819,8 @@
       "losing_trades": 62,
       "win_rate": 21.52,
       "gross_profit": 704.61,
-      "gross_loss": -792.68,
-      "total_profit": -88.07,
+      "gross_loss": -792.67,
+      "total_profit": -88.06,
       "avg_profit": -1.11,
       "avg_profit_pct": -0.06,
       "stop_loss_exits": 8,
@@ -12146,7 +12146,7 @@
           "entry_price": 401.1,
           "exit_date": "2023-03-15",
           "exit_price": 399.15,
-          "profit": -1.95,
+          "profit": -1.94,
           "profit_pct": -0.48,
           "exit_reason": "signal"
         },
@@ -13417,7 +13417,7 @@
         },
         {
           "entry_date": "2023-04-13",
-          "entry_price": 2592.25,
+          "entry_price": 2592.24,
           "exit_date": "2023-04-26",
           "exit_price": 2560.44,
           "profit": -31.8,
@@ -13480,7 +13480,7 @@
         },
         {
           "entry_date": "2023-07-10",
-          "entry_price": 2690.03,
+          "entry_price": 2690.04,
           "exit_date": "2023-08-03",
           "exit_price": 2799.54,
           "profit": 109.5,
@@ -13545,7 +13545,7 @@
           "entry_date": "2024-01-09",
           "entry_price": 3439.62,
           "exit_date": "2024-01-17",
-          "exit_price": 3440.29,
+          "exit_price": 3440.28,
           "profit": 0.66,
           "profit_pct": 0.02,
           "exit_reason": "signal"
@@ -14457,8 +14457,8 @@
       "losing_trades": 66,
       "win_rate": 22.35,
       "gross_profit": 154.73,
-      "gross_loss": -223.93,
-      "total_profit": -69.2,
+      "gross_loss": -223.94,
+      "total_profit": -69.21,
       "avg_profit": -0.81,
       "avg_profit_pct": -0.4,
       "stop_loss_exits": 6,
@@ -15099,7 +15099,7 @@
           "entry_price": 196.15,
           "exit_date": "2024-10-01",
           "exit_price": 193.98,
-          "profit": -2.16,
+          "profit": -2.17,
           "profit_pct": -1.1,
           "exit_reason": "signal"
         },
@@ -15141,7 +15141,7 @@
         },
         {
           "entry_date": "2024-11-18",
-          "entry_price": 200.66,
+          "entry_price": 200.67,
           "exit_date": "2024-11-19",
           "exit_price": 194.75,
           "profit": -5.92,
@@ -17423,7 +17423,7 @@
           "exit_date": "2021-11-30",
           "exit_price": 141.96,
           "profit": -3.89,
-          "profit_pct": -2.66,
+          "profit_pct": -2.67,
           "exit_reason": "signal"
         },
         {
@@ -17457,7 +17457,7 @@
           "entry_date": "2021-12-21",
           "entry_price": 146.04,
           "exit_date": "2022-01-05",
-          "exit_price": 148.27,
+          "exit_price": 148.28,
           "profit": 2.24,
           "profit_pct": 1.53,
           "exit_reason": "signal"
@@ -18747,8 +18747,8 @@
       "losing_trades": 62,
       "win_rate": 22.5,
       "gross_profit": 21.12,
-      "gross_loss": -41.05,
-      "total_profit": -19.93,
+      "gross_loss": -41.06,
+      "total_profit": -19.94,
       "avg_profit": -0.25,
       "avg_profit_pct": -0.53,
       "stop_loss_exits": 4,
@@ -18813,7 +18813,7 @@
           "entry_price": 49.5,
           "exit_date": "2021-05-17",
           "exit_price": 48.67,
-          "profit": -0.82,
+          "profit": -0.83,
           "profit_pct": -1.67,
           "exit_reason": "signal"
         },
@@ -24616,8 +24616,8 @@
       "winning_trades": 26,
       "losing_trades": 50,
       "win_rate": 34.21,
-      "gross_profit": 815.43,
-      "gross_loss": -747.41,
+      "gross_profit": 815.42,
+      "gross_loss": -747.4,
       "total_profit": 68.02,
       "avg_profit": 0.9,
       "avg_profit_pct": 0.17,
@@ -24764,7 +24764,7 @@
           "entry_price": 622.64,
           "exit_date": "2022-01-13",
           "exit_price": 612.71,
-          "profit": -9.93,
+          "profit": -9.92,
           "profit_pct": -1.59,
           "exit_reason": "signal"
         },
@@ -25151,7 +25151,7 @@
           "entry_price": 1107.21,
           "exit_date": "2024-09-05",
           "exit_price": 1144.21,
-          "profit": 37.01,
+          "profit": 37.0,
           "profit_pct": 3.34,
           "exit_reason": "signal"
         },
@@ -42772,8 +42772,8 @@
       "losing_trades": 64,
       "win_rate": 25.58,
       "gross_profit": 116.72,
-      "gross_loss": -137.62,
-      "total_profit": -20.9,
+      "gross_loss": -137.63,
+      "total_profit": -20.91,
       "avg_profit": -0.24,
       "avg_profit_pct": -0.18,
       "stop_loss_exits": 2,
@@ -42803,7 +42803,7 @@
           "exit_date": "2021-02-22",
           "exit_price": 138.5,
           "profit": -3.75,
-          "profit_pct": -2.63,
+          "profit_pct": -2.64,
           "exit_reason": "signal"
         },
         {
@@ -43189,7 +43189,7 @@
           "entry_price": 124.7,
           "exit_date": "2023-05-02",
           "exit_price": 124.35,
-          "profit": -0.34,
+          "profit": -0.35,
           "profit_pct": -0.28,
           "exit_reason": "signal"
         },
@@ -44127,10 +44127,10 @@
       "losing_trades": 63,
       "win_rate": 25.0,
       "gross_profit": 24.4,
-      "gross_loss": -26.89,
-      "total_profit": -2.49,
+      "gross_loss": -27.11,
+      "total_profit": -2.71,
       "avg_profit": -0.03,
-      "avg_profit_pct": -0.02,
+      "avg_profit_pct": -0.03,
       "stop_loss_exits": 3,
       "signal_exits": 80,
       "trades": [
@@ -44383,7 +44383,7 @@
           "exit_date": "2022-04-29",
           "exit_price": 34.13,
           "profit": -0.42,
-          "profit_pct": -1.21,
+          "profit_pct": -1.22,
           "exit_reason": "signal"
         },
         {
@@ -44522,12 +44522,12 @@
           "exit_reason": "stop_loss"
         },
         {
-          "entry_date": "2023-06-13",
-          "entry_price": 29.41,
+          "entry_date": "2023-06-14",
+          "entry_price": 29.63,
           "exit_date": "2023-06-23",
           "exit_price": 29.09,
-          "profit": -0.32,
-          "profit_pct": -1.08,
+          "profit": -0.54,
+          "profit_pct": -1.83,
           "exit_reason": "signal"
         },
         {
@@ -51863,7 +51863,7 @@
         },
         {
           "entry_date": "2022-10-25",
-          "entry_price": 56.31,
+          "entry_price": 56.32,
           "exit_date": "2022-12-19",
           "exit_price": 62.63,
           "profit": 6.32,
@@ -67896,8 +67896,8 @@
       "losing_trades": 35,
       "win_rate": 36.36,
       "gross_profit": 377.58,
-      "gross_loss": -152.39,
-      "total_profit": 225.19,
+      "gross_loss": -152.38,
+      "total_profit": 225.2,
       "avg_profit": 4.09,
       "avg_profit_pct": 3.15,
       "stop_loss_exits": 9,
@@ -68043,7 +68043,7 @@
           "entry_price": 75.15,
           "exit_date": "2023-05-03",
           "exit_price": 74.92,
-          "profit": -0.24,
+          "profit": -0.23,
           "profit_pct": -0.31,
           "exit_reason": "signal"
         },
