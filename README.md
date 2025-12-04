@@ -1,6 +1,6 @@
 # SHPECapital - Team CashFlow Swing Trading Algorithm
 
-A stock screening and backtesting tool that analyzes 100+ stocks from the QQQ ETF (Nasdaq 100) using a Simple Moving Average crossover strategy.
+A modular stock screening and backtesting tool that analyzes 100+ stocks from the QQQ ETF (Nasdaq 100) using a Simple Moving Average crossover strategy. Built with a clean separation of concerns: data loading, indicator calculation, signal generation, backtesting, and reporting are all isolated modules.
 
 ---
 
@@ -170,11 +170,11 @@ This installs:
 ### 2. Run the Stock Screener
 
 ```bash
-python merp.py
+python run_algorithm.py
 ```
 
 **What this does:**
-1. Loads 100+ ticker symbols from `qqq_holdings.txt` (QQQ ETF constituents)
+1. Loads 100+ ticker symbols from `data/qqq_holdings.txt` (QQQ ETF constituents)
 2. Downloads 5 years of daily OHLCV data from Yahoo Finance for each stock
 3. Calculates 20-day Simple Moving Average for each stock
 4. Generates current trading signals for today (STRONG BUY, BUY, SELL, HOLD)
@@ -182,8 +182,9 @@ python merp.py
 6. Calculates portfolio-level performance metrics
 
 **Output files generated:**
-- `screening_report_[timestamp].txt` - Human-readable text report with all signals and backtest results
-- `dashboard_[timestamp].json` - Structured data file for dashboard visualization
+- `output/trade_reports/screening_report_[timestamp].txt` - Human-readable text report with all signals and backtest results
+- `output/dashboard_data/dashboard_[timestamp].json` - Structured data file for dashboard visualization
+- `output/dashboard_data/latest.json` - Always contains the most recent run for dashboard
 
 **Expected runtime:** 2-5 minutes depending on internet speed (downloading 100 stocks × 5 years of data)
 
@@ -195,7 +196,7 @@ python merp.py
 python server.py
 ```
 
-Then open your web browser to: **http://localhost:8000**
+Then open your web browser to: **http://localhost:5000**
 
 **Dashboard features:**
 - 📊 **Portfolio Summary**: Total profit/loss, profit factor, win rate, number of trades
@@ -203,64 +204,104 @@ Then open your web browser to: **http://localhost:8000**
 - 📈 **Top Performers**: Best and worst stocks by backtest performance
 - 🔍 **Individual Stock Analysis**: Detailed trade-by-trade breakdown for each ticker
 - ⚙️ **Configuration Display**: Shows exact parameters used (SMA period, stop-loss %, lookback period)
+- 🔄 **Run Algorithm Button**: Execute the algorithm directly from the dashboard without terminal commands
 
-The dashboard reads from `dashboard_[timestamp].json` and presents all data in an easy-to-navigate web interface with filtering and sorting capabilities.
+The dashboard automatically reads from `output/dashboard_data/latest.json` and presents all data in an easy-to-navigate web interface with filtering and sorting capabilities.
 
 ---
 
 ## File Structure
 
 ```
-shpecapital-trading/
-├── merp.py                          # Main algorithm and backtesting engine (893 lines)
-├── server.py                        # Flask web server for dashboard (simple HTTP server)
+SHPECapital/
+├── run_algorithm.py                 # Entry point - executes the trading algorithm
+├── server.py                        # Flask web server for dashboard (serves dashboard & API)
 ├── dashboard.html                   # Interactive results dashboard (HTML/CSS/JavaScript)
-├── qqq_holdings.txt                 # Stock tickers to analyze (QQQ ETF constituents, 100+ symbols)
 ├── requirements.txt                 # Python dependencies (yfinance, pandas, flask, flask-cors)
-├── screening_report_[timestamp].txt # Generated text report with signals and backtest results
-├── dashboard_[timestamp].json       # Generated JSON data for dashboard visualization
 ├── README.md                        # This documentation file
-├── SHPE_final_rubric.pdf           # Project grading rubric
-└── Week_2_SHPE_Capital.pdf         # Educational materials on algorithmic trading concepts
+│
+├── data/                            # Input data folder
+│   └── qqq_holdings.txt            # Stock tickers to analyze (QQQ ETF constituents, 100+ symbols)
+│
+├── src/                             # Core algorithm modules (modular architecture)
+│   ├── __init__.py                 # Package initialization
+│   ├── main.py                     # Main orchestration logic
+│   ├── config.py                   # Configuration constants (SMA period, stop-loss %, paths)
+│   ├── data_loader.py              # Yahoo Finance data fetching
+│   ├── indicators.py               # Technical indicator calculations (SMA)
+│   ├── signals.py                  # Trading signal generation (BUY/SELL/HOLD logic)
+│   ├── backtester.py               # Backtesting engine with stop-loss simulation
+│   ├── portfolio.py                # Position sizing and portfolio management
+│   └── reporting.py                # Report generation (text & JSON output)
+│
+├── output/                          # Generated output folder (auto-created)
+│   ├── trade_reports/              # Text reports with signals and backtest results
+│   │   ├── screening_report_[timestamp].txt
+│   │   └── ...
+│   └── dashboard_data/             # JSON data for dashboard visualization
+│       ├── dashboard_[timestamp].json
+│       └── latest.json             # Most recent run (updated on each execution)
+│
+└── trading_env/                     # Python virtual environment (not in git)
+    ├── Scripts/
+    └── Lib/
 ```
 
-**Note:** Files with `[timestamp]` are auto-generated each time you run `merp.py`. The format is `YYYYMMDD_HHMM` (e.g., `20251203_1810` = December 3, 2025 at 6:10 PM).
+**Note:** Files with `[timestamp]` are auto-generated each time you run `run_algorithm.py`. The format is `YYYYMMDD_HHMM` (e.g., `20251203_1810` = December 3, 2025 at 6:10 PM).
 
 ---
 
 ## Code Architecture
 
-### Main Components (`merp.py`)
+### Modular Design
 
-**Configuration Section (Lines 76-93):**
-- Defines all strategy parameters (SMA period, stop-loss %, portfolio size)
+The algorithm is now organized into separate, focused modules for better maintainability and testing:
+
+**`src/config.py`** - Configuration Management
+- All strategy parameters in one place (SMA period, stop-loss %, portfolio size)
+- File paths for data input and output
 - Easy to modify for testing different configurations
 
-**Data Loading (Lines 95-160):**
-- `load_tickers()` - Reads stock symbols from text file
+**`src/data_loader.py`** - Data Acquisition
+- `load_tickers()` - Reads stock symbols from `data/qqq_holdings.txt`
 - `fetch_stock_data()` - Downloads historical data from Yahoo Finance
+- Handles API errors and data validation
 
-**Indicator Calculation (Lines 162-180):**
+**`src/indicators.py`** - Technical Analysis
 - `calculate_sma()` - Computes 20-day simple moving average
+- Designed for easy addition of more indicators (RSI, MACD, etc.)
 
-**Signal Generation (Lines 182-247):**
-- `generate_current_signal()` - Analyzes latest data to produce STRONG BUY/BUY/SELL/HOLD
+**`src/signals.py`** - Trading Logic
+- `generate_signal()` - Analyzes latest data to produce STRONG BUY/BUY/SELL/HOLD
+- `detect_crossover()` - Identifies SMA crossover events
+- Pure functions with no side effects for easy testing
+
+**`src/portfolio.py`** - Position Management
 - `calculate_position_size()` - Determines exact share quantity based on 2% risk rule
+- `calculate_stop_loss_price()` - Computes stop-loss exit price
+- Enforces 10% max position size limit
 
-**Backtesting Engine (Lines 249-421):**
+**`src/backtester.py`** - Simulation Engine
 - `backtest_strategy()` - Walks through historical data simulating trades
 - Tracks open positions, entry/exit prices, profit/loss
 - Implements stop-loss logic and SMA crossover detection
 - Calculates win rate, average profit, gross profit/loss
+- Returns detailed trade history for analysis
 
-**Portfolio Analysis (Lines 423-525):**
-- `analyze_stock()` - Combines signal generation + backtesting for one stock
-- `calculate_portfolio_summary()` - Aggregates results across all 100 stocks
-
-**Reporting (Lines 527-893):**
+**`src/reporting.py`** - Output Generation
 - `generate_report()` - Creates human-readable text report
-- `save_json_for_dashboard()` - Exports structured data for web dashboard
-- `main()` - Orchestrates entire pipeline
+- `generate_dashboard_json()` - Structures data for web dashboard
+- `save_dashboard_json()` - Exports to `output/dashboard_data/`
+- Saves both timestamped and latest.json versions
+
+**`src/main.py`** - Orchestration
+- `main()` - Coordinates the entire pipeline
+- Loads tickers → Fetches data → Calculates indicators → Generates signals → Runs backtests → Creates reports
+- Error handling and progress reporting
+
+**`run_algorithm.py`** - Entry Point
+- Simple script that calls `src.main.main()`
+- Can be executed directly or via server.py
 
 ---
 
