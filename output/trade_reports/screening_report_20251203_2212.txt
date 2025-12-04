@@ -1,0 +1,114 @@
+================================================================================
+SHPE CAPITAL - TEAM CASHFLOW
+Stock Screening & Backtesting Report
+Generated: 2025-12-03 22:12:02
+================================================================================
+
+STRATEGY CONFIGURATION
+--------------------------------------------------------------------------------
+Indicator: 20-period Simple Moving Average
+Interval: 1d (Daily candles)
+Lookback Period: 5y
+Portfolio Size: $10,000
+Max Position Size: 10.0% ($1,000 per stock)
+Risk Per Trade: 2.0% ($200)
+Stop-Loss: ENABLED (5.0% threshold)
+
+PORTFOLIO SUMMARY
+================================================================================
+Stocks Analyzed: 100
+Profitable Stocks: 60 (60.0%)
+Unprofitable Stocks: 40
+
+Total Trades Simulated: 7,270
+Winning Trades: 1,901 (26.1%)
+Losing Trades: 5,369
+
+Gross Profit: $31,593.06
+Gross Loss: $-27,440.49
+Net Profit: $4,152.57
+Profit Factor: 1.15x
+Avg Profit % Per Stock: 0.49%
+
+Best Performer: BKNG (+$1,480.99, 34.8% win rate)
+Worst Performer: ILMN ($-184.27, 12.8% win rate)
+
+Stop-Loss Exits: 1,120 (15.4%)
+Signal Exits: 6,078 (83.6%)
+Worst Single Trade: -5.00%
+
+================================================================================
+CURRENT TRADING SIGNALS
+================================================================================
+
+🟢 STRONG BUY Signals: 8
+--------------------------------------------------------------------------------
+PLTR   | Price: $  176.08 | SMA: $  172.23 | Distance:   2.23%
+        → BUY 4 shares = $704.32 | Stop-Loss: $167.28
+CMCSA  | Price: $   27.43 | SMA: $   27.17 | Distance:   0.96%
+        → BUY 18 shares = $493.74 | Stop-Loss: $26.06
+GILD   | Price: $  125.00 | SMA: $  124.45 | Distance:   0.44%
+        → BUY 4 shares = $500.00 | Stop-Loss: $118.75
+CRWD   | Price: $  524.17 | SMA: $  523.23 | Distance:   0.18%
+        → BUY 0 shares = $0.00 | Stop-Loss: $497.96
+ABNB   | Price: $  120.13 | SMA: $  118.45 | Distance:   1.42%
+        → BUY 4 shares = $480.52 | Stop-Loss: $114.12
+PAYX   | Price: $  113.39 | SMA: $  111.35 | Distance:   1.84%
+        → BUY 4 shares = $453.56 | Stop-Loss: $107.72
+MRNA   | Price: $   25.18 | SMA: $   24.66 | Distance:   2.09%
+        → BUY 29 shares = $730.22 | Stop-Loss: $23.92
+SIRI   | Price: $   21.33 | SMA: $   21.20 | Distance:   0.63%
+        → BUY 23 shares = $490.59 | Stop-Loss: $20.26
+
+🟢 BUY Signals: 64
+--------------------------------------------------------------------------------
+AAPL   | Price: $  284.15 | SMA: $  273.75 | Distance:   3.80%
+        → BUY 2 shares = $568.30 | Stop-Loss: $269.94
+AVGO   | Price: $  380.61 | SMA: $  362.42 | Distance:   5.02%
+        → BUY 2 shares = $761.22 | Stop-Loss: $361.58
+META   | Price: $  639.60 | SMA: $  619.78 | Distance:   3.20%
+        → BUY 1 shares = $639.60 | Stop-Loss: $607.62
+TSLA   | Price: $  446.74 | SMA: $  422.99 | Distance:   5.61%
+        → BUY 2 shares = $893.48 | Stop-Loss: $424.40
+GOOGL  | Price: $  319.63 | SMA: $  297.73 | Distance:   7.35%
+        → BUY 3 shares = $958.89 | Stop-Loss: $303.65
+GOOG   | Price: $  320.62 | SMA: $  298.15 | Distance:   7.53%
+        → BUY 3 shares = $961.86 | Stop-Loss: $304.59
+COST   | Price: $  922.26 | SMA: $  911.10 | Distance:   1.23%
+        → BUY 0 shares = $0.00 | Stop-Loss: $876.15
+CSCO   | Price: $   77.75 | SMA: $   75.43 | Distance:   3.07%
+        → BUY 9 shares = $699.75 | Stop-Loss: $73.86
+PEP    | Price: $  148.06 | SMA: $  146.05 | Distance:   1.38%
+        → BUY 3 shares = $444.18 | Stop-Loss: $140.66
+BKNG   | Price: $ 5047.21 | SMA: $ 4918.48 | Distance:   2.62%
+        → BUY 0 shares = $0.00 | Stop-Loss: $4794.85
+
+🔴 SELL Signals: 2
+--------------------------------------------------------------------------------
+TMUS   | Price: $  208.51 | SMA: $  208.69 | Distance:  -0.09%
+ORLY   | Price: $   98.61 | SMA: $   98.94 | Distance:  -0.34%
+
+================================================================================
+TOP 15 BACKTEST PERFORMERS
+================================================================================
+Ticker   Profit       Trades   Win%     Avg%       PF    
+--------------------------------------------------------------------------------
+BKNG     $1480.99     69       34.8   % 0.86     % 1.46x 
+COST     $465.89      67       31.3   % 1.47     % 2.07x 
+KLAC     $239.86      79       24.1   % 0.58     % 1.27x 
+META     $235.29      69       34.8   % 1.30     % 1.49x 
+CEG      $225.20      55       36.4   % 3.15     % 2.48x 
+CRWD     $224.66      65       30.8   % 1.07     % 1.63x 
+GOOGL    $186.56      71       36.6   % 1.58     % 2.63x 
+TEAM     $177.01      59       25.4   % 1.47     % 1.58x 
+GOOG     $173.34      73       37.0   % 1.41     % 2.33x 
+ISRG     $164.12      73       24.7   % 1.07     % 1.32x 
+AMD      $148.93      60       26.7   % 2.84     % 1.74x 
+AVGO     $145.71      77       35.1   % 1.55     % 1.84x 
+DASH     $145.07      63       34.9   % 2.15     % 1.72x 
+AAPL     $143.03      57       38.6   % 1.60     % 2.10x 
+AMGN     $140.89      62       32.3   % 1.03     % 1.76x 
+
+================================================================================
+END OF REPORT
+================================================================================

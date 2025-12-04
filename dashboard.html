@@ -479,7 +479,7 @@
                     data = result.data;
                 } else {
                     // Load from local file
-                    const response = await fetch('dashboard_data/latest.json');
+                    const response = await fetch('output/dashboard_data/latest.json');
                     if (!response.ok) throw new Error('Failed to load data');
                     data = await response.json();
                 }
